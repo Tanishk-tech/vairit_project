@@ -2,7 +2,7 @@ const Header= () => {
     return (
         <div className="flex items-center h-[80px] ">
             <div className="w-2/4">
-                <img src="./images/Raghunath.png" className="w-1/10 relative left-[30%]" />
+                <img src="./images/Raghunath.png" className="w-1/10 relative left-[30%]"  alt="image"/>
             </div>
             <ul className="flex items-center gap-[40px] list-none w-2/4 ">
                 <li className="hover:text-red-600 hover:underline">Home</li>
