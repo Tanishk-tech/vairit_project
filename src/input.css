@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-[50px] ;
+    }
+
+    h2{
+        @apply text-[30px];
+    }
+
+    p{
+        @apply text-[16px];
+    }
+}
+
+@layer components{
+    .header-hover{
+        @apply text-red border-solid border-b-[2px] border-red ;
+    }
+
+    .petal{
+        background-image : url('../public/images/petal.png');
+    }
+
+    .tick-symbol {
+        background-image:url('../public/images/tick.svg');
+        background-repeat: no-repeat;
+    }
+
+    .hing-bowl{
+        background-image: url('../public/images/hing_bowl.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
