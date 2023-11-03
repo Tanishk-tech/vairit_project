@@ -15,12 +15,12 @@ const Section2= () => {
                 <h1 className="text-red font-bold pb-5">Pure Agriculture and Organic</h1>
                 <h2 className="pb-3">We're Leader in Agriculture Market</h2>
                 <p className="pb-5">There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou or randomised words even slightly believable.</p>
-                <ul className="list-style-none ">
+                <ul className="list-style-none mb-6 ">
                     <li className="tick-symbol pl-8 pb-3 text-base">Organic food contains more vitamins</li>
                     <li className="tick-symbol pl-8 pb-3 text-base">Eat organic because supply meets demand</li>
                     <li className="tick-symbol pl-8 pb-3 text-base">Organic food is never irradiated</li>
                 </ul>
-                <span className="bg-red w-[20%] text-white text-base font-bold uppercase text-center p-3 hover:bg-yellow hover:text-red rounded-xl ">read more</span>
+                <span className="bg-red w-[20%] text-white text-xs font-bold uppercase text-center px-1.5 py-3 hover:bg-yellow hover:text-red rounded-xl cursor-pointer ">read more</span>
             </div>
         </div>
     )

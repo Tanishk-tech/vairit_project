@@ -47,16 +47,16 @@ const Section4 = () => {
     };
 
     return (
-        <div style={{display: "flex"}} className=" flex-col w-[100%] px-[12%] py-[6%] items-center">
-            <h1 className="text-red capitalize pb-12">manufactured hing</h1>
-            <div className="w-[100%]">
+        <div style={{display: "flex"}} className=" flex-col w-[100%] px-[12%] py-[6%] items-center section4">
+            <h1 className="text-red capitalize pb-12 font-bold">manufactured hing</h1>
+            <div className="w-[100%] bg-yellow">
             <Slider {...settings}>
                 {
                     data.map((d) => (
-                        <div>
-                            <div className="flex bg-yellow rounded-xl p-20">
+                        <div className="bg-yellow">
+                            <div className="flex bg-yellow rounded-xl p-20 cursor-grab">
                                 <div className="flex flex-col w-2/3 pr-10 justify-center">
-                                    <h1 className="uppercase">{d.value}</h1>
+                                    <h1 className="uppercase font-bold">{d.value}</h1>
                                     <p className="text-justify">{d.text}</p>
                                 </div>
                                 <div className="w-1/3">
