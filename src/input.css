@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base{
+    html{
+        font-size: 16px;
+    }
     h1{
         @apply text-[50px] ;
     }
@@ -25,6 +28,13 @@
         background-image : url('../public/images/petal.png');
     }
 
+    .section1-background {
+        background-image: url('../public/images/section1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* backdrop-filter: light-gray 50%; */
+    }
+
     .tick-symbol {
         background-image:url('../public/images/tick.svg');
         background-repeat: no-repeat;
@@ -35,4 +45,8 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+}
+
+.slick-slide > div {
+    margin: 0px 10px;
 }

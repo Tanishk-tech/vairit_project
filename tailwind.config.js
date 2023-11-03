@@ -9,9 +9,9 @@ module.exports = {
     xl: '1440px',
   },
   colors: {
-    'red':'	#8B0000',
+    'red':'#8F1D21',
     'white':'#FFFFFF',
-    'yellow':'#D4AF37	',
+    'yellow':'#FFD345',
   },
   fontFamily: {
     sans: ['Graphik', 'sans-serif'],
