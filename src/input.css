@@ -17,6 +17,10 @@
         @apply text-[30px];
     }
 
+    h3{
+        @apply text-[22px];
+    }
+
     p{
         @apply text-[16px];
     }

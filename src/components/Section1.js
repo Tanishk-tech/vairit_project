@@ -54,7 +54,7 @@ const Section1 = () => {
                     </div>                
                 </div>
 
-                <span className="bg-yellow w-fit text-xs font-bold uppercase text-center px-12 py-6 mb-10 hover:bg-white hover:text-red rounded-xl cursor-pointer">discover more</span>
+                <span className="bg-yellow w-fit text-base font-bold uppercase text-center px-8 py-4 mb-10 hover:bg-white hover:text-red rounded-xl cursor-pointer">discover more</span>
             </div>
             <div className="w-2/5">
                 <img src="./images/section1.png" alt="section1image" className="w-[70%] ml-[30%] mt-[50%] " />

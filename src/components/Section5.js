@@ -46,7 +46,7 @@ const Section5 = () => {
                     </div>
                 </div>
 
-                <span className="bg-red w-fit text-white text-xs font-bold uppercase text-center  px-12  py-6 hover:bg-yellow hover:text-red rounded-xl cursor-pointer ">read more</span>
+                <span className="bg-red w-fit text-white text-base font-bold uppercase text-center  px-8  py-4 hover:bg-yellow hover:text-red rounded-xl cursor-pointer ">read more</span>
             </div>
         </div>
     )

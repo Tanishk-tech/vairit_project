@@ -20,7 +20,7 @@ const Section2= () => {
                     <li className="tick-symbol pl-8 pb-3 text-base">Eat organic because supply meets demand</li>
                     <li className="tick-symbol pl-8 pb-3 text-base">Organic food is never irradiated</li>
                 </ul>
-                <span className="bg-red w-fit text-white text-xs font-bold uppercase text-center px-12 py-6 hover:bg-yellow hover:text-red rounded-xl cursor-pointer ">read more</span>
+                <span className="bg-red w-fit text-white text-base font-bold uppercase text-center px-8 py-4 hover:bg-yellow hover:text-red rounded-xl cursor-pointer ">read more</span>
             </div>
         </div>
     )
