@@ -49,4 +49,9 @@
 
 .slick-slide > div {
     margin: 0px 10px;
+    display: flex;
+}
+
+.slick-slide{
+    display: flex;
 }

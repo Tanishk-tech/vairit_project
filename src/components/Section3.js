@@ -41,9 +41,10 @@ const Section3 = () => {
     var settings = {
         dots: true,
         infinite: true,
+        arrows:false,
         speed: 300,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 2
     };
 
     return (
