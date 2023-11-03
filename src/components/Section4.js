@@ -40,10 +40,16 @@ const Section4 = () => {
     var settings = {
         dots: true,
         infinite: true,
-        arrow:false,
+        arrows:false,
         speed: 300,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnFocus: false, 
+        pauseOnHover: true,
+        cssEase: 'linear',
+        waitForAnimate: false
     };
 
     return (

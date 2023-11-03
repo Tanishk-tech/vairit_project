@@ -55,13 +55,13 @@
     display: flex;
 }
 
-.slick-dots li button::before {
+.section3 .slick-dots li button::before {
     font-size: 0.75rem;
     color: #fff;
     opacity: 0.7;
 }
 
-.slick-dots li.slick-active button::before {
+.section3 .slick-dots li.slick-active button::before {
     color: #FFD345;
     opacity: 1;
 }

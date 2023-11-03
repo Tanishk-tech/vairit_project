@@ -44,14 +44,20 @@ const Section3 = () => {
         arrows:false,
         speed: 300,
         slidesToShow: 4,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnFocus: false, 
+        pauseOnHover: true,
+        cssEase: 'linear',
+        waitForAnimate: false
     };
 
     return (
-        <div className="bg-red flex flex-col items-center w-[100%] py-20">
+        <div className="bg-red flex flex-col items-center w-[100%] py-20 section3">
             <p className="text-white uppercase">our products</p>
             <h1 className="text-white capitalize font-bold">explore our the food of the gods</h1>
-            <div className=" w-3/4 m-auto">
+            <div className=" w-3/4 margin-auto">
                 <Slider {...settings}>
                 {
                     data.map((d) => (
