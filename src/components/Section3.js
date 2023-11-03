@@ -22,19 +22,19 @@ const Section3 = () => {
         },
         {
             value : 'uzbeki' ,
-            img : './images/rock1.png',
+            img : './images/rock5.png',
         },
         {
             value : 'uzbeki nukra dry' ,
-            img : './images/rock2.png',
+            img : './images/rock6.png',
         },
         {
             value : 'krgyztan' ,
-            img : './images/rock3.png',
+            img : './images/rock7.png',
         },
         {
             value : 'kazakhstan' ,
-            img : './images/rock4.png',
+            img : './images/rock8.png',
         },
     ]
 
