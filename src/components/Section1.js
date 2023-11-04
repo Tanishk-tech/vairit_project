@@ -1,6 +1,6 @@
 const Section1 = () => {
     return (
-        <div className="flex bg-red pl-[12%]  items-center" id="s1">
+        <div className="flex bg-red pl-[12%] pt-[80px] items-center" id="s1">
             <div className="flex flex-col w-3/5">
                 <h2 className="text-white font-bold capitalize mt-10 ">india's</h2>
                 <h1 className="text-yellow font-bold uppercase ">top leading provider in</h1>
