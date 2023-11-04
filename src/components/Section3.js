@@ -46,7 +46,7 @@ const Section3 = () => {
         slidesToShow: 4,
         slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 200000,
+        autoplaySpeed: 2000,
         pauseOnFocus: false, 
         pauseOnHover: true,
         cssEase: 'linear',
