@@ -1,6 +1,6 @@
 const Section5 = () => {
     return (
-        <div className="flex pl-[12%] pr-[6%] pt-[6%] pb-[6%]">
+        <div className="flex pl-[12%] pr-[6%] pt-[6%] pb-[6%]" id="s5">
             <div className="w-2/5">
                 <img src="./images/tree.png" alt="tree" />
             </div>
@@ -45,8 +45,7 @@ const Section5 = () => {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
                     </div>
                 </div>
-
-                <span className="bg-red w-fit text-white text-base font-bold uppercase text-center  px-8  py-4 hover:bg-yellow hover:text-red rounded-xl cursor-pointer ">read more</span>
+                <button className="bg-red w-fit text-white text-base font-bold uppercase text-center  px-8  py-4 hover:bg-yellow hover:text-red rounded-xl cursor-pointer ">read more</button>
             </div>
         </div>
     )

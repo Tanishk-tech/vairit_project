@@ -1,6 +1,6 @@
 const Section1 = () => {
     return (
-        <div className="flex bg-red pl-[12%]  items-center">
+        <div className="flex bg-red pl-[12%]  items-center" id="s1">
             <div className="flex flex-col w-3/5">
                 <h2 className="text-white font-bold capitalize mt-10 ">india's</h2>
                 <h1 className="text-yellow font-bold uppercase ">top leading provider in</h1>
@@ -53,8 +53,7 @@ const Section1 = () => {
                         </div>
                     </div>                
                 </div>
-
-                <span className="bg-yellow w-fit text-base font-bold uppercase text-center px-8 py-4 mb-10 hover:bg-white hover:text-red rounded-xl cursor-pointer">discover more</span>
+                <button className="bg-yellow w-fit text-base font-bold uppercase text-center px-8 py-4 mb-10 hover:bg-white hover:text-red rounded-xl cursor-pointer">discover more</button>
             </div>
             <div className="w-2/5">
                 <img src="./images/section1.png" alt="section1image" className="w-[70%] ml-[30%] mt-[50%] " />

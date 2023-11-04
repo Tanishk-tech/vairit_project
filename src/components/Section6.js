@@ -1,6 +1,6 @@
 const Section6 = () =>{
     return (
-        <div className="flex flex-col items-center bg-red px-[12%] py-[6%] relative ">
+        <div className="flex flex-col items-center bg-red px-[12%] py-[6%] relative " id="s6">
             <img src="./images/section6_icon.png" alt="icon" className="absolute top-0 right-0 " />
             <h1 className="text-[10rem] font-bold text-yellow">50</h1>
             <h2 className="text-3xl uppercase text-white pb-8">years of experience</h2>

@@ -45,7 +45,7 @@ const Section4 = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 2000,
         pauseOnFocus: false, 
         pauseOnHover: true,
         cssEase: 'linear',
@@ -53,7 +53,7 @@ const Section4 = () => {
     };
 
     return (
-        <div style={{display: "flex"}} className=" flex-col w-[100%] px-[12%] py-[6%] items-center section4">
+        <div style={{display: "flex"}} className=" flex-col w-[100%] px-[12%] py-[6%] items-center section4" id="4">
             <h1 className="text-red capitalize pb-12 font-bold">manufactured hing</h1>
             <div className="w-[100%] bg-yellow">
             <Slider {...settings}>

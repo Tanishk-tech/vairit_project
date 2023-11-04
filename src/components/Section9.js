@@ -1,6 +1,6 @@
 const Section9 = () => {
     return (
-        <div className="pl-[12%] pr-[8%] pt-[6%] pb-[3%] flex border-b">
+        <div className="pl-[12%] pr-[8%] pt-[6%] pb-[3%] flex border-b" id="s9">
             <div className="flex flex-col w-[50%]">
                 <img src="./images/Raghunath.png" alt="logo" className="pb-3 w-24 h-20"/>
                 <p className="pb-5 border-b ">Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea dictumst. Duis porta,quam ut finibus ultrices</p>

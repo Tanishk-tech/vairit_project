@@ -4,7 +4,7 @@
 
 @layer base{
     body{
-        @apply font-livvic
+        @apply font-livvic ;
     }
     html{
         font-size: 16px;

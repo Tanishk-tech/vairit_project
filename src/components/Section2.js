@@ -1,6 +1,6 @@
 const Section2= () => {
     return (
-        <div className="flex w-[100%] h-[600px]  pl-[12%] mb-16  items-center relative">
+        <div className="flex w-[100%] h-[600px]  pl-[12%] mb-16  items-center relative" id="s2">
             <div className="w-2/5 h-[100%]">
                 <div className="bg-yellow z-0 absolute left-0 top-0 w-[25%] h-[60%]"></div>
                 <div className="hing-bowl z-10 absolute top-[10%] w-[30%] h-[80%] rounded-xl">
@@ -20,7 +20,7 @@ const Section2= () => {
                     <li className="tick-symbol pl-8 pb-3 text-base">Eat organic because supply meets demand</li>
                     <li className="tick-symbol pl-8 pb-3 text-base">Organic food is never irradiated</li>
                 </ul>
-                <span className="bg-red w-fit text-white text-base font-bold uppercase text-center px-8 py-4 hover:bg-yellow hover:text-red rounded-xl cursor-pointer ">read more</span>
+                <button className="bg-red w-fit text-white text-base font-bold uppercase text-center px-8 py-4 hover:bg-yellow hover:text-red rounded-xl cursor-pointer ">read more</button>
             </div>
         </div>
     )
