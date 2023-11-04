@@ -54,9 +54,26 @@
     }
 }
 
+
+
 .slick-slide > div {
     margin: 0px 0.75rem;
     display: flex;
+}
+
+.section1 .slick-dots {
+    padding-bottom: 1.5rem;
+}
+
+.section1 .slick-dots li button::before {
+    font-size: 0.75rem;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.section1 .slick-dots li.slick-active button::before {
+    color: #FFD345;
+    opacity: 1;
 }
 
 .section3 .slick-dots li button::before {

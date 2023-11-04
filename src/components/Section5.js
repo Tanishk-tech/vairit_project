@@ -1,11 +1,11 @@
 const Section5 = () => {
     return (
-        <div className="flex pl-[12%] pr-[6%] pt-[6%] pb-[6%]" id="s5">
-            <div className="w-2/5">
+        <div className="flex pl-[12%] pr-[6%] pt-[6%] pb-[6%] max-sm:px-4 max-sm:flex-col" id="s5">
+            <div className="w-2/5 max-sm:w-[100%]">
                 <img src="./images/tree.png" alt="tree" />
             </div>
-            <div className="w-3/5 flex flex-col  pl-20 justify-center">
-                <h2 className="uppercase text-red font-5xl font-bold mb-6">harvesting hing</h2>
+            <div className="w-3/5 flex flex-col  pl-20 justify-center max-sm:w-[100%] max-sm:items-center">
+                <h2 className="uppercase text-red font-5xl font-bold mb-6 max-sm:pt-10">harvesting hing</h2>
                 <div className="flex mb-8">
                     <div className="pr-6">
                         <img src="./images/seed1.png" alt="seed" />

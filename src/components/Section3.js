@@ -50,15 +50,25 @@ const Section3 = () => {
         pauseOnFocus: false, 
         pauseOnHover: true,
         cssEase: 'linear',
-        waitForAnimate: false
+        waitForAnimate: false,
+        responsive: [
+            {
+                breakpoint: 640,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     };
 
     return (
-        <div className="bg-red flex flex-col items-center w-[100%] py-20 section3" id="s3">
+        <div className="bg-red flex flex-col items-center w-[100%] py-20 section3 max-sm:text-center max-sm:p-4" id="s3">
             <p className="text-white uppercase">our products</p>
             <h1 className="text-white capitalize font-bold">explore our the food of the gods</h1>
-            <div className=" w-3/4 margin-auto">
-                <Slider {...settings}>
+            <div className=" w-3/4 margin-auto max-sm:w-[100%] max-sm:px-[25%]">
+                <Slider {...settings} className="max-sm:slidesToShow-2">
                 {
                     data.map((d) => (
                         <div className="h-100 relative pb-6">
