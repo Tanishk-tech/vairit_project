@@ -13,7 +13,7 @@ const Header= () => {
     }
 
     return (
-        <div className="flex items-center w-[100%] h-[80px] pl-[12%] pr-[10%] bg-white fixed top-0 z-10 max-sm:bg-yellow max-sm:px-5 max-sm:py-2 ">
+        <div className="flex items-center w-[100%] h-[80px] pl-[12%] pr-[10%] bg-white fixed top-0 z-10  max-sm:px-5 max-sm:py-2 ">
             <div className="w-2/4">
                 <img src="./images/raghu.png" className="w-[12%]"  alt="logo"/>
             </div>

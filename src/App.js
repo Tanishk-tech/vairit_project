@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Section1/>
-      <Section2/>
+      {/* <Section1/> */}
+      {/* <Section2/>
       <Section3/>
       <Section4/>
       <Section5/>
@@ -23,7 +23,7 @@ function App() {
       <Section7/>
       <Section8/>
       <Section9/>
-      <Section10/>
+      <Section10/> */}
     </div>
   );
 }
