@@ -1,4 +1,4 @@
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const Section7 = () => {
     const navigate = useNavigate() ;
