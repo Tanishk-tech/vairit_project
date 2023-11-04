@@ -4,7 +4,7 @@ const Header= () => {
     const [display,setDisplay] = useState("hidden");
 
     const handleChange = () => {
-        if(display=="hidden"){
+        if(display ==="hidden"){
             setDisplay("flex");
         }
         else{
