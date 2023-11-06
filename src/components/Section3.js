@@ -71,8 +71,8 @@ const Section3 = () => {
                 <Slider {...settings} className="max-sm:slidesToShow-2">
                 {
                     data.map((d) => (
-                        <div className="h-50 relative pb-6 max-sm:h-auto">
-                            <div className=" h-40 mt-10 transition duration-150 ease-out hover:ease-in hover:-translate-y-6 cursor-grab ">
+                        <div className="h-100 relative pb-6 max-sm:h-50">
+                            <div className=" h-80 mt-10 transition duration-150 ease-out hover:ease-in hover:-translate-y-6 cursor-grab max-sm:h-40 ">
                                 <img src={d.img} alt="rocks" className="rounded-xl h-[100%] max-sm:w-[100%] " />
                                 <div className="absolute w-[100%] h-[100%]  top-0 left-0 opacity-0 transition duration-150 ease-out hover:opacity-100 hover:ease-in">
                                     <p className=" text-white absolute w-[100%] top-[75%] text-center uppercase max-sm:text-base ">{d.value}</p>
