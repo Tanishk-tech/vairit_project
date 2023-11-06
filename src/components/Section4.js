@@ -54,16 +54,16 @@ const Section4 = () => {
 
     return (
         <div style={{display: "flex"}} className=" flex-col w-[100%] px-[12%] py-[6%] items-center section4 max-sm:px-6" id="4">
-            <h1 className="text-red capitalize pb-12 font-bold max-sm:pb-6">manufactured hing</h1>
+            <h1 className="text-red capitalize pb-12 font-bold max-sm:pb-6 max-sm:text-4xl max-sm:text-center">manufactured hing</h1>
             <div className="w-[100%] bg-yellow">
             <Slider {...settings}>
                 {
                     data.map((d) => (
                         <div className="bg-yellow">
-                            <div className="flex bg-yellow rounded-xl p-20 cursor-grab max-sm:flex-col-reverse max-sm:px-6 max-sm:items-center max-sm:text-center">
+                            <div className="flex bg-yellow rounded-xl p-20 cursor-grab max-sm:flex-col-reverse max-sm:px-6 max-sm:py-8 max-sm:items-center max-sm:text-center">
                                 <div className="flex flex-col w-2/3 pr-10 justify-center max-sm:w-[100%] max-sm:p-0">
-                                    <h1 className="uppercase font-bold">{d.value}</h1>
-                                    <p className="text-justify max-sm:text-xl max-sm:text-center">{d.text}</p>
+                                    <h1 className="uppercase font-bold max-sm:text-4xl max-sm:leading-tight">{d.value}</h1>
+                                    <p className="text-justify max-sm:text-xl max-sm:text-center max-sm:text-xl">{d.text}</p>
                                 </div>
                                 <div className="w-1/3">
                                     <img src={d.image} alt='hing' />

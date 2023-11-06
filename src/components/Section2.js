@@ -1,6 +1,6 @@
 const Section2= () => {
     return (
-        <div className="flex w-[100%] h-[600px]  pl-[12%] mb-16  items-center relative max-sm:pl-0 max-sm:px-4 max-sm:flex-col" id="s2">
+        <div className="flex w-[100%] h-[600px]  pl-[12%] mb-16  items-center relative max-sm:pl-0 max-sm:px-4 max-sm:flex-col max-sm:h-auto" id="s2">
             <div className="w-2/5 h-[100%]">
                 <div className="bg-yellow z-0 absolute left-0 top-0 w-[25%] h-[60%] max-sm:hidden"></div>
                 <div className="hing-bowl z-10 absolute top-[10%] w-[30%] h-[80%] rounded-xl max-sm:hidden">
@@ -17,9 +17,9 @@ const Section2= () => {
                 </div> */}
             </div>
             <div className="w-3/5 flex flex-col max-sm:w-[100%] max-sm:text-center max-sm:items-center max-sm:pt-6 max-sm:w-[100%]">
-                <p className="uppercase pb-4 max-sm:text-xl">our introduction</p>
-                <h1 className="text-red font-bold pb-5">Pure Agriculture and Organic</h1>
-                <h2 className="pb-3">We're Leader in Agriculture Market</h2>
+                <p className="uppercase pb-4 max-sm:text-2xl">our introduction</p>
+                <h1 className="text-red font-bold pb-5 max-sm:text-4xl ">Pure Agriculture and Organic</h1>
+                <h2 className="pb-3 max-sm:leading-snug">We're Leader in Agriculture Market</h2>
                 <p className="pb-5 text-xl">There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou or randomised words even slightly believable.</p>
                 <ul className="list-style-none mb-6 text-start ">
                     <li className="tick-symbol pl-8 pb-3 text-base max-sm:text-xl">Organic food contains more vitamins</li>

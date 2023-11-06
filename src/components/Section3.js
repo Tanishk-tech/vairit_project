@@ -65,17 +65,17 @@ const Section3 = () => {
 
     return (
         <div className="bg-red flex flex-col items-center w-[100%] py-20 section3 max-sm:text-center max-sm:p-4" id="s3">
-            <p className="text-white uppercase">our products</p>
-            <h1 className="text-white capitalize font-bold">explore our the food of the gods</h1>
-            <div className=" w-3/4 margin-auto max-sm:w-[100%] max-sm:px-[25%]">
+            <p className="text-white uppercase max-sm:text-xl">our products</p>
+            <h1 className="text-white capitalize font-bold max-sm:text-4xl max-sm:leading-snug">explore our the food of the gods</h1>
+            <div className=" w-3/4 margin-auto max-sm:w-[100%] max-sm:pl-[24%] max-sm:pr-[20%]">
                 <Slider {...settings} className="max-sm:slidesToShow-2">
                 {
                     data.map((d) => (
-                        <div className="h-100 relative pb-6">
-                            <div className=" h-80 mt-10 transition duration-150 ease-out hover:ease-in hover:-translate-y-6 cursor-grab ">
-                                <img src={d.img} alt="rocks" className="rounded-xl h-[100%] " />
+                        <div className="h-50 relative pb-6 max-sm:h-auto">
+                            <div className=" h-40 mt-10 transition duration-150 ease-out hover:ease-in hover:-translate-y-6 cursor-grab ">
+                                <img src={d.img} alt="rocks" className="rounded-xl h-[100%] max-sm:w-[100%] " />
                                 <div className="absolute w-[100%] h-[100%]  top-0 left-0 opacity-0 transition duration-150 ease-out hover:opacity-100 hover:ease-in">
-                                    <p className=" text-white absolute w-[100%] top-[75%] text-center uppercase ">{d.value}</p>
+                                    <p className=" text-white absolute w-[100%] top-[75%] text-center uppercase max-sm:text-base ">{d.value}</p>
                                 </div>
                             </div>
                         </div>

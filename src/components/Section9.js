@@ -1,6 +1,6 @@
 const Section9 = () => {
     return (
-        <div className="pl-[12%] pr-[8%] pt-[6%] pb-[3%] flex border-b max-sm:flex max-sm:px-4" id="s9">
+        <div className="pl-[12%] pr-[8%] pt-[6%] pb-[3%] flex border-b max-sm:flex max-sm:px-4 max-sm:flex-col" id="s9">
             <div className="flex flex-col w-[50%] max-sm:w-[100%] max-sm:items-center max-sm:text-center">
                 <img src="./images/Raghunath.png" alt="logo" className="pb-3 w-24 h-20"/>
                 <p className="pb-5 border-b ">Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea dictumst. Duis porta,quam ut finibus ultrices</p>
@@ -12,7 +12,7 @@ const Section9 = () => {
                 </div>
             </div>
             <div className="flex flex-col w-[20%] pl-16 max-sm:w-[100%] max-sm:px-0 max-sm:text-center max-sm:pt-6">
-                <h3 className="text-red capitalize ">useful links</h3>
+                <h3 className="text-red capitalize max-sm:text-2xl ">useful links</h3>
                 <ul className="max-sm:text-xl">
                     <li>Home</li>
                     <li>About Us</li>
@@ -22,7 +22,7 @@ const Section9 = () => {
                 </ul>
             </div>
             <div className="flex flex-col w-[30%] pl-16 max-sm:w-[100%] max-sm:px-0 max-sm:text-center max-sm:pt-6">
-                <h3 className="text-red capitalize">Contact info</h3>
+                <h3 className="text-red capitalize max-sm:text-2xl">Contact info</h3>
                 <ul className="max-sm:text-xl">
                     <li>Phone</li>
                     <p>+880123456789</p>
