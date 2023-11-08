@@ -40,7 +40,7 @@ const Book= () => {
         );
     });
 
-    const [page,setPage]= useState(0);
+    
 
    
 
