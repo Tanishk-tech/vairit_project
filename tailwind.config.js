@@ -11,6 +11,7 @@ module.exports = {
   colors: {
     'red':'#8F1D21',
     'white':'#FFFFFF',
+    'black':'#000000',
     'yellow':'#FFD345',
     'grey' : '#F6F6F6',
   },
@@ -22,6 +23,12 @@ module.exports = {
   extend: {
     width: {
       '1/10': '10%',
+    },
+    keyframes: {
+      'modal': {
+        '0%':  {top:"33%",left:"33%", opacity:'0' },
+        '100%':{top:"33%",left:"33%" , opacity:'1'},
+      },
     },
     
 },
