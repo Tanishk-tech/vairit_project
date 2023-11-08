@@ -1,6 +1,5 @@
 import HTMLFlipBook from 'react-pageflip';
 import React from 'react';
-import { useState } from 'react';
 
 const Book= () => {
     let settings={
