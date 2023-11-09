@@ -108,7 +108,7 @@ const Section1 = () => {
                     <Slider {...settings} className="hidden max-sm:block">
                     {
                         data.map((d) => (
-                            <div  className="flex   p-3 rounded-xl mb-3 ">
+                            <div  className="flex   p-3 rounded-xl mb-3 " >
                                 <div className="flex items-center  w-[35%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center">
                                     <img src={d.image} alt="map" className="w-24 h-20 " />
                                 </div>
@@ -125,9 +125,9 @@ const Section1 = () => {
                 <div className="grid grid-cols-2 gap-x-3 mb-6 w-[85%]  max-sm:hidden">
                     {
                         data.map((d) => (
-                            <div  className="flex   p-3 rounded-xl mb-3 " onClick={handlemodal}>
+                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer " onClick={handlemodal} data-aos="fade-left">
                                 <div className="flex items-center  w-[35%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center">
-                                    <img src={d.image} alt="map" className="w-24 h-20 " />
+                                    <img src={d.image} alt="map" className="w-24 h-20 cursor-pointer " />
                                 </div>
                                 <div className="flex flex-col justify-center  w-[65%] max-sm:w-[100%]">
                                     <h2 className="uppercase  text-2xl font-bold">{d.country}</h2>

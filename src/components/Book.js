@@ -46,8 +46,8 @@ const Book= () => {
     }
 
     return (
-        <div className='px-[12%] pt-[6%] flex items-center'>
-            <button className='' onClick={back}>back</button>
+        <div className='px-[12%] pt-[1%] flex flex-col items-center'>
+            <button className="bg-black text-white self-end w-fit text-base font-bold uppercase text-center px-8 py-4 mb-10 hover:bg-yellow hover:text-black rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm " onClick={back}>back</button>
             <HTMLFlipBook {...settings} className='bg-grey'>
                 <PageCover>BOOK TITLE</PageCover>
                 <Page number={1}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Page>
