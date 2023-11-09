@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Section8 = () => {
     return (
         <div className="flex pl-[10%] py-[6%] bg-grey max-sm:flex-col-reverse max-sm:px-4 max-sm:items-center max-sm:p-[6%]" id="s8">

@@ -1,8 +1,18 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Section3 = () => {
+    useEffect(() => {
+        AOS.init({ 
+            duration: 1000,
+            disable: window.innerWidth < 1024,
+        });
+        AOS.refresh();
+    }, []);
     const data = [
         {
             value : 'afghani hing' ,
@@ -46,7 +56,7 @@ const Section3 = () => {
         slidesToShow: 4,
         slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         pauseOnFocus: false, 
         pauseOnHover: true,
         cssEase: 'linear',
@@ -71,7 +81,7 @@ const Section3 = () => {
                 <Slider {...settings} className="max-sm:slidesToShow-2">
                 {
                     data.map((d) => (
-                        <div className="h-100 relative pb-6 max-sm:h-50">
+                        <div className="h-100 relative pb-6 max-sm:h-50" data-aos="fade-up">
                             <div className=" h-80 mt-10 transition duration-150 ease-out hover:ease-in hover:-translate-y-6 cursor-grab max-sm:h-40 ">
                                 <img src={d.img} alt="rocks" className="rounded-xl h-[100%] max-sm:w-[100%] " />
                                 <div className="absolute w-[100%] h-[100%]  top-0 left-0 opacity-0 transition duration-150 ease-out hover:opacity-100 hover:ease-in">

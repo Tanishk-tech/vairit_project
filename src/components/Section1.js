@@ -1,9 +1,20 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Section1 = () => {
+
+    useEffect(() => {
+        AOS.init({ 
+            duration: 1000,
+            disable: window.innerWidth < 1024,
+        });
+        AOS.refresh();
+    }, []);
 
     const data = [
         {
@@ -87,7 +98,7 @@ const Section1 = () => {
 
 
     return (
-        <div className="section1 flex bg-red pl-[12%] pt-[80px] items-center max-sm:flex-col max-sm:px-4" id="s1">
+        <div className="section1 flex bg-red pl-[12%] pt-[80px] items-center max-sm:flex-col max-sm:px-4" id="s1" >
             <div className="flex flex-col w-3/5 text-white max-sm:w-[100%] max-sm:text-center max-sm:items-center">
                 <h2 className="text-white font-bold capitalize mt-10 max-sm:text-2xl ">india's</h2>
                 <h1 className="text-yellow font-bold uppercase max-sm:text-4xl max-sm:leading-snug  ">top leading provider in</h1>
@@ -142,7 +153,7 @@ const Section1 = () => {
                 
                 <button className="bg-yellow w-fit text-base font-bold uppercase text-center px-8 py-4 mb-10 hover:bg-white hover:text-red rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm">discover more</button>
             </div>
-            <div className="w-2/5 max-sm:hidden">
+            <div className="w-2/5 max-sm:hidden" data-aos="fade-left">
                 <img src="./images/section1.png" alt="section1image" className="w-[70%] ml-[30%] mt-[60%] " />
             </div>
         </div>

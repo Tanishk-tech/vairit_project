@@ -1,8 +1,18 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Section4 = () => {
+    useEffect(() => {
+        AOS.init({ 
+            duration: 1000,
+            disable: window.innerWidth < 1024,
+        });
+        AOS.refresh();
+    }, []);
 
     const data = [
         {
@@ -45,7 +55,7 @@ const Section4 = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         pauseOnFocus: false, 
         pauseOnHover: true,
         cssEase: 'linear',
@@ -55,11 +65,11 @@ const Section4 = () => {
     return (
         <div style={{display: "flex"}} className=" flex-col w-[100%] px-[12%] py-[6%] items-center section4 max-sm:px-6" id="4">
             <h1 className="text-red capitalize pb-12 font-bold max-sm:pb-6 max-sm:text-4xl max-sm:text-center">manufactured hing</h1>
-            <div className="w-[100%] bg-yellow">
+            <div className="w-[100%] bg-yellow" data-aos="fade-down">
             <Slider {...settings}>
                 {
                     data.map((d) => (
-                        <div className="bg-yellow">
+                        <div className="bg-yellow" data-aos="fade-up">
                             <div className="flex bg-yellow rounded-xl p-20 cursor-grab max-sm:flex-col-reverse max-sm:px-6 max-sm:py-8 max-sm:items-center max-sm:text-center">
                                 <div className="flex flex-col w-2/3 pr-10 justify-center max-sm:w-[100%] max-sm:p-0">
                                     <h1 className="uppercase font-bold max-sm:text-4xl max-sm:leading-tight">{d.value}</h1>
