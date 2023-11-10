@@ -37,7 +37,7 @@ const Book= () => {
     }
 
     const bookRef=useRef(null);
-    const [page,setPage] = useState(0);
+    // const [page,setPage] = useState(0);
     // const totalpage=bookRef.current.pageFlip().pageCount();
     
 
@@ -49,9 +49,9 @@ const Book= () => {
         bookRef.current.pageFlip().flipNext() ;
     }
 
-    const onPage = (e) => {
-        setPage(e.data);
-    };
+    // const onPage = (e) => {
+    //     setPage(e.data);
+    // };
     
 
     let settings={
