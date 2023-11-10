@@ -14,6 +14,7 @@ module.exports = {
     'black':'#000000',
     'yellow':'#FFD345',
     'grey' : '#F6F6F6',
+    'bisque' : '#ffe4c4',
   },
   fontFamily: {
     sans: ['Graphik', 'sans-serif'],

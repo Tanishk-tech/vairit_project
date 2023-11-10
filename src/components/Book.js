@@ -70,29 +70,29 @@ const Book= () => {
     } ;
 
     return (
-        <div className='px-[12%] pt-[1%] flex flex-col items-center'>
+        <div className='px-[12%] pt-[1%] flex flex-col items-center bg-bisque'>
             <div className='flex w-[100%] mb-6 items-center'>
                 <img src='./images/raghu.png' alt='logo' className=' w-[5%] h-[5%] mr-[35%] ml-[5%]'/>
                 <button className="bg-black text-white  w-fit text-base font-bold uppercase text-center px-8 py-4 ml-[45%] hover:bg-yellow hover:text-black rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm " onClick={back}>back</button>
             </div>
             
-            <HTMLFlipBook {...settings} ref={bookRef}  className='book_back mb-6'>
+            <HTMLFlipBook {...settings} ref={bookRef}  className='mb-6'>
                 <PageCover source={"URL('./images/first.png')"} ></PageCover>
                 <Page source={"URL('./images/second.png')"}></Page>
                 <Page source={"URL('./images/third.png')"}></Page>
-                <Page source={"URL('./images/fourth.png')"}></Page>
                 <Page source={"URL('./images/5.png')"}></Page>
+                <Page source={"URL('./images/fourth.png')"}></Page>
                 <Page source={"URL('./images/6.png')"}></Page>
                 <Page source={"URL('./images/7.png')"}></Page>
                 <Page source={"URL('./images/8.png')"}></Page>
                 <Page source={"URL('./images/9.png')"}></Page>
                 <Page source={"URL('./images/10.png')"}></Page>
-                <Page source={"URL('./images/11.png')"}></Page>
+                {/* <Page source={"URL('./images/11.png')"}></Page> */}
                 <Page source={"URL('./images/12.png')"}></Page>
                 <Page source={"URL('./images/13.png')"}></Page>
-                <Page source={"URL('./images/14.png')"}></Page>
-                <Page source={"URL('./images/15.png')"}></Page>
+                {/* <Page source={"URL('./images/14.png')"}></Page> */}
                 <Page source={"URL('./images/16.png')"}></Page>
+                <Page source={"URL('./images/15.png')"}></Page>
                 <Page source={"URL('./images/17.png')"}></Page>
                 <Page source={"URL('./images/18.png')"}></Page>
                 <Page source={"URL('./images/19.png')"}></Page>

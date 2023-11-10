@@ -22,7 +22,7 @@ const Section7 = () => {
     return (
         <div className="flex  py-[6%] max-sm:px-4 max-sm:flex-col" id="s7">
             <div className="w-[50%] max-sm:w-[100%] pl-[6%]">
-                <img src="./images/book.png" alt="book" className="w-[80%] rotate_3d" />
+                <img src="./images/book.png" alt="book" className="w-[80%] " />
             </div>
             <div className="flex flex-col justify-center w-[50%] max-sm:w-[100%] max-sm:items-center max-sm:text-center max-sm:pt-10" >
                 <h2 className="text-5xl text-yellow uppercase pb-4 font-bold">our brochure</h2>
