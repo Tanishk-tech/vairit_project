@@ -1,21 +1,9 @@
 import HTMLFlipBook from 'react-pageflip';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useRef,useState } from 'react';
 
 const Book= () => {
-    let settings={
-        width:100,
-        height:100,
-        size:"stretch",
-        // minWidth:315,
-        // maxWidth:1000,
-        // minHeight:400,
-        // maxHeight:1533,
-        maxShadowOpacity:0.5,
-        showCover:true,
-        mobileScrollSupport:true,
-        className:"demo-book",
-    } ;
 
     const PageCover = React.forwardRef((props, ref) => {
     return (
@@ -48,13 +36,38 @@ const Book= () => {
         navigate('/');
     }
 
+    const bookRef=useRef(null);
+    const [page,setPage] = useState(0);
+    // const totalpage=bookRef.current.pageFlip().pageCount();
+    
+
     const handlePrev=() => {
-        this.flipBook.getPageFlip().flipNext();
+        bookRef.current.pageFlip().flipPrev();
     }
 
     const handleNext=() => {
-        this.flipBook.getPageFlip().flipNext();
+        bookRef.current.pageFlip().flipNext() ;
     }
+
+    const onPage = (e) => {
+        setPage(e.data);
+    };
+    
+
+    let settings={
+        width:100,
+        height:100,
+        size:"stretch",
+        // minWidth:315,
+        // maxWidth:1000,
+        // minHeight:400,
+        // maxHeight:1533,
+        maxShadowOpacity:0.5,
+        showCover:true,
+        mobileScrollSupport:true,
+        className:"demo-book",
+        ref:{bookRef},
+    } ;
 
     return (
         <div className='px-[12%] pt-[1%] flex flex-col items-center'>
@@ -63,7 +76,7 @@ const Book= () => {
                 <button className="bg-black text-white  w-fit text-base font-bold uppercase text-center px-8 py-4 ml-[45%] hover:bg-yellow hover:text-black rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm " onClick={back}>back</button>
             </div>
             
-            <HTMLFlipBook {...settings} className='book_back mb-6'>
+            <HTMLFlipBook {...settings} ref={bookRef}  className='book_back mb-6'>
                 <PageCover source={"URL('./images/first.png')"} ></PageCover>
                 <Page source={"URL('./images/second.png')"}></Page>
                 <Page source={"URL('./images/third.png')"}></Page>
@@ -89,7 +102,9 @@ const Book= () => {
 
             <div>
                 <button className='text-base capitalize px-4 py-2 bg-yellow mr-6' onClick={handlePrev}>prev</button>
-                <button className='text-base capitalize px-4 py-2  bg-yellow' onClick={handleNext}>next</button>
+                {/* [<span>{page}</span> of 
+                <span>20</span>] */}
+                <button className='text-base capitalize px-4 py-2 ml-6 bg-yellow' onClick={handleNext}>next</button>
             </div>
         
         </div>
