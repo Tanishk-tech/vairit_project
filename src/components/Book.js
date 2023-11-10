@@ -70,9 +70,9 @@ const Book= () => {
     } ;
 
     return (
-        <div className='px-[12%] pt-[1%] flex flex-col items-center bg-bisque'>
+        <div className='px-[12%] pt-[1%] flex flex-col items-center bg-bisque overflow-hidden'>
             <div className='flex w-[100%] mb-6 items-center'>
-                <img src='./images/raghu.png' alt='logo' className=' w-[5%] h-[5%] mr-[35%] ml-[5%]'/>
+                <img src='./images/raghu.png' alt='logo' className=' w-[5%] h-[5%] mr-[35%] ml-[5%]  '/>
                 <button className="bg-black text-white  w-fit text-base font-bold uppercase text-center px-8 py-4 ml-[45%] hover:bg-yellow hover:text-black rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm " onClick={back}>back</button>
             </div>
             
