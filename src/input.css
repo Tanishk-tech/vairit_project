@@ -57,6 +57,10 @@
         background-image: url('../public/images/book_background.jpg');
         z-index: 1;
     }
+
+    .rotate_3d {
+        transform: rotate3d(1, 2, -1, 45deg);
+    }
 }
 
 
