@@ -52,6 +52,11 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    .book_back{
+        background-image: url('../public/images/book_background.jpg');
+        z-index: 1;
+    }
 }
 
 
