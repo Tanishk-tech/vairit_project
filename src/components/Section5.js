@@ -40,21 +40,21 @@ const Section5 = () => {
                 <img src="./images/tree.png" alt="tree" />
             </div>
             <div className="w-3/5 flex flex-col  pl-20 justify-center max-sm:w-[100%] max-sm:items-center max-sm:px-4">
-                <h2 className="uppercase text-red font-5xl font-bold mb-6 max-sm:pt-10 max-sm:text-4xl  max-sm : leading-tight">harvesting hing</h2>
+                <h2 className="text-4xl capitalize text-red font-5xl font-bold mb-6 max-sm:pt-10 max-sm:text-4xl  max-sm : leading-tight">harvesting hing</h2>
                 {
                     data.map((d) =>(
                         <div className="flex mb-8" data-aos="flip-down">
                             <div className="pr-6 max-sm:w-[75%]">
-                                <img src={d.img} alt="seed" className="" />
+                                <img src={d.img} alt="seed" className="p-2" />
                             </div>
                             <div className="flex flex-col justify-center">
-                                <h2 className="max-sm:text-4xl  max-sm : leading-tight">{d.value}</h2>
-                                <p className="max-sm:text-xl">{d.text}</p>
+                                <h2 className=" text-3xl max-sm:text-4xl  max-sm : leading-tight">{d.value}</h2>
+                                <p className=" text-base pr-[35%] max-sm:text-xl">{d.text}</p>
                             </div>
                         </div>
                     ))
                 }
-                <button className="bg-red w-fit text-white text-base font-bold uppercase text-center  px-8  py-4 hover:bg-yellow hover:text-red rounded-xl cursor-pointer max-sm:px-4 max-sm:py-2 max-sm:text-sm ">read more</button>
+                <button className="bg-red w-fit text-white text-base font-bold capitalize text-center  px-8  py-4 hover:bg-yellow hover:text-red rounded-xl cursor-pointer max-sm:px-4 max-sm:py-2 max-sm:text-sm ">read more</button>
             </div>
         </div>
     )

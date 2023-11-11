@@ -99,12 +99,12 @@ const Section1 = () => {
 
 
     return (
-        <div className="section1 flex bg-red pl-[12%] pt-[80px] items-center max-sm:flex-col max-sm:px-4" id="s1" >
+        <div className="section1 flex bg-red pl-[12%] pt-[2%] items-center max-sm:flex-col max-sm:px-4" id="s1" >
             <div className="flex flex-col w-3/5 text-white max-sm:w-[100%] max-sm:text-center max-sm:items-center">
-                <h2 className="text-white font-bold capitalize mt-10 max-sm:text-2xl ">india's</h2>
-                <h1 className="text-yellow font-bold uppercase max-sm:text-4xl max-sm:leading-snug  ">top leading provider in</h1>
-                <h1 className="text-white font-bold uppercase max-sm:text-4xl max-sm:leading-snug ">the hing import business</h1>
-                <p className="text-2xl text-white font-thin pb-6 max-sm:text-xl ">For more than 5 decades our company is involved in imports of hing and are currently importing hing from 5 different origins</p>           
+                <h2 className="text-white text-xl font-bold capitalize pl-3 pb-1 mt-10 max-sm:text-2xl ">india's</h2>
+                <h1 className="text-yellow text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug  ">Top leading provider in</h1>
+                <h1 className="text-white text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug ">The hing import business</h1>
+                <p className="text-xl text-white font-thin pr-[30%] pl-3  max-sm:text-xl ">For more than 5 decades our company is involved in imports of hing and are currently importing hing from 5 different origins</p>           
                 <div className="grid grid-cols-2 gap-x-3 mb-6 w-[85%]  max-sm:w-[100%] max-sm:grid-cols-1  ">
                     <Slider {...settings} className="hidden max-sm:block">
                     {
@@ -114,7 +114,7 @@ const Section1 = () => {
                                     <img src={d.image} alt="map" className="w-24 h-20 " />
                                 </div>
                                 <div className="flex flex-col justify-center  w-[65%] max-sm:w-[100%]">
-                                    <h2 className="uppercase  text-2xl font-bold">{d.country}</h2>
+                                    <h2 className="capitalize  text-2xl font-bold">{d.country}</h2>
                                     <p className="capitalize">{d.location}</p>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@ const Section1 = () => {
                                     <img src={d.image} alt="map" className="w-24 h-20 cursor-pointer " />
                                 </div>
                                 <div className="flex flex-col justify-center  w-[65%] max-sm:w-[100%]">
-                                    <h2 className="uppercase  text-2xl font-bold">{d.country}</h2>
+                                    <h2 className="capitalize  text-2xl font-bold">{d.country}</h2>
                                     <p className="capitalize">{d.location}</p>
                                 </div>
                             </div> 
@@ -145,14 +145,14 @@ const Section1 = () => {
                                         <img src={image} alt="map" className="w-24 h-20 " />
                                     </div>
                                     <div className="flex flex-col justify-center text-center  max-sm:w-[100%]">
-                                        <h2 className="uppercase text-black text-2xl font-bold  ">{country}</h2>
+                                        <h2 className="capitalize text-black text-2xl font-bold  ">{country}</h2>
                                         <p className="capitalize text-black">{location}</p>
                                     </div>
                             </div>
                     </div>
                 </div>
                 
-                <a  href="https://thepurehing.com/"><button className="bg-yellow w-fit text-base font-bold uppercase text-center px-8 py-4 mb-10 hover:bg-white hover:text-red rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm">discover more</button></a>
+                <a  href="https://thepurehing.com/"><button className="bg-yellow w-fit text-base font-bold  text-center capitalize px-8 py-4 ml-3 mb-10 hover:bg-white hover:text-red rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm">discover more</button></a>
             </div>
             <div className="w-2/5 max-sm:hidden" data-aos="fade-left">
                 <img src="./images/section1.png" alt="section1image" className="w-[70%] ml-[30%] mt-[60%] " />
