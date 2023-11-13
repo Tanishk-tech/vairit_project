@@ -99,9 +99,9 @@ const Section1 = () => {
 
 
     return (
-        <div className="section1 flex bg-red pl-[12%] pt-[2%] items-center max-sm:flex-col max-sm:px-4" id="s1" >
+        <div className="section1 relative flex bg-red pl-[12%] pt-[10%]  max-sm:flex-col max-sm:px-4" id="s1" >
             <div className="flex flex-col w-3/5 text-white max-sm:w-[100%] max-sm:text-center max-sm:items-center">
-                <h2 className="text-white text-xl font-bold capitalize pl-3 pb-1 mt-10 max-sm:text-2xl ">india's</h2>
+                <h2 className="text-white text-xl font-bold capitalize pl-3 pb-1  max-sm:text-2xl ">india's</h2>
                 <h1 className="text-yellow text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug  ">Top leading provider in</h1>
                 <h1 className="text-white text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug ">The hing import business</h1>
                 <p className="text-xl text-white font-thin pr-[30%] pl-3  max-sm:text-xl ">For more than 5 decades our company is involved in imports of hing and are currently importing hing from 5 different origins</p>           
@@ -138,8 +138,8 @@ const Section1 = () => {
                             
                         ))
                     }
-                    <div className=" w-full h-full z-4 pt-1/20   fixed top-0 left-0" style={{display: modal}}>
-                        <div className=" animate-[modal_0.5s_ease-in-out]  w-1/4 h-1/3 bg-white   relative top-[50%] left-[33%] flex flex-col items-center " >
+                    <div className=" w-full h-full z-4 pt-1/20  bg-grey_blur  absolute top-0 left-0" style={{display: modal}}>
+                        <div className=" animate-[modal_0.5s_ease-in-out]  w-1/4 h-1/3 bg-white   relative top-[40%] left-[40%] flex flex-col items-center " >
                         <img className='self-end mt-2 mr-2 mb-8 w-4  hover:rotate-[90deg] duration-500' onClick={handlemodal} src='../images/close.png' alt='close' />
                             <div className="flex items-center pb-3 max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center">
                                         <img src={image} alt="map" className="w-24 h-20 " />
@@ -154,8 +154,9 @@ const Section1 = () => {
                 
                 <a  href="https://thepurehing.com/"><button className="bg-yellow w-fit text-base font-bold  text-center capitalize px-8 py-4 ml-3 mb-10 hover:bg-white hover:text-red rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm">discover more</button></a>
             </div>
-            <div className="w-2/5 max-sm:hidden" data-aos="fade-left">
-                <img src="./images/section1.png" alt="section1image" className="w-[70%] ml-[30%] mt-[60%] " />
+            <div className="w-2/5 flex flex-col items-center max-sm:hidden" >
+                <img src="./images/50_years.png"  alt="50years" className="w-[40%] mb-12" data-aos="flip-left" />
+                <img src="./images/section1.png" alt="section1image" className="w-[70%] ml-[30%] " data-aos="fade-left" />
             </div>
         </div>
     )

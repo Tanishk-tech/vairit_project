@@ -100,11 +100,11 @@ const Book= () => {
                 <PageCover source={"URL('./images/21.png')"}></PageCover>
             </HTMLFlipBook>
 
-            <div>
-                <button className='text-base capitalize px-4 py-2 bg-yellow mr-6' onClick={handlePrev}>prev</button>
+            <div className=''>
+                <button className='text-base capitalize mr-6' onClick={handlePrev}><img src='./images/prev.png' alt='icons' /></button>
                 {/* [<span>{page}</span> of 
                 <span>20</span>] */}
-                <button className='text-base capitalize px-4 py-2 ml-6 bg-yellow' onClick={handleNext}>next</button>
+                <button className='text-base capitalize    ' onClick={handleNext}><img src='./images/next.png' alt='icons' /></button>
             </div>
         
         </div>
