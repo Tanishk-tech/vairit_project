@@ -76,7 +76,7 @@ const Book= () => {
                 <button className="bg-black text-white  w-fit text-base font-bold uppercase text-center px-8 py-4 ml-[45%] hover:bg-yellow hover:text-black rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm " onClick={back}>back</button>
             </div>
             
-            <HTMLFlipBook {...settings} ref={bookRef}  className='mb-6 cursor-grab'>
+            <HTMLFlipBook {...settings} ref={bookRef}  className='mb-1 cursor-grab'>
                 <PageCover source={"URL('./images/first.png')"} ></PageCover>
                 <Page source={"URL('./images/second.png')"}></Page>
                 <Page source={"URL('./images/third.png')"}></Page>
