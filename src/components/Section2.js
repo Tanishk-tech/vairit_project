@@ -6,7 +6,6 @@ const Section2= () => {
     useEffect(() => {
         AOS.init({ 
             duration: 1000,
-            disable: window.innerWidth < 1024,
             once:true,
         });
         AOS.refresh();

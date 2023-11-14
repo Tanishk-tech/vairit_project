@@ -11,7 +11,6 @@ const Section1 = () => {
     useEffect(() => {
         AOS.init({ 
             duration: 1000,
-            disable: window.innerWidth < 1024,
             once:true,
         });
         AOS.refresh();
@@ -155,7 +154,7 @@ const Section1 = () => {
                 <a  href="https://thepurehing.com/"><button className="bg-yellow w-fit text-base font-bold  text-center capitalize px-8 py-4 ml-3 mb-10 hover:bg-white hover:text-red rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm">discover more</button></a>
             </div>
             <div className="w-2/5 flex flex-col items-center max-sm:w-[100%] max-sm:pt-[20%] " >
-                <img src="./images/50_years.png"  alt="50years" className="w-[40%] mb-12" data-aos="flip-left" />
+                <img src="./images/50_years.png"  alt="50years" className="w-[40%] mb-12" data-aos="fade-up" />
                 <img src="./images/section1.png" alt="section1image" className="w-[70%] ml-[30%] max-sm:hidden " data-aos="fade-left" />
             </div>
         </div>
