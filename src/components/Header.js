@@ -18,6 +18,10 @@ const Header= () => {
         w:"w-[20%]",
         mw:"max-sm:w-[40%]",
         })
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+        }, []);
     
     const listenScrollEvent = (e) => {
         if (window.scrollY < 400) {
@@ -35,15 +39,9 @@ const Header= () => {
             mw:"max-sm:w-[80%]",
             })
         }
-        console.log(logo);
     }
 
-    console.log(logo);
     
-    
-    useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
-    }, []);
 
     return (
         <div className="flex items-center z-20 w-[100%] h-[80px] pl-[12%] pr-[10%] bg-white fixed top-0 z-10  max-sm:px-5 max-sm:py-2 ">
