@@ -64,7 +64,7 @@ const About = () => {
                 </div>
                 <div className="pt-10" data-aos="fade-up" >
                     <h1 className="w-fit m-auto px-10 uppercase border-solid border-b-4 border-yellow ">seeds of a long journey</h1>
-                    <img src="./images/book_background.jpg" className="my-10" />
+                    <img src="./images/book_background.jpg" className="my-10" alt="men" />
                     <p className="text-2xl mb-6">The story begins in pre-partition India, at Dera Ismail Khan, Khyber Pakhtunkhwa, a region in current day
                     Pakistan. Populated by both Pashtun and Hindokwan (Hindu) communities, the region had been a hub for
                     cultivating high quality Hing since centuries.</p>
@@ -83,7 +83,7 @@ const About = () => {
                         the form of Sri Raghunath Ji Overseas.</p>
                     </div>
                     <div className="w-1/2 flex flex-col items-center pt-[10%]">
-                        <img src="./images/seed1.png" className="w-[25%]" />
+                        <img src="./images/seed1.png" className="w-[25%]" alt="men" />
                         <b className="text-xl text-yellow">Late Lala Chetan Das Bhatia Circa1903 to 1972</b>
                         <p className="font-thin text-xl">Lala Ji's endearing persona made him the first face of Sri
                         Raghunath Ji Overseas, as the company transported high
@@ -105,14 +105,14 @@ const About = () => {
                 </div>
                 <div className="flex my-10" data-aos="fade-up">
                     <div className="w-1/2 flex flex-col items-center">
-                        <img src="./images/seed1.png" className="w-1/4" />
+                        <img src="./images/seed1.png" className="w-1/4" alt="men" />
                         <b className="text-yellow text-xl mt-2">Ajay Bhatia Born 1965</b>
                         <p className="text-xl font-thin">Shri Ajay Bhatia's initiatives saw the company expand its
                         customer base significantly, supplying raw material to Hing
                         manufacturers across India.</p>
                     </div>
                     <div className="w-1/2 flex flex-col items-end pt-[12%]">
-                        <img src="./images/seed1.png" className="w-1/4" />
+                        <img src="./images/seed1.png" className="w-1/4" alt="men" />
                         <b className="text-xl text-yellow mt-2">Sharad Bhatia Born 1988</b>
                     </div>
                 </div>
