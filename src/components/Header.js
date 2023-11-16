@@ -16,6 +16,10 @@ const Header= () => {
         // console.log(e.target.dataset.path);
         navigate(e.target.dataset.path);
     }
+    
+    useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent);
+    }, []);
 
     const [logo , setLogo] = useState({
         imageSrc: './images/raghu.png',
@@ -44,9 +48,6 @@ const Header= () => {
         console.log("listen_fun" , logo.imageSrc);
     }
 
-    useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
-    }, []);
 
     return (
         <div className="flex items-center z-20 w-[100%] h-[80px] pl-[12%] pr-[10%] bg-white fixed top-0 z-10  max-sm:px-5 max-sm:py-2 ">
