@@ -5,8 +5,7 @@ import 'aos/dist/aos.css';
 const Section5 = () => {
     useEffect(() => {
         AOS.init({ 
-            duration: 1000,
-            disable: window.innerWidth < 1024,
+            duration: 2500,
             once:true,
         });
         AOS.refresh();
@@ -44,12 +43,12 @@ const Section5 = () => {
                 {
                     data.map((d) =>(
                         <div className="flex mb-8" data-aos="flip-down">
-                            <div className="pr-6 max-sm:w-[75%]">
+                            <div className="pr-6 max-sm:w-[75%] max-sm:pr-0">
                                 <img src={d.img} alt="seed" className="p-2" />
                             </div>
                             <div className="flex flex-col justify-center">
-                                <h2 className=" text-3xl max-sm:text-4xl  max-sm : leading-tight">{d.value}</h2>
-                                <p className=" text-base pr-[35%] max-sm:text-xl">{d.text}</p>
+                                <h2 className=" text-3xl max-sm:text-4xl  max-sm:leading-tight">{d.value}</h2>
+                                <p className=" text-base pr-[35%] max-sm:text-xl max-sm:pr-0">{d.text}</p>
                             </div>
                         </div>
                     ))

@@ -10,7 +10,7 @@ const Section1 = () => {
 
     useEffect(() => {
         AOS.init({ 
-            duration: 1000,
+            duration: 2500,
             once:true,
         });
         AOS.refresh();
@@ -125,7 +125,7 @@ const Section1 = () => {
                 <div className="grid grid-cols-2 gap-x-3 mb-6 w-[85%]  max-sm:hidden">
                     {
                         data.map((d) => (
-                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer " onClick={handlemodal} data-aos="fade-left">
+                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer " onClick={handlemodal} data-aos="flip-up">
                                 <div className="flex items-center  w-[35%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center">
                                     <img src={d.image} alt="map" className="w-24 h-20 cursor-pointer " />
                                 </div>
@@ -155,7 +155,7 @@ const Section1 = () => {
             </div>
             <div className="w-2/5 flex flex-col items-center max-sm:w-[100%] max-sm:pt-[20%] " >
                 <img src="./images/50_years.png"  alt="50years" className="w-[40%] mb-12" data-aos="fade-up" />
-                <img src="./images/section1.png" alt="section1image" className="w-[70%] ml-[30%] max-sm:hidden " data-aos="fade-left" />
+                <img src="./images/section1.png" alt="section1image" className="w-[70%] ml-[30%] max-sm:hidden " data-aos="fade-up" />
             </div>
         </div>
     )

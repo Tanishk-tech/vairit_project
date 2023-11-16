@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 const Section2= () => {
     useEffect(() => {
         AOS.init({ 
-            duration: 1000,
+            duration: 2500,
             once:true,
         });
         AOS.refresh();
