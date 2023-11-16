@@ -16,10 +16,6 @@ const Header= () => {
         // console.log(e.target.dataset.path);
         navigate(e.target.dataset.path);
     }
-    
-    useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
-    }, []);
 
     const [logo , setLogo] = useState({
         imageSrc: './images/raghu.png',
@@ -28,9 +24,14 @@ const Header= () => {
         mw:"max-sm:w-[40%]",
         });
 
-    const listenScrollEvent = async (e) => {
+    useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent);
+    }, []);
+
+
+    const listenScrollEvent =  (e) => {
         if (window.scrollY <= 800) {
-            await setLogo({
+            setLogo({
             imageSrc: './images/raghu.png',
             imageAlt: 'logo',
             w:"w-[20%]",
@@ -38,7 +39,7 @@ const Header= () => {
             })
         } 
         else{
-            await setLogo({
+            setLogo({
             imageSrc: './images/raghu_desc.png',
             imageAlt: 'logo',
             w:"w-[50%]",
