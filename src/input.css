@@ -67,6 +67,34 @@
     .about_back{
         background-image: url('../public/images/book_background.jpg');
     }
+
+    @keyframes flipup {
+        from {
+            transform: rotateY(90deg)
+        }
+        to {
+            transform: rotateY(0deg)
+        }
+    }
+
+    @keyframes fadeup  {
+        from {
+            transform: translate(0px, 40px);
+            opacity: 0;
+        }
+        to {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+    }
+
+    .flipUp {
+        animation: flipup 3s linear 1s;
+    }
+
+    .fadeUp{
+        animation: fadeup 3s linear 1s;
+    }
 }
 
 
