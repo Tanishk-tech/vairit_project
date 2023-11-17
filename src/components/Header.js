@@ -17,12 +17,12 @@ const Header= () => {
         navigate(e.target.dataset.path);
     }
 
-    const [logo , setLogo] = useState({
+    const logo={
         imageSrc: './images/raghu.png',
         imageAlt: 'logo',
         w:"w-[20%]",
         mw:"max-sm:w-[40%]",
-        });
+        };
 
         
     // const listenScrollEvent =  (e) => {
