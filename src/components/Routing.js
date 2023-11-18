@@ -3,6 +3,8 @@ import App from "../App";
 import Book from "./Book";
 import About from "./About";
 import Process from "./Process";
+import Contact from "./Contact";
+import Browse  from "./Browse";
 
 const Routing = () => {
     return(
@@ -13,6 +15,8 @@ const Routing = () => {
                     <Route path="/book" element={<Book/>} />
                     <Route path="/about" element={<About/>} />
                     <Route path="/Process" element={<Process/>} />
+                    <Route path="/Contact" element={<Contact />} />
+                    <Route path="/Browse" element={<Browse/>} />
                 </Routes>
             </BrowserRouter>
         </div>

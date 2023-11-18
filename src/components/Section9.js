@@ -2,7 +2,7 @@ const Section9 = () => {
     return (
         <div className="bg-grey pl-[12%] pr-[8%] pt-[6%] pb-[3%] flex border-b max-sm:flex max-sm:px-4 max-sm:flex-col" id="s9">
             <div className="flex flex-col w-[50%] max-sm:w-[100%] max-sm:items-center max-sm:text-center">
-                <img src="./images/Raghu.png" alt="logo" className="pb-3 w-[50%] h-[60%]"/>
+                <img src="./images/Raghu.png" alt="logo" className="pb-3 w-[40%] h-[50%]"/>
                 <p className="pb-5 border-b ">Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea dictumst. Duis porta,quam ut finibus ultrices</p>
                 <div className="flex pt-3">
                     <img src="./images/facebook.svg" alt="media" className="pr-2" />

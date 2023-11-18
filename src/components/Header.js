@@ -62,6 +62,7 @@ const Header= () => {
                 <li className="hover:header-hover cursor-pointer max-sm:py-6 max-sm:border-b max-sm:border-white max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white " onClick={handleChange} data-path='/About' >About Us</li>
                 <li className="hover:header-hover cursor-pointer max-sm:py-6 max-sm:border-b max-sm:border-white max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white " onClick={handleChange} data-path='/Process' >Process</li>
                 <li className="hover:header-hover cursor-pointer max-sm:py-6 max-sm:border-b max-sm:border-white max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white" onClick={handleChange} data-path='/Gallery'>Gallery</li>
+                <li className="hover:header-hover cursor-pointer max-sm:py-6 max-sm:border-b max-sm:border-white max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white" onClick={handleChange} data-path='/Browse'>Browse</li>
                 <li className="hover:header-hover cursor-pointer max-sm:py-6 max-sm:w-[100%] max-sm:text-center" onClick={handleChange} data-path='Contact' >Contact Us</li>
             </ul>
         </div>

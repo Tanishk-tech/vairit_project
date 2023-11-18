@@ -95,6 +95,10 @@
     .fadeUp{
         animation: fadeup 3s linear 1s;
     }
+
+    .contactBack{
+        background-image: url(../public/images/contact_back.jpg);
+    }
 }
 
 
