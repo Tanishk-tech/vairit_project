@@ -73,6 +73,15 @@ const Section1 = () => {
     //     };
 
     const handlemodal= (event) => {
+        let body = document.querySelector("body");
+        console.log(event.currentTarget.alt);
+        if(event.currentTarget.alt==='close'){
+            body.style.overflow='auto';
+        }
+        else{
+            body.style.overflow='hidden';
+        }
+
         modal==='none' ? setModal("block") : setModal("none");
 
         if(event.currentTarget.lastChild != null || event.currentTarget.firstChild !=null ){
