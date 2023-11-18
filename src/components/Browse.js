@@ -2,6 +2,8 @@ import Header from "./Header";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Section9 from "./Section9";
+import Section10 from "./Section10";
 
 const Browse = () =>{
     const data = [
@@ -78,7 +80,7 @@ const Browse = () =>{
                             <div className=" h-80 mt-10 transition duration-150 ease-out hover:ease-in hover:-translate-y-6 cursor-grab max-sm:h-40 ">
                                 <img src={d.img} alt="rocks" className="rounded-xl  h-[100%] max-sm:w-[100%] " />
                                 <div className="absolute w-[100%] h-[100%]  top-0 left-0 opacity-0 transition duration-150 ease-out hover:opacity-100 hover:ease-in">
-                                    <p className="text-xl bg-red text-white absolute w-[100%] top-[75%] text-center capitalize max-sm:text-base ">{d.value}</p>
+                                    <p className="text-xl bg-yellow text-white absolute w-[100%] top-[100%] text-center capitalize max-sm:text-base ">{d.value}</p>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +88,8 @@ const Browse = () =>{
                 }
                 </Slider>
             </div>
-            
+            <Section9 />
+            <Section10 />
         </div>
     )
 }
