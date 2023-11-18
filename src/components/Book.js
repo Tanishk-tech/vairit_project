@@ -72,8 +72,11 @@ const Book= () => {
     return (
         <div className='px-[12%] pt-[1%] h-[100vh] flex flex-col items-center bg-bisque overflow-hidden'>
             <div className='flex w-[100%] mb-6 items-center'>
-                <img src='./images/raghu.png' alt='logo' className=' w-[8%] h-[70%] mr-[35%] ml-[5%]  '/>
-                <button className="bg-black text-white  w-fit text-base font-bold uppercase text-center px-8 py-4 ml-[45%] hover:bg-yellow hover:text-black rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm " onClick={back}>back</button>
+                <img src='./images/raghu.png' alt='logo' className=' w-[11%] h-[100%] mr-[35%] ml-[5%]  '/>
+                <button className="text-black border-2 border-solid border-red    w-fit text-base font-bold uppercase text-center px-6 py-2 ml-[45%] hover:bg-red hover:text-white rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm " onClick={back}>back</button>
+                {/* <div className='w-1/2'>
+                    <img src='./images/back.png' alt='back' className='w-[5%] pl-[90%]' onClick={back} />
+                </div> */}
             </div>
             
             <HTMLFlipBook {...settings} ref={bookRef}  className='mb-6 cursor-grab'>
@@ -101,7 +104,7 @@ const Book= () => {
             </HTMLFlipBook>
 
             <div className=''>
-                <button className='text-base capitalize mr-6' onClick={handlePrev}><img src='./images/prev.png' alt='icons' /></button>
+                <button className='text-base capitalize mr-16' onClick={handlePrev}><img src='./images/prev.png' alt='icons' /></button>
                 {/* [<span>{page}</span> of 
                 <span>20</span>] */}
                 <button className='text-base capitalize    ' onClick={handleNext}><img src='./images/next.png' alt='icons' /></button>

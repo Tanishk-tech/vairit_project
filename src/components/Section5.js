@@ -53,7 +53,7 @@ const Section5 = () => {
                         </div>
                     ))
                 }
-                <button className="bg-red w-fit text-white text-base font-bold capitalize text-center  px-8  py-4 hover:bg-yellow hover:text-red rounded-xl cursor-pointer max-sm:px-4 max-sm:py-2 max-sm:text-sm ">read more</button>
+                <button className="w-fit border-2 border-solid border-red text-base font-bold capitalize text-center  px-8  py-4 hover:bg-red hover:text-white rounded-xl cursor-pointer max-sm:px-4 max-sm:py-2 max-sm:text-sm ">read more</button>
             </div>
         </div>
     )
