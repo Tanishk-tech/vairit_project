@@ -57,7 +57,7 @@ const Section3 = () => {
         slidesToShow: 4,
         slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 3000000,
+        autoplaySpeed: 3000,
         pauseOnFocus: false, 
         pauseOnHover: true,
         cssEase: 'linear',
@@ -78,7 +78,7 @@ const Section3 = () => {
         <div className="bg-red flex flex-col items-center w-[100%] py-[3%] section3 max-sm:text-center max-sm:p-4" id="s3">
             <p className="text-white text-xl capitalize max-sm:text-xl">our products</p>
             <h1 className="text-white text-4xl font-bold max-sm:text-4xl max-sm:leading-snug">Explore our the food of the gods</h1>
-            <div className=" w-3/4 margin-auto max-sm:w-[100%] max-sm:pl-[24%] max-sm:pr-[20%]">
+            <div className=" w-3/4  max-sm:w-[100%] max-sm:pl-[24%] max-sm:pr-[20%]">
                 <Slider {...settings} className="max-sm:slidesToShow-2">
                 {
                     data.map((d) => (

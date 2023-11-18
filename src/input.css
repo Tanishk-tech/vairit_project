@@ -99,6 +99,10 @@
     .contactBack{
         background-image: url(../public/images/contact_back.jpg);
     }
+
+    .inshadow{
+        filter: drop-shadow(2px 4px 6px #8F1D21 );
+    }
 }
 
 
@@ -147,5 +151,19 @@
 
 .section4 .slick-dots li.slick-active button::before {
     color: #8F1D21 ;
+    opacity: 1;
+}
+
+.browse .slick-dots{
+    background-color:#8F1D21  ;
+}
+.browse .slick-dots li button::before {
+    font-size: 0.75rem;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.browse .slick-dots li.slick-active button::before {
+    color: #FFD345;
     opacity: 1;
 }
