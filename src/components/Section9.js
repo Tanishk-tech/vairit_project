@@ -1,4 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 const Section9 = () => {
+    const navigate =useNavigate();
+
+    const handleChange = (e) => {
+        // console.log(e.target.dataset.path);
+        navigate(e.target.dataset.path);
+    }
+
     return (
         <div className="bg-grey pl-[12%] pr-[8%] pt-[6%] pb-[3%] flex border-b max-sm:flex max-sm:px-4 max-sm:flex-col" id="s9">
             <div className="flex flex-col w-[50%] max-sm:w-[100%] max-sm:items-center max-sm:text-center">
@@ -14,20 +23,20 @@ const Section9 = () => {
             <div className="flex flex-col w-[20%] pl-16 max-sm:w-[100%] max-sm:px-0 max-sm:text-center max-sm:pt-6">
                 <h3 className="text-red capitalize max-sm:text-2xl ">useful links</h3>
                 <ul className="max-sm:text-xl">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Process</li>
-                    <li>Gallery</li>
-                    <li>Contact Us</li>
+                    <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/'>Home</li>
+                    <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/About'>About Us</li>
+                    <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/Process'>Process</li>
+                    <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/Gallery'>Gallery</li>
+                    <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/Contact'>Contact Us</li>
                 </ul>
             </div>
             <div className="flex flex-col w-[30%] pl-16 max-sm:w-[100%] max-sm:px-0 max-sm:text-center max-sm:pt-6">
                 <h3 className="text-red capitalize max-sm:text-2xl">Contact info</h3>
                 <ul className="max-sm:text-xl">
                     <li>Phone</li>
-                    <p>+880123456789</p>
+                    <p ><a href="tel:+880123456789" className="curser-pointer hover:text-red hover:underline">+880123456789</a></p>
                     <li>Email</li>
-                    <p>needhelp@company.com</p>
+                    <p><a href="mailto:needhelp@company.com" className="curser-pointer hover:text-red hover:underline">needhelp@company.com</a></p>
                     <li>Address</li>
                     <p>Road No. 8, Niketan, Dhaka, Bangladesh</p>
                 </ul>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState ,useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Header= () => {
@@ -24,7 +24,7 @@ const Header= () => {
         mw:"max-sm:w-[40%]",
         };
 
-        
+    const scollToRef = useRef(null);
     // const listenScrollEvent =  (e) => {
     //     if (window.scrollY <= 800) {
     //         setLogo({
