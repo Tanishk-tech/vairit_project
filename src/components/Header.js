@@ -33,30 +33,51 @@ const Header= () => {
 
     
     // const scollToRef = useRef(null);
-    const listenScrollEvent =  (e) => {
-        if (window.scrollY <= 800) {
-            setLogo({
-            imageSrc: './images/raghu.png',
-            imageAlt: 'logohuihui',
-            w:"w-[30%]",
-            mw:"max-sm:w-[40%]",
-            })
-        } 
-        else{
-            setLogo({
-                imageSrc: './images/raghu_desc.png',
-                imageAlt: 'logo',
-            w:"w-[60%]",
-            mw:"max-sm:w-[80%]",
-        })
-        console.log("raghu desc : " , logo.imageSrc);
-        console.log("raghu desc : " , logo.imageAlt);
-        }
-        console.log("listen_fun" , logo.imageSrc);
-    }
+    // const listenScrollEvent =  (e) => {
+    //     if (window.scrollY <= 800) {
+    //         setLogo({
+    //         imageSrc: './images/raghu.png',
+    //         imageAlt: 'logohuihui',
+    //         w:"w-[30%]",
+    //         mw:"max-sm:w-[40%]",
+    //         })
+    //     } 
+    //     else{
+    //         setLogo({
+    //             imageSrc: './images/raghu_desc.png',
+    //             imageAlt: 'logo',
+    //         w:"w-[60%]",
+    //         mw:"max-sm:w-[80%]",
+    //     })
+    //     console.log("raghu desc : " , logo.imageSrc);
+    //     console.log("raghu desc : " , logo.imageAlt);
+    //     }
+    //     console.log("listen_fun" , logo.imageSrc);
+    // }
     
     useEffect( () => {
-        window.addEventListener('scroll', listenScrollEvent);
+        window.addEventListener('scroll', (e) => {
+            if (window.scrollY <= 800) {
+                setLogo({
+                imageSrc: './images/raghu.png',
+                imageAlt: 'logohuihui',
+                w:"w-[30%]",
+                mw:"max-sm:w-[40%]",
+                })
+            } 
+            else{
+                setLogo({
+                    imageSrc: './images/raghu_desc.png',
+                    imageAlt: 'logo',
+                w:"w-[60%]",
+                mw:"max-sm:w-[80%]",
+            })
+            console.log("raghu desc : " , logo.imageSrc);
+            console.log("raghu desc : " , logo.imageAlt);
+            }
+            console.log("listen_fun" , logo.imageSrc);
+        }
+        );
     }, []);
 
     return (
