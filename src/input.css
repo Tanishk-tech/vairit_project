@@ -89,6 +89,17 @@
         }
     }
 
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(-8%);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+            transform: translateY(0);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+
     .flipUp {
         animation: flipup 3s linear 1s;
     }
@@ -102,7 +113,25 @@
     }
 
     .inshadow{
-        filter: drop-shadow(2px 4px 6px #8F1D21 );
+        filter: drop-shadow(2px 4px 6px #8f861d );
+    }
+
+    .bounce{
+        animation: bounce 1.5s infinite;
+    }
+
+    .arrowBack1{
+        background-image: url('../public/images/arrowd.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+    }
+
+    .arrowBack2{
+        background-image: url('../public/images/arrowu.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
     }
 }
 

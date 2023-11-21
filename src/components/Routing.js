@@ -16,7 +16,7 @@ const Routing = () => {
                     <Route path="/about" element={<About/>} />
                     <Route path="/Process" element={<Process/>} />
                     <Route path="/Contact" element={<Contact />} />
-                    <Route path="/Browse" element={<Browse/>} />
+                    <Route path="/Brand" element={<Browse/>} />
                 </Routes>
             </BrowserRouter>
         </div>

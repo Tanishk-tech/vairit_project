@@ -16,7 +16,11 @@ const Process=() =>{
     return (
         <div className="w-[100%]">
             <Header/>
-            <div className="bg-red text-white px-[6%] pt-[10%]" >
+            <div className="relative w-full">
+                <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
+                <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl">process</h1>
+            </div>
+            <div className="bg-red text-white px-[6%]" >
                 <div className="flex flex-col py-[2%] max-sm:pt-[12%] max-sm:text-center" data-aos="fade-up" >
                     <h1 className="uppercase text-[40px] text-yellow pr-[50%] leading-tight  max-sm:px-0 max-sm:text-3xl max-sm:px-6 ">identifying the plant during april-may</h1>
                     <p className="text-xl mb-6 pr-[20%] max-sm:text-base max-sm:pr-0">Hing is extracted from the root of the asafoetida plant, which generally stem during the spring
@@ -26,8 +30,8 @@ const Process=() =>{
                 </div>
                 <div className="flex pb-[2%] w-[100%] max-sm:flex-col">
                     <div className="w-[60%] flex flex-col max-sm:w-full max-sm:pb-8" data-aos="flip-up" >
-                        <img src="./images/seed1.png" alt="spices" className="w-[25%] h-[50%] ml-[40%] mb-[5%] max-sm:w-[40%] max-sm:m-auto" />
-                        <img src="./images/seed1.png" alt="spices" className="w-[20%] h-[40%] ml-[50%] max-sm:hidden" />
+                        <img src="./images/process1.jpg" alt="spices" className="w-[25%] h-[50%] ml-[40%] rounded-full mb-[5%] max-sm:w-[40%] max-sm:m-auto" />
+                        <img src="./images/process2.jpg" alt="spices" className="w-[20%] h-[40%] ml-[50%] rounded-full max-sm:hidden" />
                     </div>
                     <div className="w-[40%] max-sm:w-full" data-aos="fade-up">
                         <h1 className="uppercase text-[40px] text-right text-yellow leading-tight  max-sm:px-0 max-sm:text-3xl max-sm:text-center">extracting the asafoetida</h1>
@@ -40,7 +44,7 @@ const Process=() =>{
                         30-50 Kg. asafoetida, depending upon the
                         weather. The picture here shows asafoetida oozing
                         out and being collected by the farmer's knife.</p>
-                        <img src="./images/seed1.png" alt="spices" className="w-[40%]  hidden max-sm:block max-sm:m-auto" data-aos="flip-up"  />
+                        <img src="./images/process2.jpg" alt="spices" className="w-[40%] rounded-full  hidden max-sm:block max-sm:m-auto" data-aos="flip-up"  />
                     </div>
                 </div>
                 <div className="flex flex-col max-sm:items-center max-sm:text-center max-sm:pt-6" data-aos="fade-up" >
@@ -48,7 +52,7 @@ const Process=() =>{
                     <p className="text-xl mb-6 pr-[30%] max-sm:text-base max-sm:pr-0">Asafoetida plant's roots are exposed to direct sun for 5- 10 days before the extraction of Hing. This
                     picture here shows a Plant from which
                     Hing extraction is yet to begin</p>
-                    <img src="./images/seed1.png" alt="spices" className="w-[15%] mb-[5%] ml-[40%] max-sm:ml-0 max-sm:w-[40%]" data-aos="flip-up"  />
+                    <img src="./images/process3.jpg" alt="spices" className="w-[15%] mb-[5%] ml-[40%]  rounded-full max-sm:ml-0 max-sm:w-[40%]" data-aos="flip-up"  />
                 </div>
                 <div className="text-center" data-aos="fade-up" >
                     <h1 className="uppercase text-[40px] text-right text-yellow  leading-tight pb-4 pl-[50%]  max-sm:px-0 max-sm:text-3xl max-sm:text-center max-sm:pl-0">storing and packing for further export</h1>
