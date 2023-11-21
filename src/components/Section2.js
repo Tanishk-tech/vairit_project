@@ -32,8 +32,8 @@ const Section2= () => {
                 <p className="capitalize text-xl pb-1 max-sm:text-2xl" >our introduction</p>
                 <h1 className="text-red text-4xl leading-none font-bold pb-1 max-sm:text-4xl " >Pure Agriculture and Organic</h1>
                 <h2 className="text-3xl pb-1 max-sm:leading-snug">We're Leader in Agriculture Market</h2>
-                <p className="pb-5 text-base pr-[25%] leading-tight max-sm:pr-0">There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou or randomised words even slightly believable.</p>
-                <ul className="list-style-none mb-6 text-start ">
+                <p className="pb-5 text-base pr-[25%] leading-tight max-sm:p-3">There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou or randomised words even slightly believable.</p>
+                <ul className="list-style-none mb-6 text-start p-3 ">
                     <li className="tick-symbol pl-8 pb-3 text-base max-sm:text-xl" >Organic food contains more vitamins</li>
                     <li className="tick-symbol pl-8 pb-3 text-base max-sm:text-xl " >Eat organic because supply meets demand</li>
                     <li className="tick-symbol pl-8 pb-3 text-base max-sm:text-xl ">Organic food is never irradiated</li>
