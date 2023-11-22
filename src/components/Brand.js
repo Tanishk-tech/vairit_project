@@ -84,7 +84,7 @@ const Brand = () =>{
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
                 <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl">our brands</h1>
             </div>
-            <div className="flex text-white pl-[6%] pr-[4%] pt-[4%]">
+            {/* <div className="flex text-white pl-[6%] pr-[4%] pt-[4%]">
                 <div className="flex flex-col w-1/3">
                     <div>
                         <img src="./images/brand1.png" alt="bottle" className="w-3/5"  />
@@ -125,16 +125,14 @@ const Brand = () =>{
                             <div className=" pb-6 h-10 " >
                                 <div className="cursor-grab flex items-center ">
                                     <img src={d.img} alt="rocks" className="rounded-xl w-[50%] h-[10%]  h-[100%] max-sm:w-[100%] " />
-                                    {/* <div className="absolute w-[100%] h-[100%]  top-0 left-0 opacity-0 transition duration-150 ease-out hover:opacity-100 hover:ease-in">
-                                        <p className="text-xl bg-yellow text-white absolute w-[100%] top-[100%] text-center capitalize max-sm:text-base ">{d.value}</p>
-                                    </div> */}
+                                    
                                 </div>
                             </div>
                         ))
                     }
                     </Slider>
                 </div>
-            </div>
+            </div> */}
             <Section9 />
             <Section10 />
         </div>
