@@ -1,82 +1,82 @@
 import Header from "./Header";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Section9 from "./Section9";
 import Section10 from "./Section10";
 
 const Brand = () =>{
-    const data = [
-        {
-            value : 'brands' ,
-            img : './images/brandf1.png',
-        },
-        // {
-        //     value : 'brands' ,
-        //     img : './images/brandf2.avif',
-        // },
-        {
-            value : 'brands' ,
-            img : './images/brandf1.png',
-        },
-        // {
-        //     value : 'brands' ,
-        //     img : './images/brandf2.avif',
-        // },
-        {
-            value : 'brands' ,
-            img : './images/brandf1.png',
-        },
-        {
-            value : 'brands' ,
-            img : './images/brandf1.png',
-        },
-        {
-            value : 'brands' ,
-            img : './images/brandf1.png',
-        },
-        {
-            value : 'brands' ,
-            img : './images/brandf1.png',
-        },
-        {
-            value : 'brands' ,
-            img : './images/brandf1.png',
-        },
-        {
-            value : 'brands' ,
-            img : './images/brandf1.png',
-        },
-        // {
-        //     value : 'brands' ,
-        //     img : './images/brandf2.avif',
-        // },  
-    ]
+    // const data = [
+    //     {
+    //         value : 'brands' ,
+    //         img : './images/brandf1.png',
+    //     },
+    //     // {
+    //     //     value : 'brands' ,
+    //     //     img : './images/brandf2.avif',
+    //     // },
+    //     {
+    //         value : 'brands' ,
+    //         img : './images/brandf1.png',
+    //     },
+    //     // {
+    //     //     value : 'brands' ,
+    //     //     img : './images/brandf2.avif',
+    //     // },
+    //     {
+    //         value : 'brands' ,
+    //         img : './images/brandf1.png',
+    //     },
+    //     {
+    //         value : 'brands' ,
+    //         img : './images/brandf1.png',
+    //     },
+    //     {
+    //         value : 'brands' ,
+    //         img : './images/brandf1.png',
+    //     },
+    //     {
+    //         value : 'brands' ,
+    //         img : './images/brandf1.png',
+    //     },
+    //     {
+    //         value : 'brands' ,
+    //         img : './images/brandf1.png',
+    //     },
+    //     {
+    //         value : 'brands' ,
+    //         img : './images/brandf1.png',
+    //     },
+    //     // {
+    //     //     value : 'brands' ,
+    //     //     img : './images/brandf2.avif',
+    //     // },  
+    // ]
 
-    var settings = {
-        dots: true,
-        infinite: true,
-        arrows:true,
-        speed: 300,
-        slidesToShow: 5,
-        slidesToScroll: 2,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        pauseOnFocus: false, 
-        pauseOnHover: true,
-        cssEase: 'linear',
-        waitForAnimate: false,
-        responsive: [
-            {
-                breakpoint: 640,
-                settings: {
-                    dots: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-        ]
-    };
+    // var settings = {
+    //     dots: true,
+    //     infinite: true,
+    //     arrows:true,
+    //     speed: 300,
+    //     slidesToShow: 5,
+    //     slidesToScroll: 2,
+    //     autoplay: true,
+    //     autoplaySpeed: 1000,
+    //     pauseOnFocus: false, 
+    //     pauseOnHover: true,
+    //     cssEase: 'linear',
+    //     waitForAnimate: false,
+    //     responsive: [
+    //         {
+    //             breakpoint: 640,
+    //             settings: {
+    //                 dots: false,
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //             }
+    //         },
+    //     ]
+    // };
     return (
         <div className="bg-red browse">
             <Header />
