@@ -4,8 +4,7 @@ import Book from "./Book";
 import About from "./About";
 import Process from "./Process";
 import Contact from "./Contact";
-import Browse  from "./Browse";
-
+import Brand from "./Brand";
 const Routing = () => {
     return(
         <div>
@@ -16,7 +15,7 @@ const Routing = () => {
                     <Route path="/about" element={<About/>} />
                     <Route path="/Process" element={<Process/>} />
                     <Route path="/Contact" element={<Contact />} />
-                    <Route path="/Brand" element={<Browse/>} />
+                    <Route path="/Brand" element={<Brand/>} />
                 </Routes>
             </BrowserRouter>
         </div>

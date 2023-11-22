@@ -94,6 +94,11 @@ const About = () => {
                         quality Hing into pre-partition mainland India</p>
                     </div>
                 </div>
+
+                <div className="flex justify-center py-10">
+                    <img src="./images/legacy.png" alt="legacy" className="w-1/3" />
+                </div>
+
                 <div className="" data-aos="fade-up">
                     <p className="text-xl mb-6 text-right max-sm:text-base max-sm:text-center">While Shri Ram Lal Bhatia consolidated Sri Raghunath Ji Overseas Hing business in India, his
                     son Shri Ajay Bhatia played a vital role in expanding the company's presence. He travelled
