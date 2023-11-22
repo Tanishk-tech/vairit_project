@@ -117,7 +117,7 @@ const Section1 = () => {
                     <Slider {...settings} className="hidden max-sm:block">
                     {
                         data.map((d) => (
-                            <div  className="flex   p-3 rounded-xl mb-3 " >
+                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer  " onClick={handlemodal} >
                                 <div className="flex items-center  w-[35%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center">
                                     <img src={d.image} alt="map" className="w-24 h-20 " />
                                 </div>
