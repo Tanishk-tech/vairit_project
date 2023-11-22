@@ -71,7 +71,7 @@ const Brand = () =>{
                 breakpoint: 640,
                 settings: {
                     dots: false,
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
@@ -84,29 +84,29 @@ const Brand = () =>{
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
                 <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl">our brands</h1>
             </div>
-            <div className="flex text-white pl-[6%] pr-[4%] pt-[4%]">
-                <div className="flex flex-col w-1/3">
-                    <div>
+            <div className="flex text-white pl-[4%] pr-[4%] pt-[4%] max-sm:flex-col">
+                <div className="flex flex-col w-1/3 max-sm:w-full max-sm:mb-6">
+                    <div className="flex justify-center max-sm:mb-3">
                         <img src="./images/brand1.png" alt="bottle" className="w-3/5"  />
                     </div>
-                    <div className="flex pl-[10%]">
+                    <div className="flex justify-center">
                         <img src="./images/brand1.png" alt="bottle" className="w-1/5 h-4/5 bg-white border-solid border-2 border-yellow mr-3"  />
                         <img src="./images/brand1.png" alt="bottle" className="w-1/5 h-4/5 bg-white border-solid border-2 border-yellow"  />
                     </div>
                 </div>
-                <div className="flex flex-col w-2/3">
-                    <h3 className="mb-3">URBAN PLATTER HING POWDER, 100G [COMPOUNDED
+                <div className="flex flex-col w-2/3 max-sm:w-full max-sm:text-center">
+                    <h3 className="mb-3 max-sm:text-xl">URBAN PLATTER HING POWDER, 100G [COMPOUNDED
                     ASAFOETIDA | SPICE | SAVOURY & UMAMI FLAVOUR |
                     (ADD TO DALS, VEGETABLES, GRAVIES)</h3>
-                    <div className="flex items-center mb-6">
+                    <div className="flex items-center mb-6 max-sm:justify-center ">
                         <img src="./images/brand3.png"  alt="vegetarian"  className="w-[3%] mr-3"/>
                         <span className="text-base">This is a Vegetarian product.</span>
                     </div>
-                    <div className="mb-3">
-                        <img src="./images/brand2.png" alt="amazon" className="w-[15%] rounded-xl" />
+                    <div className="mb-3 max-sm:flex max-sm:justify-center">
+                        <img src="./images/brand2.png" alt="amazon" className="w-[15%] rounded-xl max-sm:w-1/4" />
                     </div>
-                    <h2 className="text-yellow">About this item</h2>
-                    <div className="flex w-1/2">
+                    <h2 className="text-yellow max-sm:text-2xl max-sm:mb-3">About this item</h2>
+                    <div className="flex w-1/2 max-sm:w-full">
                         <div className="w-1/2 pr-3">
                             <p>100% Raw Hing Direct from Farm Hand Pounded, Hand Cleaned Brand- Persian Foods</p>
                         </div>
@@ -117,7 +117,7 @@ const Brand = () =>{
                 </div>
             </div>
             <div className="text-white flex flex-col ">
-                <h1 className="text-3xl w-fit border-solid border-b-4 border-yellow px-10 m-auto ">CLIENTS</h1>
+                <h1 className="text-3xl w-fit border-solid border-b-4 border-yellow px-10 m-auto max-sm:mt-4 ">CLIENTS</h1>
                 <div className=" w-3/5 pt-6 m-auto pb-[3%]  max-sm:w-[100%] max-sm:pl-[24%] max-sm:pr-[20%]">
                     <Slider {...settings} className="max-sm:slidesToShow-2">
                     {
