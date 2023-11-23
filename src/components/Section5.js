@@ -34,7 +34,7 @@ const Section5 = () => {
         },
     ]
     return (
-        <div className="flex pl-[12%] pr-[6%] pt-[6%] pb-[6%] max-sm:px-4 max-sm:flex-col" id="s5">
+        <div className="flex pl-[12%] pr-[6%] pt-[6%] pb-[6%] bg-grey max-sm:px-4 max-sm:flex-col" id="s5">
             <div className="w-2/5 max-sm:w-[100%]" data-aos="fade-down">
                 <img src="./images/tree.png" alt="tree" />
             </div>

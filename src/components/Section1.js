@@ -65,6 +65,7 @@ const Section1 = () => {
     const [country , setCountry]= useState("afghanistan");
     const [location , setLocation]= useState("watani safed");
     const [image , setImage]= useState("./images/afgan.png");
+    const [bounce , setBounce]=useState("bounce inshadow");
     // let data2=
     //     {
     //         country : 'afghanistan',
@@ -72,14 +73,18 @@ const Section1 = () => {
     //         image : './images/afgan.png' 
     //     };
 
+    
+
     const handlemodal= (event) => {
         let body = document.querySelector("body");
         console.log(event.currentTarget.alt);
         if(event.currentTarget.alt==='close'){
             body.style.overflow='auto';
+            setBounce("bounce inshadow");
         }
         else{
             body.style.overflow='hidden';
+            setBounce(" ");
         }
 
         modal==='none' ? setModal("block") : setModal("none");
@@ -163,7 +168,7 @@ const Section1 = () => {
                 <a  href="https://thepurehing.com/"><button className=" w-fit text-base font-bold  border-2 border-solid border-yellow text-center capitalize px-8 py-4 ml-3 mb-10 hover:bg-yellow hover:text-black rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm">discover more</button></a>
             </div>
             <div className="w-2/5 flex flex-col items-center max-sm:w-[100%] max-sm:pt-[20%] " >
-                <img src="./images/50_years.png"  alt="50years" className="w-[40%] mb-12  bounce " data-aos="fade-up" />
+                <img src="./images/50_years.png"  alt="50years"  className={`${bounce} w-[40%] mb-12`}  />
                 <img src="./images/section1.png" alt="section1image" className="w-[70%] ml-[30%] max-sm:hidden " data-aos="fade-up" />
             </div>
         </div>

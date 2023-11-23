@@ -63,7 +63,7 @@ const Section4 = () => {
     };
 
     return (
-        <div style={{display: "flex"}} className=" flex-col w-[100%] px-[12%] py-[2%] items-center section4 max-sm:px-6" id="4">
+        <div style={{display: "flex"}} className=" flex-col w-[100%] px-[12%] pt-[2%]  bg-grey items-center section4 max-sm:px-6" id="4">
             <h1 className="text-red text-4xl capitalize pb-4 font-bold max-sm:pb-6 max-sm:text-4xl max-sm:text-center">manufactured hing</h1>
             <div className="w-[100%] bg-yellow" data-aos="fade-down">
             <Slider {...settings}>

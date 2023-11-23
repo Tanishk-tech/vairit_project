@@ -1,8 +1,19 @@
 import Header from "./Header";
 import Section9 from "./Section9";
 import Section10 from "./Section10";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+    useEffect(() => {
+        AOS.init({ 
+            duration: 2500,
+            once:true,
+        });
+        AOS.refresh();
+    }, []);
+
     return (
         <div className="bg-red">
             <Header/>
@@ -11,7 +22,7 @@ const Contact = () => {
                 <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl">contact us</h1>
             </div>
             <div className="flex px-[6%] py-[3%] max-sm:flex-col max-sm:py-[6%]">
-                <div className="w-2/5 flex flex-col max-sm:w-full max-sm:pb-6">
+                <div className="w-2/5 flex flex-col max-sm:w-full max-sm:pb-6" data-aos="fade-right">
                     <div className="text-white flex mb-6 ">
                         <div className="pr-6 max-sm:pr-8">
                             <img src="./images/address.png"  alt="address" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2" />
@@ -46,7 +57,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-3/5 max-sm:w-full">
+                <div className="w-3/5 max-sm:w-full" data-aos="fade-up">
                     <h3 className="capitalize text-white mb-6 max-sm:text-center">contact form</h3>
                     <form>
                         <input type="text" placeholder="Name" name="Name" className="w-[45%]  mr-[10%] mb-6 p-3 max-sm:w-full"  />
