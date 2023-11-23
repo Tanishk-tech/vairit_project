@@ -69,7 +69,7 @@ const Brand = () =>{
         infinite: true,
         arrows:true,
         speed: 300,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -82,14 +82,14 @@ const Brand = () =>{
                 breakpoint: 640,
                 settings: {
                     
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 2,
                 }
             },
         ]
     };
     return (
-        <div className="bg-red browse">
+        <div className="bg-red browse brand">
             <Header />
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
@@ -135,8 +135,7 @@ const Brand = () =>{
                         data.map((d) => (
                             <div className=" pt-4 h-10 " >
                                 <div className="cursor-grab flex items-center justify-center" >
-                                    <img src={d.img} alt="rocks" className="rounded-xl w-[50%] h-[10%]  h-[100%] max-sm:w-[100%] " />
-                                    
+                                    <img src={d.img} alt="rocks" className="rounded-xl w-[80%] h-[10%]  h-[100%] max-sm:w-[80%] " />
                                 </div>
                             </div>
                         ))

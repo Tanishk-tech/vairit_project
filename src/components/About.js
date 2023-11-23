@@ -9,7 +9,7 @@ const About = () => {
 
     useEffect(() => {
         AOS.init({ 
-            duration: 2500,
+            duration: 3000,
             once:true,
         });
         AOS.refresh();
@@ -38,7 +38,7 @@ const About = () => {
                 <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl">about us</h1>
             </div>
             <div className="bg-red px-[8%] text-center text-white max-sm:pt-[16%]">
-                <div className="py-10 max-sm:pb-2" data-aos="fade-up" >
+                <div className="py-10 max-sm:pb-2" data-aos="flip-up" >
                     {/* <h1 className="text-[40px] w-fit m-auto px-10 uppercase border-solid border-b-4 border-yellow max-sm:text-3xl">About us</h1> */}
                     <p className="text-xl py-4 max-sm:text-base">At [Your Brand Name], we embark on a journey fueled by passion and innovation. With a relentless
                         commitment to excellence, we merge creativity and cutting-edge technology to redefine standards.
@@ -57,7 +57,7 @@ const About = () => {
                             ))
                         }
                     </div>
-                    <p className="text-xl py-4 max-sm:text-base" data-aos="fade-up" >At [Your Brand Name], we embark on a journey fueled by passion and innovation. With a relentless
+                    <p className="text-xl py-4 max-sm:text-base" data-aos="flip-up" >At [Your Brand Name], we embark on a journey fueled by passion and innovation. With a relentless
                     commitment to excellence, we merge creativity and cutting-edge technology to redefine standards. Our
                     foundation is built on a belief in the power of possibilities. From inception, we set out to inspire and
                     transform—fusing imagination with expertise to craft unique experiences. We are more than a brand; we are
@@ -66,15 +66,15 @@ const About = () => {
                     boundaries fade, and the extraordinary becomes the norm. Welcome to [Your Brand Name], where
                     innovation knows no limits.</p>
                 </div>
-                <div className="pt-10" data-aos="fade-up" >
-                    <h1 className="text-[40px] w-fit m-auto px-10 uppercase border-solid border-b-4 border-yellow max-sm:px-0 max-sm:text-3xl ">seeds of a long journey</h1>
-                    <img src="./images/family.png" className="my-10 w-full" alt="men" data-aos="flip-left" />
-                    <p className="text-xl mb-6 max-sm:text-base">The story begins in pre-partition India, at Dera Ismail Khan, Khyber Pakhtunkhwa, a region in current day
+                <div className="pt-10" >
+                    <h1 className="text-[40px] w-fit m-auto px-10 uppercase border-solid border-b-4 border-yellow max-sm:px-0 max-sm:text-3xl " data-aos="flip-up" >seeds of a long journey</h1>
+                    <img src="./images/family.png" className="my-10 w-full" alt="men" data-aos="zoom-in" />
+                    <p className="text-xl mb-6 max-sm:text-base" data-aos="flip-up">The story begins in pre-partition India, at Dera Ismail Khan, Khyber Pakhtunkhwa, a region in current day
                     Pakistan. Populated by both Pashtun and Hindokwan (Hindu) communities, the region had been a hub for
                     cultivating high quality Hing since centuries.</p>
                 </div>
-                <div  className="flex my-10 max-sm:flex-col " data-aos="fade-up">
-                    <div className="w-1/2 max-sm:w-full" >
+                <div  className="flex my-10 max-sm:flex-col ">
+                    <div className="w-1/2 max-sm:w-full" data-aos="flip-up" >
                         <p className="text-xl text-left max-sm:text-base max-sm:text-center"><b className="text-yellow max-sm:text-sm">Year 1903</b>: Lala Chetan Das Bhatia is born in the idyllic
                         settings of Dera Ismail Khan. His life soon becomes infused
                         with the sharp, piercing aroma of Hing.
@@ -86,21 +86,21 @@ const About = () => {
                         a legacy that runs to this day, into its fourth generation, in
                         the form of Sri Raghunath Ji Overseas.</p>
                     </div>
-                    <div className="w-1/2 flex flex-col arrowBack1 bg-red items-center pt-[14%] pb-[7%] max-sm:w-full">
-                        <img src="./images/about1.png" className="w-[25%]" alt="men" data-aos="flip-left" />
-                        <b className="text-base text-yellow  max-sm:text-sm">Late Lala Chetan Das Bhatia Circa1903 to 1972</b>
-                        <p className="font-thin  text-base max-sm:text-sm">Lala Ji's endearing persona made him the first face of Sri
+                    <div className="w-1/2 flex flex-col bg-red items-center pt-[14%] pb-[4%] max-sm:w-full"   >
+                        <img src="./images/about1.png" className="w-[25%]" alt="men"  data-aos="zoom-in"  />
+                        <b className="text-base text-yellow  max-sm:text-sm"  data-aos="flip-up" >Late Lala Chetan Das Bhatia Circa1903 to 1972</b>
+                        <p className="font-thin  text-base max-sm:text-sm"  data-aos="flip-up" >Lala Ji's endearing persona made him the first face of Sri
                         Raghunath Ji Overseas, as the company transported high
                         quality Hing into pre-partition mainland India</p>
                     </div>
                 </div>
 
                 <div className="flex justify-center mb-8">
-                    <img src="./images/legacy.png" alt="legacy" className="w-1/3" />
+                    <img src="./images/legacy.png" alt="legacy" className="w-1/3"  data-aos="zoom-in"  />
                 </div>
 
-                <div className="" data-aos="fade-up">
-                    <p className="text-xl mb-6 text-right max-sm:text-base max-sm:text-center">While Shri Ram Lal Bhatia consolidated Sri Raghunath Ji Overseas Hing business in India, his
+                <div className="" >
+                    <p className="text-xl mb-6 text-right max-sm:text-base max-sm:text-center" data-aos="flip-up">While Shri Ram Lal Bhatia consolidated Sri Raghunath Ji Overseas Hing business in India, his
                     son Shri Ajay Bhatia played a vital role in expanding the company's presence. He travelled
                     across India,  <b className="text-yellow">exploring new markets</b> for the company. All this while, the company had
                     focused primarily on the Hindi heartland of India's north. Shri Ajay Bhatia was surprised to
@@ -109,27 +109,27 @@ const About = () => {
                     Bhatia developed a strong customer base in the region. The 1990s saw the company
                     supplying raw Hing to manufacturers across the southern cities from Hyderabad to Chennai
                     and - Kumbakonam to Thrissur</p>
-                    <p className="text-xl text-right pl-[20%] max-sm:text-base max-sm:text-center max-sm:pl-0">This further raised the stature of <b className="text-yellow">Sri Raghunath Ji Overseas</b> as the preferred supplier for
+                    <p className="text-xl text-right pl-[20%] max-sm:text-base max-sm:text-center max-sm:pl-0" data-aos="flip-up">This further raised the stature of <b className="text-yellow">Sri Raghunath Ji Overseas</b> as the preferred supplier for
                     Hing manufacturers across the country.</p>
                 </div>
-                <div className="flex my-6 max-sm:flex-col" data-aos="fade-up">
-                    <div className="w-1/2 flex flex-col items-center pt-[3%] pb-[6%] arrowBack2 max-sm:w-full">
-                        <img src="./images/about2.png" className="w-1/4" alt="men" data-aos="flip-left" />
-                        <b className="text-yellow text-base mt-2 max-sm:text-sm">Ajay Bhatia Born 1965</b>
-                        <p className="text-base font-thin max-sm:text-sm">Shri Ajay Bhatia's initiatives saw the company expand its
+                <div className="flex my-6 max-sm:flex-col" >
+                    <div className="w-1/2 flex flex-col items-center pb-[6%] max-sm:w-full">
+                        <img src="./images/about2.png" className="w-1/4" alt="men" data-aos="zoom-in" />
+                        <b className="text-yellow text-base mt-2 max-sm:text-sm" data-aos="flip-up">Ajay Bhatia Born 1965</b>
+                        <p className="text-base font-thin max-sm:text-sm" data-aos="flip-up">Shri Ajay Bhatia's initiatives saw the company expand its
                         customer base significantly, supplying raw material to Hing
                         manufacturers across India.</p>
                     </div>
                     <div className="w-1/2 flex flex-col items-end pt-[12%] max-sm:w-full max-sm:items-center">
-                        <img src="./images/about3.png" className="w-1/4" alt="men" data-aos="flip-left" />
-                        <b className="text-base text-yellow mt-2 max-sm:text-sm">Sharad Bhatia Born 1988</b>
+                        <img src="./images/about3.png" className="w-1/4" alt="men" data-aos="flip-up" />
+                        <b className="text-base text-yellow mt-2 max-sm:text-sm" data-aos="flip-up">Sharad Bhatia Born 1988</b>
                     </div>
                 </div>
                 <div className="pb-10">
-                    <p className="text-xl mb-6 text-left max-sm:text-base max-sm:text-center">At the turn of the 21st century, <b className="text-yellow">Sri Raghunath Ji Overseas</b> journey of growth was further spiced up
+                    <p className="text-xl mb-6 text-left max-sm:text-base max-sm:text-center" data-aos="flip-up">At the turn of the 21st century, <b className="text-yellow">Sri Raghunath Ji Overseas</b> journey of growth was further spiced up
                     by the infusion of its fourth generation of leadership. Sri Sharad Bhatia, the current chairman,
                     joined the organisation at a young age of 20 years.</p>
-                    <p className="text-xl text-left max-sm:text-base max-sm:text-center">Regular family discussions revolving around Hing had seeped him with a good understanding of the
+                    <p className="text-xl text-left max-sm:text-base max-sm:text-center" data-aos="flip-up">Regular family discussions revolving around Hing had seeped him with a good understanding of the
                     spice. The makings of the finest Hing, their varieties, trustworthy sources and buyers, the volatility
                     of the market, it was all education to a growing Sharad Bhatia. In no time, he realized that Hing
                     enjoyed a very special place in the Indian kitchen and cuisine.</p>

@@ -114,10 +114,10 @@ const Section1 = () => {
     return (
         <div className="section1 relative flex bg-red pl-[12%] pt-[10%]  max-sm:flex-col-reverse max-sm:px-4" id="s1" >
             <div className="flex flex-col w-3/5 text-white max-sm:w-[100%] max-sm:text-center max-sm:items-center">
-                <h2 className="text-white text-xl font-bold capitalize pl-3 pb-1  max-sm:text-2xl ">india's</h2>
-                <h1 className="text-yellow text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug  ">Top leading provider in</h1>
-                <h1 className="text-white text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug ">The hing import business</h1>
-                <p className="text-xl text-white font-thin pr-[30%] pl-3  max-sm:text-xl max-sm:pr-0 ">For more than 5 decades our company is involved in imports of hing and are currently importing hing from 5 different origins</p>           
+                <h2 className="text-white text-xl font-bold capitalize pl-3 pb-1  max-sm:text-2xl " data-aos="fade-up">india's</h2>
+                <h1 className="text-yellow text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug  " data-aos="fade-up">Top leading provider in</h1>
+                <h1 className="text-white text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug " data-aos="fade-up">The hing import business</h1>
+                <p className="text-xl text-white font-thin pr-[30%] pl-3  max-sm:text-xl max-sm:pr-0 " data-aos="fade-up">For more than 5 decades our company is involved in imports of hing and are currently importing hing from 5 different origins</p>           
                 <div className="grid grid-cols-2 gap-x-3 mb-6 w-[85%]  max-sm:w-[100%] max-sm:grid-cols-1  ">
                     <Slider {...settings} className="hidden max-sm:block">
                     {
@@ -139,7 +139,7 @@ const Section1 = () => {
                 <div className="grid grid-cols-2 gap-x-3 mb-6 w-[85%]  max-sm:hidden">
                     {
                         data.map((d) => (
-                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer " onClick={handlemodal} data-aos="flip-up">
+                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer flipUp " onClick={handlemodal}>
                                 <div className="flex items-center  w-[35%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center">
                                     <img src={d.image} alt="map" className="w-24 h-20 cursor-pointer " />
                                 </div>
