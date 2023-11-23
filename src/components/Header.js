@@ -100,7 +100,7 @@ const Header= () => {
                 <li className="hover:header-hover cursor-pointer max-sm:py-2 max-sm:border-b max-sm:border-white max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white " onClick={handleChange} data-path='/' >Home</li>
                 <li className="hover:header-hover cursor-pointer max-sm:py-2 max-sm:border-b max-sm:border-white max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white " onClick={handleChange} data-path='/About' >About Us</li>
                 <li className="hover:header-hover cursor-pointer max-sm:py-2 max-sm:border-b max-sm:border-white max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white " onClick={handleChange} data-path='/Process' >Process</li>
-                <li className="hover:header-hover cursor-pointer max-sm:py-2 max-sm:border-b max-sm:border-white max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white" onClick={handleChange} data-path='/Gallery'>Gallery</li>
+                {/* <li className="hover:header-hover cursor-pointer max-sm:py-2 max-sm:border-b max-sm:border-white max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white" onClick={handleChange} data-path='/Gallery'>Gallery</li> */}
                 <li className="hover:header-hover cursor-pointer max-sm:py-2 max-sm:border-b max-sm:border-white max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white" onClick={handleChange} data-path='/Brand'>Our Brands</li>
                 <li className="hover:header-hover cursor-pointer max-sm:py-2 max-sm:w-[100%] max-sm:text-center" onClick={handleChange} data-path='/Contact' >Contact Us</li>
             </ul>

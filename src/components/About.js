@@ -86,7 +86,7 @@ const About = () => {
                         a legacy that runs to this day, into its fourth generation, in
                         the form of Sri Raghunath Ji Overseas.</p>
                     </div>
-                    <div className="w-1/2 flex flex-col arrowBack1 bg-red items-center pt-[10%] max-sm:w-full">
+                    <div className="w-1/2 flex flex-col arrowBack1 bg-red items-center pt-[14%] pb-[7%] max-sm:w-full">
                         <img src="./images/about1.png" className="w-[25%]" alt="men" data-aos="flip-left" />
                         <b className="text-base text-yellow  max-sm:text-sm">Late Lala Chetan Das Bhatia Circa1903 to 1972</b>
                         <p className="font-thin  text-base max-sm:text-sm">Lala Ji's endearing persona made him the first face of Sri
@@ -95,7 +95,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center py-10">
+                <div className="flex justify-center mb-8">
                     <img src="./images/legacy.png" alt="legacy" className="w-1/3" />
                 </div>
 
@@ -112,8 +112,8 @@ const About = () => {
                     <p className="text-xl text-right pl-[20%] max-sm:text-base max-sm:text-center max-sm:pl-0">This further raised the stature of <b className="text-yellow">Sri Raghunath Ji Overseas</b> as the preferred supplier for
                     Hing manufacturers across the country.</p>
                 </div>
-                <div className="flex my-10 max-sm:flex-col" data-aos="fade-up">
-                    <div className="w-1/2 flex flex-col items-center arrowBack1 max-sm:w-full">
+                <div className="flex my-6 max-sm:flex-col" data-aos="fade-up">
+                    <div className="w-1/2 flex flex-col items-center pt-[3%] pb-[6%] arrowBack2 max-sm:w-full">
                         <img src="./images/about2.png" className="w-1/4" alt="men" data-aos="flip-left" />
                         <b className="text-yellow text-base mt-2 max-sm:text-sm">Ajay Bhatia Born 1965</b>
                         <p className="text-base font-thin max-sm:text-sm">Shri Ajay Bhatia's initiatives saw the company expand its

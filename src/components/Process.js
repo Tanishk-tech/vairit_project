@@ -52,7 +52,7 @@ const Process=() =>{
                     <p className="text-xl mb-6 pr-[30%] max-sm:text-base max-sm:pr-0">Asafoetida plant's roots are exposed to direct sun for 5- 10 days before the extraction of Hing. This
                     picture here shows a Plant from which
                     Hing extraction is yet to begin</p>
-                    <img src="./images/process3.jpg" alt="spices" className="w-[15%] mb-[5%] ml-[40%]  rounded-full max-sm:ml-0 max-sm:w-[40%]" data-aos="flip-up"  />
+                    <img src="./images/process3.png" alt="spices" className="w-[15%] mb-[5%] ml-[40%]  rounded-full max-sm:ml-0 max-sm:w-[40%]" data-aos="flip-up"  />
                 </div>
                 <div className="text-center" data-aos="fade-up" >
                     <h1 className="uppercase text-[40px] text-right text-yellow  leading-tight pb-4 pl-[50%]  max-sm:px-0 max-sm:text-3xl max-sm:text-center max-sm:pl-0">storing and packing for further export</h1>
