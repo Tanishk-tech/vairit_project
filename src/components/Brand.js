@@ -81,9 +81,9 @@ const Brand = () =>{
             {
                 breakpoint: 640,
                 settings: {
-                    dots: false,
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
+                    
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
                 }
             },
         ]
@@ -129,7 +129,7 @@ const Brand = () =>{
             </div>
             <div className="text-white flex flex-col ">
                 <h1 className="text-3xl w-fit border-solid border-b-4 border-yellow px-10 pb-3 m-auto max-sm:mt-4 ">CLIENTS</h1>
-                <div className=" w-3/5 pt-6 m-auto pb-[3%]  max-sm:w-[100%] max-sm:pl-[24%] max-sm:pr-[20%]" >
+                <div className=" w-3/5 pt-6 m-auto pb-[3%]  max-sm:w-[100%] max-sm:pl-[10%] max-sm:pr-[12%] max-sm:pb-[10%]" >
                     <Slider {...settings} className="max-sm:slidesToShow-2">
                     {
                         data.map((d) => (
