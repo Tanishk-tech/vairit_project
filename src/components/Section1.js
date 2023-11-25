@@ -20,29 +20,34 @@ const Section1 = () => {
         {
             country : 'afghanistan',
             location: 'watani safed',
-            image : './images/afgan.png'
+            image : './images/afgan.png',
+            desc:'Also known as Mazari Hing, this is a premium white asafoetida.',
         },
 
         {
             country : 'iran',
             location: 'hingra',
-            image : './images/iran.png'
+            image : './images/iran.png',
+            desc :'The Iranian Bitter, also known as Hingra, brings a bold and robust flavor to your dishes.',
         },
 
         {
             country : 'uzbekistan',
             location: 'uzbeki hing',
-            image : './images/uzbek.png'
+            image : './images/uzbek.png',
+            desc:'The dry crystal Uzbekistan hing is raw and natural, preserved in dried crystal form and in paste form.'
         },
         {
             country : 'kazakhstan',
             location: 'kazakhi hing',
-            image : './images/kazak.png'
+            image : './images/kazak.png',
+            desc:'Discover the distinct flavor of Kazakh asafoetida, adding a unique taste to your dishes.',
         },
         {
             country : 'kyrgyztan',
             location: 'kyrgyz hing',
-            image : './images/kyrg.png'
+            image : './images/kyrg.png',
+            desc:'Kyrgyzstan Hing offers a different dimension to your cooking with its unique taste profile.',
         },
     ]
 
@@ -62,9 +67,10 @@ const Section1 = () => {
     };
 
     const [modal,setModal] = useState("none");
-    const [country , setCountry]= useState("afghanistan");
+    // const [country , setCountry]= useState("afghanistan");
     const [location , setLocation]= useState("watani safed");
     const [image , setImage]= useState("./images/afgan.png");
+    const [desc,setDesc]=useState("Also known as Mazari Hing, this is a premium white asafoetida.");
     const [bounce , setBounce]=useState("bounce inshadow");
     // let data2=
     //     {
@@ -90,9 +96,10 @@ const Section1 = () => {
         modal==='none' ? setModal("block") : setModal("none");
 
         if(event.currentTarget.lastChild != null || event.currentTarget.firstChild !=null ){
-            setCountry(event.currentTarget.lastChild.firstChild.textContent);
+            // setCountry(event.currentTarget.lastChild.firstChild.textContent);
             setLocation(event.currentTarget.lastChild.lastChild.textContent);
             setImage(event.currentTarget.firstChild.firstChild.src);
+            setLocation(event.currentTarget.lastChild.lastChild.textContent);
         }
         // if(event.currentTarget.lastChild != null || event.currentTarget.firstChild !=null ){
             
@@ -129,6 +136,7 @@ const Section1 = () => {
                                 <div className="flex flex-col justify-center  w-[65%] max-sm:w-[100%]">
                                     <h2 className="capitalize  text-2xl font-bold">{d.country}</h2>
                                     <p className="capitalize">{d.location}</p>
+                                    <p className="capitalize hidden">{d.desc}</p>
                                 </div>
                             </div>
                         ))
@@ -146,20 +154,22 @@ const Section1 = () => {
                                 <div className="flex flex-col justify-center  w-[65%] max-sm:w-[100%]">
                                     <h2 className="capitalize  text-2xl font-bold">{d.country}</h2>
                                     <p className="capitalize">{d.location}</p>
+                                    <p className="capitalize hidden">{d.location}</p>
                                 </div>
                             </div> 
                             
                         ))
                     }
                     <div className=" w-full h-full z-4 pt-1/20  bg-black_blur  absolute top-0 left-0" style={{display: modal}}>
-                        <div className=" animate-[modal_0.5s_ease-in-out]  w-1/4 h-1/3 bg-white   relative top-[40%] left-[40%] flex flex-col items-center " >
+                        <div className=" animate-[modal_0.5s_ease-in-out]  w-1/4 h-1/3    relative top-[25%] left-[35%] flex flex-col items-center " >
                             <img className='self-end mt-2 mr-2 mb-8 w-4  hover:rotate-[90deg] duration-500' onClick={handlemodal} src='../images/close.png' alt='close' />
                             <div className="flex items-center pb-3 pt-[10%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center flipUp">
-                                <img src={image} alt="map" className="w-24 h-20 " />
+                                <img src={image} alt="map" className="w-48 " />
                             </div>
-                            <div className="flex flex-col justify-center text-center   max-sm:w-[100%] fadeUp">
-                                <h2 className="capitalize text-black text-2xl font-bold  ">{country}</h2>
-                                <p className="capitalize text-black">{location}</p>
+                            <div className="flex flex-col justify-center text-center text-white   max-sm:w-[100%] fadeUp">
+                                {/* <h2 className="capitalize text-black text-2xl font-bold  ">{country}</h2> */}
+                                <p className="capitalize mb-1">{location}</p>
+                                <p className="capitalize px-[16%]">{desc}</p>
                             </div>
                         </div>
                     </div>

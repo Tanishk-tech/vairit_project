@@ -24,6 +24,10 @@ const Header= () => {
     //     mw:"max-sm:w-[40%]",
     //     };
 
+    useEffect( () => {
+        window.addEventListener('scroll',listenScrollEvent)
+    }, []);
+
     const [logo , setLogo] = useState({
         imageSrc: './images/raghu.png',
         imageAlt: 'logo',
@@ -31,6 +35,7 @@ const Header= () => {
         mw:"max-sm:w-[40%]",
         });
 
+    
     
     // const scollToRef = useRef(null);
     const listenScrollEvent =  (e) => {
@@ -55,9 +60,7 @@ const Header= () => {
         console.log("listen_fun" , logo.imageSrc);
     }
     
-    useEffect( () => {
-        window.addEventListener('scroll',listenScrollEvent)
-    }, []);
+    
 
     // useEffect(() => {
     //     const listenScrollEvent = async (e) => {
