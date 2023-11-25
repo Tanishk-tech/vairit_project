@@ -4,7 +4,7 @@
 
 @layer base{
     body{
-        font-family: Trajan Pro Regular;
+        font-family: 'Cardo', serif;
         scroll-behavior: smooth;
     }
     html{
