@@ -4,6 +4,7 @@ import Section10 from "./Section10";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScrollToTop from "./ScrollToTop";
 
 const Process=() =>{
     useEffect(() => {
@@ -15,6 +16,7 @@ const Process=() =>{
     }, []);
     return (
         <div className="w-[100%]">
+            <ScrollToTop />
             <Header/>
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />

@@ -7,6 +7,7 @@ import Section10 from "./Section10";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScrollToTop from "./ScrollToTop";
 
 const Brand = () =>{
     useEffect(() => {
@@ -90,6 +91,7 @@ const Brand = () =>{
     };
     return (
         <div className="bg-red browse brand">
+            <ScrollToTop />
             <Header />
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />

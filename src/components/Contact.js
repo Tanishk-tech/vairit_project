@@ -4,6 +4,7 @@ import Section10 from "./Section10";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScrollToTop from "./ScrollToTop";
 
 const Contact = () => {
     useEffect(() => {
@@ -16,6 +17,7 @@ const Contact = () => {
 
     return (
         <div className="bg-red">
+            <ScrollToTop />
             <Header/>
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
@@ -60,8 +62,8 @@ const Contact = () => {
                 <div className="w-3/5 max-sm:w-full" data-aos="fade-up">
                     <h3 className="capitalize text-white mb-6 max-sm:text-center">contact form</h3>
                     <form>
-                        <input type="text" placeholder="First Name" name="Fname" className="w-[45%]  mr-[10%] mb-6 p-3 rounded-xl max-sm:w-full" required />
-                        <input type="text" placeholder="Last Name" name="Lname" className="w-[45%] p-3 mb-6 rounded-xl  max-sm:w-full" required  /><br/>
+                        <input type="text" placeholder="First Name" name="Fname" className="w-[49%]  mr-[2%] mb-6 p-3 rounded-xl max-sm:w-full" required />
+                        <input type="text" placeholder="Last Name" name="Lname" className="w-[49%] p-3 mb-6 rounded-xl  max-sm:w-full" required  /><br/>
                         <input type="tel" placeholder="Contact Number" name="contact" className="w-full  rounded-xl p-3 mb-6" required  /><br/>
                         <input type="email" placeholder="Email" name="email" className="w-full rounded-xl  p-3 mb-6" required  /><br/>
                         <textarea name="comment" rows="8" cols="50" placeholder="Message" className="w-full rounded-xl p-3 mb-6"></textarea>

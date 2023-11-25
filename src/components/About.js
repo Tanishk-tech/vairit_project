@@ -4,6 +4,7 @@ import Section10 from "./Section10";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScrollToTop from "./ScrollToTop";
 
 const About = () => {
 
@@ -32,6 +33,7 @@ const About = () => {
 
     return (
         <div className="w-[100%]">
+            <ScrollToTop />
             <Header/>
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
@@ -95,8 +97,8 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center mb-8">
-                    <img src="./images/legacy.png" alt="legacy" className="w-1/3"  data-aos="zoom-in"  />
+                <div className="flex justify-center mb-8 ">
+                    <img src="./images/legacy.png" alt="legacy" className="w-1/3 bg-white"  data-aos="zoom-in"  />
                 </div>
 
                 <div className="" >

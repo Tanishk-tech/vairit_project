@@ -8,10 +8,12 @@ import Section7 from "./components/Section7";
 import Section9 from "./components/Section9";
 import Section10 from "./components/Section10";
 import Header from "./components/Header";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Header/>
       <Section1/>
       <Section2/>
