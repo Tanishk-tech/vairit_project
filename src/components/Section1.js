@@ -70,7 +70,7 @@ const Section1 = () => {
     // const [country , setCountry]= useState("afghanistan");
     const [location , setLocation]= useState("watani safed");
     const [image , setImage]= useState("./images/afgan.png");
-    const [desc,setDesc]=useState("Also known as Mazari Hing, this is a premium white asafoetida.");
+    const [desc]=useState("Also known as Mazari Hing, this is a premium white asafoetida.");
     const [bounce , setBounce]=useState("bounce inshadow");
     // let data2=
     //     {

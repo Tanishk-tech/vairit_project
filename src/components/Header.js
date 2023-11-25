@@ -24,10 +24,7 @@ const Header= () => {
     //     mw:"max-sm:w-[40%]",
     //     };
 
-    useEffect( () => {
-        window.addEventListener('scroll',listenScrollEvent)
-    }, []);
-
+    
     const [logo , setLogo] = useState({
         imageSrc: './images/raghu.png',
         imageAlt: 'logo',
@@ -35,6 +32,9 @@ const Header= () => {
         mw:"max-sm:w-[40%]",
         });
 
+        useEffect( () => {
+            window.addEventListener('scroll',listenScrollEvent)
+        }, []);
     
     
     // const scollToRef = useRef(null);
