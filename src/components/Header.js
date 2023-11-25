@@ -33,61 +33,58 @@ const Header= () => {
 
     
     // const scollToRef = useRef(null);
-    // const listenScrollEvent =  (e) => {
-    //     if (window.scrollY <= 800) {
-    //         setLogo({
-    //         imageSrc: './images/raghu.png',
-    //         imageAlt: 'logohuihui',
-    //         w:"w-[30%]",
-    //         mw:"max-sm:w-[40%]",
-    //         })
-    //     } 
-    //     else{
-    //         setLogo({
-    //             imageSrc: './images/raghu_desc.png',
-    //             imageAlt: 'logo',
-    //         w:"w-[60%]",
-    //         mw:"max-sm:w-[80%]",
-    //     })
-    //     console.log("raghu desc : " , logo.imageSrc);
-    //     console.log("raghu desc : " , logo.imageAlt);
-    //     }
-    //     console.log("listen_fun" , logo.imageSrc);
-    // }
-    
-    // useEffect( () => {
-    //     window.addEventListener('scroll',
-    //         console.log("listen_fun" , logo.imageSrc);
-    //     }
-    //     );
-    // }, []);
-
-    useEffect(() => {
-        const listenScrollEvent = async (e) => {
-            if (window.scrollY <= 600) {
-                setLogo({
-                imageSrc: './images/raghu.png',
-                imageAlt: 'logohuihui',
-                w:"w-[30%]",
-                mw:"max-sm:w-[40%]",
-                })
-            } 
-            else{
-                await  setLogo({
-                    imageSrc: './images/raghu_desc.png',
-                    imageAlt: 'logo',
-                    w:"w-[30%]",
-                    mw:"max-sm:w-[80%]",
+    const listenScrollEvent =  (e) => {
+        if (window.scrollY <= 800) {
+            setLogo({
+            imageSrc: './images/raghu.png',
+            imageAlt: 'logohuihui',
+            w:"w-[30%]",
+            mw:"max-sm:w-[40%]",
             })
+        } 
+        else{
+            setLogo({
+                imageSrc: './images/raghu_desc.png',
+                imageAlt: 'logo',
+            w:"w-[60%]",
+            mw:"max-sm:w-[80%]",
+        })
+        console.log("raghu desc : " , logo.imageSrc);
+        console.log("raghu desc : " , logo.imageAlt);
+        }
+        console.log("listen_fun" , logo.imageSrc);
+    }
+    
+    useEffect( () => {
+        window.addEventListener('scroll',listenScrollEvent)
+    }, []);
+
+    // useEffect(() => {
+    //     const listenScrollEvent = async (e) => {
+    //         if (window.scrollY <= 600) {
+    //             setLogo({
+    //             imageSrc: './images/raghu.png',
+    //             imageAlt: 'logohuihui',
+    //             w:"w-[30%]",
+    //             mw:"max-sm:w-[40%]",
+    //             })
+    //         } 
+    //         else{
+    //             await  setLogo({
+    //                 imageSrc: './images/raghu_desc.png',
+    //                 imageAlt: 'logo',
+    //                 w:"w-[30%]",
+    //                 mw:"max-sm:w-[80%]",
+    //         })
 
             
-            console.log("raghu desc : " , logo.imageSrc);
-            console.log("raghu desc : " , logo.imageAlt);
-            }
-            console.log("listen_fun" , logo.imageSrc);
-        }
-        window.addEventListener('scroll', listenScrollEvent);
-    },[])
+    //         console.log("raghu desc : " , logo.imageSrc);
+    //         console.log("raghu desc : " , logo.imageAlt);
+    //         }
+    //         console.log("listen_fun" , logo.imageSrc);
+    //     }
+    //     window.addEventListener('scroll', listenScrollEvent);
+    // },[])
 
     return (
         <div className="flex items-center z-20 w-[100%] h-[80px] pl-[12%] pr-[10%] bg-white fixed top-0 z-10  max-sm:px-5 max-sm:py-2 ">
