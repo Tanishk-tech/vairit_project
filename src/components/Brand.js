@@ -123,6 +123,7 @@ const Brand = () =>{
                         <div className="w-1/2 pr-3">
                             <p>100% Raw Hing Direct from Farm Hand Pounded, Hand Cleaned Brand- Persian Foods</p>
                         </div>
+                       
                         <div className="w-1/2 ">
                             <p>Variety- Hing Net Quantity- 10 gram Diet Type- Vegetarian Speciality- Organic</p>
                         </div>

@@ -14,23 +14,23 @@ const Section5 = () => {
     const data= [
         {
             img:'./images/seed1.png',
-            value:'Identifying the plant during April-May',
-            text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.'
+            value:'Identifying the Plant',
+            text:'Asafoetida is extracted from the root of the asafoetida plant during spring. Farmers must locate the plant and carefully dig around its root before May.'
         },
         {
             img:'./images/seed4.png',
-            value:'Exposing the roots to direct sun',
-            text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.'
+            value:'Extracting Asafoetida',
+            text:'In mid-July, farmers make small cuts on the root. After waiting for 1-2 days, they collect the oozing asafoetida and repeat the process until mid-September. Weather conditions affect the quantity harvested.'
         },
         {
             img:'./images/seed3.png',
-            value:'Extracting the asafoetida',
-            text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.'
+            value:'Exposing Roots to Sun',
+            text: 'The asafoetida plants roots are exposed to direct sun for 5–10 days before extraction.This helps dry and prepare the resin.'
         },
         {
             img:'./images/seed2.png',
-            value:'Storing and packing for fursther export',
-            text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.'
+            value:'Storing and Packing for Export',
+            text:'By the end of September, farmers bring their harvest down from the mountains. It undergoes quality checks and is repackaged for export to India.'
         },
     ]
     return (
@@ -43,10 +43,10 @@ const Section5 = () => {
                 {
                     data.map((d) =>(
                         <div className="flex mb-8" data-aos="flip-down">
-                            <div className="pr-6 max-sm:w-[75%] max-sm:pr-0">
-                                <img src={d.img} alt="seed" className="p-2" />
+                            <div className="pr-6 w-1/5 max-sm:w-[75%] max-sm:pr-0">
+                                <img src={d.img} alt="seed" className="p-2 w-full mt-3" />
                             </div>
-                            <div className="flex flex-col justify-center">
+                            <div className="flex w-4/5 flex-col justify-center">
                                 <h2 className=" text-3xl max-sm:text-4xl  max-sm:leading-tight">{d.value}</h2>
                                 <p className=" text-base pr-[35%] max-sm:text-xl max-sm:pr-0">{d.text}</p>
                             </div>

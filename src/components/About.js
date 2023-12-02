@@ -36,20 +36,24 @@ const About = () => {
             <ScrollToTop />
             <Header/>
             <div className="relative w-full">
-                <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
-                <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl">about us</h1>
+                {/* <img src="./images/wertui.png" alt="hing" className="w-full h-[400px] " /> */}
+                <div className="relative w-full">
+                    <img
+                        src="./images/wertui.png"
+                        alt="hing"
+                        className="w-full h-auto" 
+    />
+                    <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl md:text-7xl ">about  us</h1>
+
+                </div>
+
+                {/* <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl">about us</h1> */}
             </div>
             <div className="bg-red px-[8%] text-center text-white max-sm:pt-[16%]">
                 <div className="py-10 max-sm:pb-2" data-aos="flip-up" >
                     {/* <h1 className="text-[40px] w-fit m-auto px-10 uppercase border-solid border-b-4 border-yellow max-sm:text-3xl">About us</h1> */}
-                    <p className="text-xl py-4 max-sm:text-base">At [Your Brand Name], we embark on a journey fueled by passion and innovation. With a relentless
-                        commitment to excellence, we merge creativity and cutting-edge technology to redefine standards.
-                        Our foundation is built on a belief in the power of possibilities. From inception, we set out to inspire
-                        and transform—fusing imagination with expertise to craft unique experiences. We are more than a
-                        brand; we are a testament to ingenuity. Rooted in a culture of integrity and forward-thinking, we
-                        embrace challenges as opportunities for growth. With a dedicated team driving our vision, we invite
-                        you to explore a world where boundaries fade, and the extraordinary becomes the norm. Welcome to
-                        [Your Brand Name], where innovation knows no limits.</p>
+                    <p className="text-xl py-4 max-sm:text-base">SRI RAGHUNATH JI OVERSEAS: A Legacy of 50 Years in the Hing Industry
+                        , Stands as a beacon of excellence in the world of spices, boasting a rich legacy spanning five decades. Established with a commitment to importing and manufacturing Hing from various corners of the globe, this legendary company has been a cornerstone of quality and innovation.</p>
                 </div>
                 <div className="flex flex-col">
                     <div className="flex gap-20  max-sm:gap-0 max-sm:grid max-sm:grid-cols-2 max-sm:justify-items-center ">
@@ -97,7 +101,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center mb-8 ">
+                <div className="flex justify-center mb-8  bg-white">
                     <img src="./images/legacy.png" alt="legacy" className="w-1/3 bg-white"  data-aos="zoom-in"  />
                 </div>
 

@@ -16,34 +16,19 @@ const Section4 = () => {
 
     const data = [
         {
-            value:'hing powder',
-            text : `Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry s standard dummy text 
-                    ever since the 1500s, when an unknown printer took a galley of type 
-                    and scrambled it to make a type specimen book. It has survived not 
-                    only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged`,
-            image : './images/hing.png',
+            value:'Hing Powder',
+            text: `Our asafoetida powder is a testament to quality, meticulously processed to ensure a consistent, potent flavor profile. Sourced from premium ingredients, it enriches dishes with its distinct savory essence. Perfect for both Indian and international cuisines, this finely ground powder guarantees culinary perfection with every sprinkle.`,
+            image: './images/hing_bowl-modified.png',
         },
         {
-            value:'hing powder',
-            text : `Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry s standard dummy text 
-                    ever since the 1500s, when an unknown printer took a galley of type 
-                    and scrambled it to make a type specimen book. It has survived not 
-                    only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged`,
-            image : './images/hing.png',
+            value:'Hing Khada',
+            text: `Experience the robust, pungent notes of our Hing Khada, carefully preserved in chunk form. These sizable asafoetida pieces offer a strong aromatic kick, enhancing the taste of your recipes. Ideal for tempering, its concentrated flavor elevates curries, dals, and other savory dishes, leaving a lasting impression on your palate`,
+            image: './images/hingdhana.png',
         },
         {
-            value:'hing powder',
-            text : `Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry s standard dummy text 
-                    ever since the 1500s, when an unknown printer took a galley of type 
-                    and scrambled it to make a type specimen book. It has survived not 
-                    only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged`,
-            image : './images/hing.png',
+            value:'Hing Dana',
+            text: `Our Hing Dana comprises small granules packed with intense asafoetida flavor. These tiny yet powerful morsels blend effortlessly into various cuisines, enhancing the taste without overpowering other ingredients. Convenient and versatile, they serve as a valuable addition to your spice collection, amplifying the essence of your culinary creations.`,
+            image: './images/hingdana.png',
         }
     ]
 

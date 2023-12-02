@@ -23,7 +23,7 @@ const Section9 = () => {
         <div className="bg-grey pl-[12%] pr-[8%] pt-[6%] pb-[3%] flex border-b max-sm:flex max-sm:px-4 max-sm:flex-col" id="s9">
             <div className="flex flex-col w-[50%] max-sm:w-[100%] max-sm:items-center max-sm:text-center">
                 <img src="./images/Raghu.png" alt="logo" className="pb-3 w-[40%] h-[50%]" data-aos="flip-up" />
-                <p className="pb-5 border-b " data-aos="fade-up">Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea dictumst. Duis porta,quam ut finibus ultrices</p>
+                <p className="pb-5 border-b " data-aos="fade-up">SRI RAGHUNATH JI OVERSEAS, excelling in spices for 50 years, imports and crafts Hing globally, fostering quality and innovation.</p>
                 <div className="flex pt-3" data-aos="fade-up">
                     <img src="./images/facebook.svg" alt="media" className="pr-2" />
                     <img src="./images/twitter.svg" alt="media" className="pr-2" />
@@ -45,12 +45,12 @@ const Section9 = () => {
             <div className="flex flex-col w-[30%] pl-16 max-sm:w-[100%] max-sm:px-0 max-sm:text-center max-sm:pt-6" data-aos="fade-up">
                 <h3 className="text-red capitalize max-sm:text-2xl">Contact info</h3>
                 <ul className="max-sm:text-xl">
-                    <li>Phone</li>
-                    <p ><a href="tel:+880123456789" className="curser-pointer hover:text-red hover:underline">+880123456789</a></p>
-                    <li>Email</li>
-                    <p><a href="mailto:needhelp@company.com" className="curser-pointer hover:text-red hover:underline">needhelp@company.com</a></p>
-                    <li>Address</li>
-                    <p>Road No. 8, Niketan, Dhaka, Bangladesh</p>
+                    {/* <li>Phone</li> */}
+                    <p ><span>Phone : </span><a href="tel:+880123456789" className="curser-pointer hover:text-red hover:underline">+911234567890</a></p>
+                    {/* <li>Email</li> */}
+                    <p><span>Email  : </span><a href="mailto:needhelp@company.com" className="curser-pointer hover:text-red hover:underline"> info@thepurehing.com</a></p>
+                    {/* <li>Address</li> */}
+                    <p><span>Address : </span>4163, Kohlapur Road, Kamla Nagar, Delhi, 110007</p>
                 </ul>
             </div>
 

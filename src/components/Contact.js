@@ -31,10 +31,9 @@ const Contact = () => {
                         </div>
                         <div>
                             <h3 className="max-sm:text-xl">Address</h3>
-                            <p className="max-sm:text-sm">201, 203, 204, 2nd Floor, Plot No 7A,<br/>
-                            Sector 19/C, Above Shalimar Hotel,<br/>
-                            APMC Market Road, Vashi,<br/>
-                            New Mumbai – 400703. INDIA</p>
+                            <p className="max-sm:text-sm">4163, Kohlapur Road<br/>
+                                Kamla Nagar, Delhi <br/>
+                            110007 ,INDIA</p>
                         </div>
                     </div>
 
@@ -54,8 +53,8 @@ const Contact = () => {
                         </div>
                         <div>
                             <h3 className="capitalize max-sm:text-xl">email us</h3>
-                            <p className="max-sm:text-sm">info@blghing.com<br/>
-                            info@khrishika.com</p>
+                            <p className="max-sm:text-sm">info@purehing.com<br/>
+                            sriraghunathjioverseas@gmail.com</p>
                         </div>
                     </div>
                 </div>
