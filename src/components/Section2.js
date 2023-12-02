@@ -29,10 +29,10 @@ const Section2= () => {
                 </div> */}
             </div>
             <div className="w-3/5 flex flex-col pr-[10%] max-sm:w-[100%] max-sm:text-center max-sm:items-center max-sm:pt-6 max-sm:w-[100%] max-sm:px-6" data-aos="fade-right" >
-                <p className="text-red uppercase mb-3 font-bold max-sm:text-xl">Welcome to SRI RAGHUNATH JI OVERSEAS</p>
+                <p className="text-red uppercase mb-3 font-bold max-sm:text-xs">Welcome to SRI RAGHUNATH JI OVERSEAS</p>
                 {/* <h1 className="text-red text-4xl uppercase mb-3 leading-tight font-bold max-sm:text-4xl " >Welcome to SRI RAGHUNATH JI OVERSEAS</h1> */}
-                <h1 className="text-red text-3xl mb-3 leading-tight font-bold  max-sm:text-4xl " > A realm where asafoetida is not just an ingredient.</h1>
-                <h2 className="text-2xl mb-3 max-sm:leading-snug"> "Your Flavorful Journey, Our Hing Expertise."</h2>
+                <h1 className="text-red text-3xl mb-3 leading-tight font-bold  max-sm:text-2xl max-sm:leading-tight " > A realm where asafoetida is not just an ingredient.</h1>
+                <h2 className="text-2xl mb-3 max-sm:leading-tight max-sm:mb-0"> "Your Flavorful Journey, Our Hing Expertise."</h2>
                 <p className="text-base mb-3 pr-[25%] leading-tight max-sm:p-3">it's an emblem of culinary excellence. We take great pride in introducing our distinguished line of manufactured hing and hing products, meticulously crafted to enhance your gastronomic journeys. At the very core of our mission lies an unyielding commitment to uncompromising quality and unwavering dedication to exceeding customer expectations.</p>
                 <ul className="list-style-none mb-6 text-start ">
                     <li className="tick-symbol pl-8 pb-3 text-base max-sm:text-xl" >Tailored to Your Tastes and Preferences.</li>

@@ -77,7 +77,7 @@ const Section3 = () => {
     return (
         <div className="bg-red flex flex-col items-center w-[100%] py-[3%] section3 max-sm:text-center max-sm:p-4" id="s3">
             {/* <p className="text-white text-xl capitalize max-sm:text-xl">our products</p> */}
-            <h1 className="text-white text-4xl font-bold max-sm:text-4xl max-sm:leading-snug">Explore the food of the gods</h1>
+            <h1 className="text-white text-4xl font-bold max-sm:text-2xl max-sm:leading-snug">Explore the food of the gods</h1>
             <div className=" w-3/4  max-sm:w-[100%] max-sm:pl-[24%] max-sm:pr-[20%]">
                 <Slider {...settings} className="max-sm:slidesToShow-2">
                 {
