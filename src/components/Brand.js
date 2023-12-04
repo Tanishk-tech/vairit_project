@@ -95,7 +95,7 @@ const Brand = () =>{
             <Header />
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
-                <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl">our brands</h1>
+                <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">our brands</h1>
             </div>
             <div className="flex text-white pl-[4%] pr-[4%] py-[4%] max-sm:flex-col">
                 <div className="flex flex-col w-1/2 max-sm:w-full max-sm:mb-6">
@@ -131,7 +131,7 @@ const Brand = () =>{
                 </div>
             </div>
             <div className="text-white flex flex-col ">
-                <h1 className="text-3xl w-fit border-solid border-b-4 border-yellow px-10 pb-3 m-auto max-sm:mt-4 ">CLIENTS</h1>
+                <h1 className="text-3xl w-fit border-solid border-b-4 border-yellow px-10 pb-3 m-auto max-sm:text-2xl max-sm:mt-4 ">CLIENTS</h1>
                 <div className=" w-3/5 pt-6 m-auto pb-[3%]  max-sm:w-[100%] max-sm:pl-[10%] max-sm:pr-[12%] max-sm:pb-[10%]" >
                     <Slider {...settings} className="max-sm:slidesToShow-2">
                     {

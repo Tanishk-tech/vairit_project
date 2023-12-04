@@ -20,11 +20,11 @@ const Process = () => {
             <Header />
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
-                <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl">process</h1>
+                <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">process</h1>
             </div>
             <div className="bg-red text-white px-[6%]" >
-                <div className="flex flex-col py-[2%] max-sm:pt-[12%] max-sm:text-center"  >
-                    <h1 className="uppercase text-[40px] text-yellow pr-[50%] leading-tight  max-sm:px-0 max-sm:text-3xl max-sm:px-6 " data-aos="flip-up">IDENTIFYING THE PLANT</h1>
+                <div className="flex flex-col py-[2%] max-sm:pt-[6%] max-sm:text-center"  >
+                    <h1 className="uppercase text-[40px] text-yellow pr-[50%] leading-tight  max-sm:px-0 max-sm:text-2xl" data-aos="flip-up">IDENTIFYING THE PLANT</h1>
                     <p className="text-xl mb-6 pr-[20%] max-sm:text-base max-sm:pr-0" data-aos="flip-up" >During April and May, asafoetida plants emerge, their roots containing hing. Recognition is key; spotting its distinct appearance aids farmers in harvesting before May's stems fall. The plant's image displays recognizable leaves atop a mountain. <br></br><br></br>
                         A. Identifying Asafoetida
                         In spring, recognizing asafoetida amidst nature's backdrop initiates the harvesting. <br></br>
@@ -37,7 +37,7 @@ const Process = () => {
                         <img src="./images/process2.jpg" alt="spices" className="w-[20%] h-[40%] ml-[50%] rounded-full max-sm:hidden" data-aos="zoom-in" />
                     </div>
                     <div className="w-[40%] max-sm:w-full" >
-                        <h1 className="uppercase text-[40px] text-right text-yellow leading-tight  max-sm:px-0 max-sm:text-3xl max-sm:text-center" data-aos="flip-up">EXTRACTING THE ASAFOETIDA</h1>
+                        <h1 className="uppercase text-[40px] text-right text-yellow leading-tight  max-sm:px-0 max-sm:text-2xl max-sm:text-center" data-aos="flip-up">EXTRACTING THE ASAFOETIDA</h1>
                         <p className="text-xl mb-6 text-right max-sm:text-base max-sm:text-center" data-aos="flip-up">From mid-July to mid-September, the farmer performs sequential incisions on the root, waiting for resin to seep out before making additional cuts. This method yields 30–50 kg of asafoetida from 3–4 thousand plants, varying with weather conditions.
 
                             A. Incising the Root
@@ -48,7 +48,7 @@ const Process = () => {
                     </div>
                 </div>
                 <div className="flex flex-col max-sm:items-center max-sm:text-center max-sm:pt-6"  >
-                    <h1 className="uppercase text-[40px] text-yellow pr-[60%] leading-tight  max-sm:px-0 max-sm:text-3xl max-sm:pr-0" data-aos="flip-up">EXPOSING THE ROOTS TO DIRECT SUN</h1>
+                    <h1 className="uppercase text-[40px] text-yellow pr-[60%] leading-tight  max-sm:px-0 max-sm:text-2xl max-sm:pr-0" data-aos="flip-up">EXPOSING THE ROOTS TO DIRECT SUN</h1>
                     <p className="text-xl mb-6 pr-[30%] max-sm:text-base max-sm:pr-0" data-aos="flip-up">The asafoetida roots undergo 5–10 days of direct sun exposure before hing extraction, vital for resin preparation.
 
                         A. Preservation via Sun Drying
@@ -58,7 +58,7 @@ const Process = () => {
                     <img src="./images/process3.png" alt="spices" className="w-[15%] mb-[5%] ml-[40%]  rounded-full max-sm:ml-0 max-sm:w-[40%]" data-aos="zoom-in" />
                 </div>
                 <div className="text-center"  >
-                    <h1 className="uppercase text-[40px] text-right text-yellow  leading-tight pb-4 pl-[50%]  max-sm:px-0 max-sm:text-3xl max-sm:text-center max-sm:pl-0" data-aos="flip-up">STORING AND PACKING FOR FURTHER EXPORT</h1>
+                    <h1 className="uppercase text-[40px] text-right text-yellow  leading-tight pb-4 pl-[50%]  max-sm:px-0 max-sm:text-2xl max-sm:text-center max-sm:pl-0" data-aos="flip-up">STORING AND PACKING FOR FURTHER EXPORT</h1>
                     {/* <p className="text-xl  text-right max-sm:text-base max-sm:text-center max-sm:pl-0" data-aos="flip-up">FURTHER EXPORT</p> */}
                     <p className="text-xl pb-6 pl-[20%] text-right max-sm:text-base max-sm:text-center max-sm:pl-0" data-aos="flip-up"> By September-end, farmers bring their produce down from the mountains to their homes. From there, it reaches the exporter's godown, where it is checked and repacked in export-ready cans for being shipped to India.
                         A. The Final Harvest

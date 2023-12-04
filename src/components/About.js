@@ -41,16 +41,16 @@ const About = () => {
                     <img
                         src="./images/wertui.png"
                         alt="hing"
-                        className="w-full h-auto" 
+                        className="w-full h-auto max-sm:h-[200px]" 
     />
-                    <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl md:text-7xl ">about  us</h1>
+                    <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[65%] ">about  us</h1>
 
                 </div>
 
                 {/* <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl">about us</h1> */}
             </div>
-            <div className="bg-red px-[8%] text-center text-white max-sm:pt-[16%]">
-                <div className="py-10 max-sm:pb-2" data-aos="flip-up" >
+            <div className="bg-red px-[8%] text-center text-white">
+                <div className="py-10 max-sm:pb-2 max-sm:pt-0" data-aos="flip-up" >
                     {/* <h1 className="text-[40px] w-fit m-auto px-10 uppercase border-solid border-b-4 border-yellow max-sm:text-3xl">About us</h1> */}
                     <p className="text-xl py-4 max-sm:text-base">SRI RAGHUNATH JI OVERSEAS: A Legacy of 50 Years in the Hing Industry
                         , Stands as a beacon of excellence in the world of spices, boasting a rich legacy spanning five decades. Established with a commitment to importing and manufacturing Hing from various corners of the globe, this legendary company has been a cornerstone of quality and innovation.</p>
@@ -72,14 +72,14 @@ const About = () => {
                     boundaries fade, and the extraordinary becomes the norm. Welcome to [Your Brand Name], where
                     innovation knows no limits.</p>
                 </div>
-                <div className="pt-10" >
-                    <h1 className="text-[40px] w-fit m-auto px-10 uppercase border-solid border-b-4 border-yellow max-sm:px-0 max-sm:text-3xl " data-aos="flip-up" >seeds of a long journey</h1>
-                    <img src="./images/family.png" className="my-10 w-full" alt="men" data-aos="zoom-in" />
+                <div className="pt-10 max-sm:pt-0" >
+                    <h1 className="text-[40px] w-fit m-auto px-10 uppercase border-solid border-b-4 border-yellow max-sm:px-0 max-sm:text-[22px]" data-aos="flip-up" >seeds of a long journey</h1>
+                    <img src="./images/family.png" className="my-10 w-full max-sm:my-6" alt="men" data-aos="zoom-in" />
                     <p className="text-xl mb-6 max-sm:text-base" data-aos="flip-up">The story begins in pre-partition India, at Dera Ismail Khan, Khyber Pakhtunkhwa, a region in current day
                     Pakistan. Populated by both Pashtun and Hindokwan (Hindu) communities, the region had been a hub for
                     cultivating high quality Hing since centuries.</p>
                 </div>
-                <div  className="flex my-10 max-sm:flex-col ">
+                <div  className="flex  max-sm:flex-col  ">
                     <div className="w-1/2 max-sm:w-full" data-aos="flip-up" >
                         <p className="text-xl text-left max-sm:text-base max-sm:text-center"><b className="text-yellow max-sm:text-sm">Year 1903</b>: Lala Chetan Das Bhatia is born in the idyllic
                         settings of Dera Ismail Khan. His life soon becomes infused
@@ -92,8 +92,8 @@ const About = () => {
                         a legacy that runs to this day, into its fourth generation, in
                         the form of Sri Raghunath Ji Overseas.</p>
                     </div>
-                    <div className="w-1/2 flex flex-col bg-red items-center pt-[14%] pb-[4%] max-sm:w-full"   >
-                        <img src="./images/about1.png" className="w-[25%]" alt="men"  data-aos="zoom-in"  />
+                    <div className="w-1/2 flex flex-col bg-red items-center pt-[14%] pb-[4%] max-sm:w-full max-sm:pt-[6%] "   >
+                        <img src="./images/about1.png" className="w-[25%] max-sm:pb-4" alt="men"  data-aos="zoom-in"  />
                         <b className="text-base text-yellow  max-sm:text-sm"  data-aos="flip-up" >Late Lala Chetan Das Bhatia Circa1903 to 1972</b>
                         <p className="font-thin  text-base max-sm:text-sm"  data-aos="flip-up" >Lala Ji's endearing persona made him the first face of Sri
                         Raghunath Ji Overseas, as the company transported high
@@ -101,8 +101,8 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center mb-8  bg-white">
-                    <img src="./images/legacy.png" alt="legacy" className="w-1/3 bg-white"  data-aos="zoom-in"  />
+                <div className="flex justify-center mb-8 max-sm:mb-4 ">
+                    <img src="./images/legacy.png" alt="legacy" className="w-1/3 bg-white p-4 max-sm:w-4/5"  data-aos="zoom-in"  />
                 </div>
 
                 <div className="" >
