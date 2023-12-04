@@ -75,7 +75,7 @@ const Book= () => {
                 <div className='w-1/2'>
                     <img src='./images/raghu.png' alt='logo' className=' w-1/4 max-sm:w-[60%]'/>
                 </div>
-                <div className='w-1/2 flex items-end'>
+                <div className='w-1/2 flex justify-end'>
                     <button className="text-black border-2 border-solid border-red    w-fit text-base font-bold uppercase text-center px-6 py-2 ml-[45%] hover:bg-red hover:text-white rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm " onClick={back}>back</button>
                 </div>
                 

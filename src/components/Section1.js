@@ -5,6 +5,8 @@ import { useState,useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import { useRef } from "react";
+
 
 const Section1 = () => {
 
@@ -59,7 +61,7 @@ const Section1 = () => {
         slidesToShow: 1,
         slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 200000,
         pauseOnFocus: false, 
         pauseOnHover: true,
         cssEase: 'linear',
@@ -117,6 +119,36 @@ const Section1 = () => {
         // }
     }
 
+    const slider=useRef(null);
+
+    const handlemodal2= (event) => {
+        let body = document.querySelector("body");
+        console.log(event.currentTarget);
+        if(event.currentTarget.alt==='close'){
+            body.style.overflow='auto';
+            setBounce("bounce inshadow");
+        }
+        else{
+            body.style.overflow='hidden';
+            setBounce(" ");
+        }
+
+        modal==='none' ? setModal("block") : setModal("none");
+
+        console.log(modal);
+
+        if(slider.current.lastChild != null || slider.current.firstChild !=null ){
+            // setCountry(event.currentTarget.lastChild.firstChild.textContent);
+            setLocation(slider.current.lastChild.lastChild.textContent);
+            setImage(slider.current.firstChild.firstChild.src);
+            setLocation(slider.current.lastChild.lastChild.textContent);
+        }
+        
+        // console.log(slider.current.lastChild.firstChild.textContent);
+
+    }
+
+
 
     return (
         <div className="section1 relative flex bg-red pl-[12%] pt-[10%]  max-sm:flex-col-reverse max-sm:px-4" id="s1" >
@@ -125,11 +157,11 @@ const Section1 = () => {
                 <h1 className="text-yellow text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug  " data-aos="fade-up">Top leading provider in</h1>
                 <h1 className="text-white text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug " data-aos="fade-up">The hing import business</h1>
                 <p className="text-xl text-white font-thin pr-[30%] pl-3  max-sm:text-xl max-sm:pr-0 " data-aos="fade-up">For more than 5 decades our company is involved in imports of hing and are currently importing hing from 5 different origins</p>           
-                <div className="grid grid-cols-2 gap-x-3 mb-6 w-[85%]  max-sm:w-[100%] max-sm:grid-cols-1  ">
-                    <Slider {...settings} className="hidden max-sm:block">
+                <div className="grid grid-cols-2 gap-x-3 mb-6 w-[85%]  max-sm:w-[100%] max-sm:grid-cols-1  " onClick={handlemodal2}>
+                    <Slider {...settings} className="hidden max-sm:block" >
                     {
                         data.map((d) => (
-                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer  " onClick={handlemodal} >
+                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer" ref={slider}  >
                                 <div className="flex items-center  w-[35%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center">
                                     <img src={d.image} alt="map" className="w-24 h-20 " />
                                 </div>
@@ -160,10 +192,10 @@ const Section1 = () => {
                             
                         ))
                     }
-                    <div className=" w-full h-full z-4 pt-1/20  bg-black_blur  absolute top-0 left-0" style={{display: modal}}>
+                    <div className=" w-full h-full z-4 pt-1/20  bg-black_blur  absolute top-0 left-0 block" style={{display: modal}}>
                         <div className=" animate-[modal_0.5s_ease-in-out]  w-1/4 h-1/3    relative top-[25%] left-[35%] flex flex-col items-center " >
-                            <img className='self-end mt-2 mr-2 mb-8 w-4  hover:rotate-[90deg] duration-500' onClick={handlemodal} src='../images/close.png' alt='close' />
-                            <div className="flex items-center pb-3 pt-[10%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center flipUp">
+                            <img className='self-end mt-2 mr-2 w-4  hover:rotate-[90deg] duration-500' onClick={handlemodal} src='../images/close.png' alt='close' />
+                            <div className="flex items-center pb-3 pt-[2%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center flipUp">
                                 <img src={image} alt="map" className="w-48 " />
                             </div>
                             <div className="flex flex-col justify-center text-center text-white   max-sm:w-[100%] fadeUp">
