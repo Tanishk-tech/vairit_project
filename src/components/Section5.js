@@ -44,7 +44,7 @@ const Section5 = () => {
                     data.map((d) =>(
                         <div className="flex mb-8 max-sm:flex-col max-sm:mb-0 " data-aos="flip-down">
                             <div className="pr-6 w-1/5 max-sm:flex max-sm:justify-center max-sm:w-full max-sm:pr-0">
-                                <img src={d.img} alt="seed" className="p-2 w-2/5 mt-3" />
+                                <img src={d.img} alt="seed" className="p-2 w-full mt-3 max-sm:w-2/5" />
                             </div>
                             <div className="flex w-4/5  flex-col justify-center max-sm:w-full max-sm:text-center ">
                                 <h2 className=" text-3xl max-sm:text-2xl  max-sm:leading-tight ">{d.value}</h2>
