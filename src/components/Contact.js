@@ -61,9 +61,9 @@ const Contact = () => {
                 <div className="w-3/5 max-sm:w-full" data-aos="fade-up">
                     <h3 className="capitalize text-white mb-6 max-sm:text-center">contact form</h3>
                     <form>
-                        <input type="text" placeholder="First Name" name="Fname" className="w-[49%]  mr-[2%] mb-6 p-3 rounded-xl max-sm:w-full" required />
-                        <input type="text" placeholder="Last Name" name="Lname" className="w-[49%] p-3 mb-6 rounded-xl  max-sm:w-full" required  /><br/>
-                        <input type="tel" placeholder="Contact Number" name="contact" className="w-full  rounded-xl p-3 mb-6" required  /><br/>
+                        <input type="text" placeholder="First Name" name="Fname"  className="w-[49%]  mr-[2%] mb-6 p-3 rounded-xl max-sm:w-full" required />
+                        <input type="text" placeholder="Last Name" name="Lname"  className="w-[49%] p-3 mb-6 rounded-xl  max-sm:w-full" required  /><br/>
+                        <input type="tel" placeholder="Contact Number" name="contact" title="10 digit number only" pattern="[1-9]{1}[0-9]{9}" className="w-full  rounded-xl p-3 mb-6" required  /><br/>
                         <input type="email" placeholder="Email" name="email" className="w-full rounded-xl  p-3 mb-6" required  /><br/>
                         <textarea name="comment" rows="8" cols="50" placeholder="Message" className="w-full rounded-xl p-3 mb-6"></textarea>
                         <input type="submit" value="Submit" className=" w-fit text-white text-base font-bold  border-2 border-solid border-yellow rounded-none text-center capitalize px-6 py-2 hover:bg-yellow hover:text-black rounded-xl cursor-pointer max-sm:mt-0 max-sm:px-4 max-sm:py-2 max-sm:text-sm max-sm:ml-[35%]" />
