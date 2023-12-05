@@ -16,6 +16,7 @@ module.exports = {
     'grey' : '#F6F6F6',
     'bisque' : '#ffe4c4',
     'black_blur':'#000000de',
+    'grey_over':'#808080bd',
     'grey_blur':'#d0c4c4ad',
   },
   fontFamily: {

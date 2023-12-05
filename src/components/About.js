@@ -12,7 +12,6 @@ const About = () => {
         AOS.init({ 
             duration: 3000,
             delay:400,
-            mirror:true,
             once:false,
         });
         AOS.refresh();
@@ -45,7 +44,7 @@ const About = () => {
                         alt="hing"
                         className="w-full h-[400px] max-sm:h-[200px]" 
     />
-                    <h1 className="text-white font-bold absolute top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[65%] ">about  us</h1>
+                    <h1 className="text-white font-bold absolute top-[55%] w-full text-center uppercase bg-grey_over max-sm:text-3xl max-sm:top-[65%] ">about  us</h1>
 
                 </div>
 

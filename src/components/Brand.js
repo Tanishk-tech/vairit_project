@@ -95,7 +95,7 @@ const Brand = () =>{
             <Header />
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
-                <h1 className="text-white font-bold absolute top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">our brands</h1>
+                <h1 className="text-white font-bold absolute bg-grey_over top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">our brands</h1>
             </div>
             <div className="flex text-white pl-[4%] pr-[4%] py-[4%] max-sm:flex-col">
                 <div className="flex flex-col w-1/2 max-sm:w-full max-sm:mb-6">

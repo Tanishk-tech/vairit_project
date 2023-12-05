@@ -21,7 +21,7 @@ const Contact = () => {
             <Header/>
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
-                <h1 className="text-white font-bold absolute top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">contact us</h1>
+                <h1 className="text-white font-bold absolute bg-grey_over top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">contact us</h1>
             </div>
             <div className="flex px-[6%] py-[3%] max-sm:flex-col max-sm:py-[6%]">
                 <div className="w-2/5 flex flex-col max-sm:w-full max-sm:pb-6" data-aos="fade-right">

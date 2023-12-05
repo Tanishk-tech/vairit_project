@@ -59,7 +59,7 @@ const Section1 = () => {
         arrows:false,
         speed: 300,
         slidesToShow: 1,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         pauseOnFocus: false, 
@@ -81,17 +81,19 @@ const Section1 = () => {
     //         image : './images/afgan.png' 
     //     };
 
-    
+    const sectionRef1=useRef(null);
 
     const handlemodal= (event) => {
         let body = document.querySelector("body");
         console.log(event.currentTarget.alt);
         if(event.currentTarget.alt==='close'){
             body.style.overflow='auto';
+            sectionRef1.current.style.paddingBottom="0%";
             setBounce("bounce inshadow");
         }
         else{
             body.style.overflow='hidden';
+            sectionRef1.current.style.paddingBottom="90%";
             setBounce(" ");
         }
 
@@ -120,18 +122,26 @@ const Section1 = () => {
     }
 
     const slider=useRef(null);
+    
 
     const handlemodal2= (event) => {
         let body = document.querySelector("body");
-        console.log(event.currentTarget);
+        
         if(event.currentTarget.alt==='close'){
             body.style.overflow='auto';
+            // section1.style.paddingBottom="90%";
+            sectionRef1.current.style.paddingBottom="0%";
             setBounce("bounce inshadow");
         }
         else{
             body.style.overflow='hidden';
+            // body.style.backgroundColor='';
+            // section1.style.paddingBottom="12%";
+            sectionRef1.current.style.paddingBottom="90%";
             setBounce(" ");
         }
+        // console.log(body.style);
+        // console.log("color : ",body.style.background);
 
         modal==='none' ? setModal("block") : setModal("none");
 
@@ -139,10 +149,14 @@ const Section1 = () => {
 
         if(slider.current.lastChild != null || slider.current.firstChild !=null ){
             // setCountry(event.current.lastChild.firstChild.textContent);
-            setLocation(slider.current.lastChild.children[1].textContent);
-            setImage(slider.current.firstChild.firstChild.src);
-            setDesc(slider.current.lastChild.lastChild.textContent);
         }
+        setLocation(slider.current.lastChild.children[1].textContent);
+        setImage(slider.current.firstChild.firstChild.src);
+        setDesc(slider.current.lastChild.lastChild.textContent);
+
+        console.log(slider.current.lastChild.children[1].textContent);
+        console.log(slider.current.firstChild.firstChild.src);
+        console.log(slider.current.lastChild.lastChild.textContent);
         
         // console.log(slider.current.lastChild.firstChild.textContent);
 
@@ -151,7 +165,7 @@ const Section1 = () => {
 
 
     return (
-        <div className="section1 relative flex bg-red pl-[12%] pt-[10%]  max-sm:flex-col-reverse max-sm:px-4" id="s1" >
+        <div className="section1 relative flex bg-red pl-[12%] pt-[10%]  max-sm:flex-col-reverse max-sm:px-4" id="s1" ref={sectionRef1}>
             <div className="flex flex-col w-3/5 text-white max-sm:w-[100%] max-sm:text-center max-sm:items-center">
                 <h2 className="text-white text-xl font-bold capitalize pl-3 pb-1  max-sm:text-2xl " data-aos="fade-up">india's</h2>
                 <h1 className="text-yellow text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug  " data-aos="fade-up">Top leading provider in</h1>
@@ -175,7 +189,7 @@ const Section1 = () => {
                     }
                     </Slider>
                     <div className=" w-full h-full z-4 pt-1/20  bg-black_blur  absolute top-0 left-0" style={{display: modal}}>
-                        <div className=" animate-[modal_0.5s_ease-in-out]  w-full h-1/3    relative top-[60%]   flex-col items-center hidden  max-sm:flex" >
+                        <div className=" animate-[modal_0.5s_ease-in-out]  w-full h-1/3    fixed top-[40%]   flex-col items-center hidden  max-sm:flex" >
                             <img className='self-end mt-2 mr-2 w-4  hover:rotate-[90deg] duration-500' onClick={handlemodal} src='../images/close.png' alt='close' />
                             <div className="flex items-center pb-3 pt-[2%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center flipUp">
                                 <img src={image} alt="map" className="w-40 " />
@@ -206,7 +220,7 @@ const Section1 = () => {
                         ))
                     }
                     <div className=" w-full h-full z-4 pt-1/20  bg-black_blur  absolute top-0 left-0" style={{display: modal}}>
-                        <div className=" animate-[modal_0.5s_ease-in-out]  w-1/4 h-1/3    relative top-[25%] left-[35%] flex flex-col items-center " >
+                        <div className=" animate-[modal_0.5s_ease-in-out]  w-1/4 h-1/3  bg-black_blur    fixed top-[40%] left-[35%] flex flex-col items-center " >
                             <img className='self-end mt-2 mr-2 w-4  hover:rotate-[90deg] duration-500' onClick={handlemodal} src='../images/close.png' alt='close' />
                             <div className="flex items-center pb-3 pt-[2%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center flipUp">
                                 <img src={image} alt="map" className="w-48 " />

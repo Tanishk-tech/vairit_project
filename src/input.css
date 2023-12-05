@@ -6,6 +6,7 @@
     body{
         font-family: 'Cardo', serif;
         scroll-behavior: smooth;
+        /* background-color: #8F1D21; */
     }
     html{
         font-size: 16px;
