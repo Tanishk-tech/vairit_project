@@ -61,7 +61,7 @@ const Section1 = () => {
         slidesToShow: 1,
         slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 200000,
+        autoplaySpeed: 2000,
         pauseOnFocus: false, 
         pauseOnHover: true,
         cssEase: 'linear',
@@ -72,7 +72,7 @@ const Section1 = () => {
     // const [country , setCountry]= useState("afghanistan");
     const [location , setLocation]= useState("watani safed");
     const [image , setImage]= useState("./images/afgan.png");
-    const [desc]=useState("Also known as Mazari Hing, this is a premium white asafoetida.");
+    const [desc,setDesc]=useState("Also known as Mazari Hing, this is a premium white asafoetida.");
     const [bounce , setBounce]=useState("bounce inshadow");
     // let data2=
     //     {
@@ -138,10 +138,10 @@ const Section1 = () => {
         console.log(modal);
 
         if(slider.current.lastChild != null || slider.current.firstChild !=null ){
-            // setCountry(event.currentTarget.lastChild.firstChild.textContent);
-            setLocation(slider.current.lastChild.lastChild.textContent);
+            // setCountry(event.current.lastChild.firstChild.textContent);
+            setLocation(slider.current.lastChild.children[1].textContent);
             setImage(slider.current.firstChild.firstChild.src);
-            setLocation(slider.current.lastChild.lastChild.textContent);
+            setDesc(slider.current.lastChild.lastChild.textContent);
         }
         
         // console.log(slider.current.lastChild.firstChild.textContent);
@@ -157,11 +157,11 @@ const Section1 = () => {
                 <h1 className="text-yellow text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug  " data-aos="fade-up">Top leading provider in</h1>
                 <h1 className="text-white text-4xl font-bold capitalize pl-3  pb-1 max-sm:text-4xl max-sm:leading-snug " data-aos="fade-up">The hing import business</h1>
                 <p className="text-xl text-white font-thin pr-[30%] pl-3  max-sm:text-xl max-sm:pr-0 " data-aos="fade-up">For more than 5 decades our company is involved in imports of hing and are currently importing hing from 5 different origins</p>           
-                <div className="grid grid-cols-2 gap-x-3 mb-6 w-[85%]  max-sm:w-[100%] max-sm:grid-cols-1  " onClick={handlemodal2}>
+                <div className="grid grid-cols-2 gap-x-3 mb-6 w-[85%]  max-sm:w-[100%] max-sm:grid-cols-1  ">
                     <Slider {...settings} className="hidden max-sm:block" >
                     {
                         data.map((d) => (
-                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer" ref={slider}  >
+                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer" ref={slider} onClick={handlemodal2} >
                                 <div className="flex items-center  w-[35%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center">
                                     <img src={d.image} alt="map" className="w-24 h-20 " />
                                 </div>
@@ -174,6 +174,19 @@ const Section1 = () => {
                         ))
                     }
                     </Slider>
+                    <div className=" w-full h-full z-4 pt-1/20  bg-black_blur  absolute top-0 left-0" style={{display: modal}}>
+                        <div className=" animate-[modal_0.5s_ease-in-out]  w-full h-1/3    relative top-[60%]   flex-col items-center hidden  max-sm:flex" >
+                            <img className='self-end mt-2 mr-2 w-4  hover:rotate-[90deg] duration-500' onClick={handlemodal} src='../images/close.png' alt='close' />
+                            <div className="flex items-center pb-3 pt-[2%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center flipUp">
+                                <img src={image} alt="map" className="w-40 " />
+                            </div>
+                            <div className="flex flex-col justify-center text-center text-white   max-sm:w-[100%] fadeUp">
+                                {/* <h2 className="capitalize text-black text-2xl font-bold  ">{country}</h2> */}
+                                <p className="capitalize mb-1">{location}</p>
+                                <p className="capitalize px-[16%]">{desc}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-x-3 mb-6 w-[85%]  max-sm:hidden">
@@ -192,7 +205,7 @@ const Section1 = () => {
                             
                         ))
                     }
-                    <div className=" w-full h-full z-4 pt-1/20  bg-black_blur  absolute top-0 left-0 block" style={{display: modal}}>
+                    <div className=" w-full h-full z-4 pt-1/20  bg-black_blur  absolute top-0 left-0" style={{display: modal}}>
                         <div className=" animate-[modal_0.5s_ease-in-out]  w-1/4 h-1/3    relative top-[25%] left-[35%] flex flex-col items-center " >
                             <img className='self-end mt-2 mr-2 w-4  hover:rotate-[90deg] duration-500' onClick={handlemodal} src='../images/close.png' alt='close' />
                             <div className="flex items-center pb-3 pt-[2%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center flipUp">

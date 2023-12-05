@@ -11,7 +11,9 @@ const About = () => {
     useEffect(() => {
         AOS.init({ 
             duration: 3000,
-            once:true,
+            delay:400,
+            mirror:true,
+            once:false,
         });
         AOS.refresh();
     }, []);
@@ -41,9 +43,9 @@ const About = () => {
                     <img
                         src="./images/wertui.png"
                         alt="hing"
-                        className="w-full h-auto max-sm:h-[200px]" 
+                        className="w-full h-[400px] max-sm:h-[200px]" 
     />
-                    <h1 className="text-white font-bold absolute top-[50%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[65%] ">about  us</h1>
+                    <h1 className="text-white font-bold absolute top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[65%] ">about  us</h1>
 
                 </div>
 
@@ -101,7 +103,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center mb-8 max-sm:mb-4 ">
+                <div className="flex justify-center mb-8 mx-[-9.5%] bg-white max-sm:mb-4 ">
                     <img src="./images/legacy.png" alt="legacy" className="w-1/3 bg-white p-4 max-sm:w-4/5"  data-aos="zoom-in"  />
                 </div>
 

@@ -70,8 +70,8 @@ const Book= () => {
     } ;
 
     return (
-        <div className='px-[12%] pt-[1%] h-[100vh] flex flex-col items-center bg-bisque overflow-hidden'>
-            <div className='flex w-[100%] mb-6 items-center'>
+        <div className=' pt-[1%] h-[100vh] flex flex-col items-center bg-bisque overflow-hidden'>
+            <div className='flex w-[100%] mb-6 items-center px-[12%]'>
                 <div className='w-1/2'>
                     <img src='./images/raghu.png' alt='logo' className=' w-1/4 max-sm:w-[60%]'/>
                 </div>
@@ -82,8 +82,8 @@ const Book= () => {
             </div>
             
             <HTMLFlipBook {...settings} ref={bookRef}  className='mb-6 cursor-grab max-sm:pt-[30%]'>
-                <PageCover source={"URL('./images/first.png')"} ></PageCover>
-                <Page source={"URL('./images/second.png')"}></Page>
+                <PageCover source={"URL('./images/first.png')"} className='max-sm:w-[200px]' ></PageCover>
+                <Page source={"URL('./images/second.png')"} className='' ></Page>
                 <Page source={"URL('./images/third.png')"}></Page>
                 <Page source={"URL('./images/5.png')"}></Page>
                 <Page source={"URL('./images/fourth.png')"}></Page>
