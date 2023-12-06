@@ -15,6 +15,7 @@ module.exports = {
     'yellow':'#FFD345',
     'grey' : '#F6F6F6',
     'bisque' : '#ffe4c4',
+    'white_blur':'#ffffffb3',
     'black_blur':'#000000de',
     'grey_over':'#808080bd',
     'grey_blur':'#d0c4c4ad',

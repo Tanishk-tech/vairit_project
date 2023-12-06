@@ -11,8 +11,8 @@ const About = () => {
     useEffect(() => {
         AOS.init({ 
             duration: 3000,
-            delay:400,
-            once:false,
+            delay:200,
+            once:true,
         });
         AOS.refresh();
     }, []);
@@ -44,7 +44,7 @@ const About = () => {
                         alt="hing"
                         className="w-full h-[400px] max-sm:h-[200px]" 
     />
-                    <h1 className="text-white font-bold absolute top-[55%] w-full text-center uppercase bg-grey_over max-sm:text-3xl max-sm:top-[65%] ">about  us</h1>
+                    <h1 className="text-red font-bold absolute top-[55%] w-full text-center uppercase bg-white_blur max-sm:text-3xl max-sm:top-[65%] ">about  us</h1>
 
                 </div>
 
@@ -72,14 +72,11 @@ const About = () => {
                     opportunities for growth. With a dedicated team driving our vision, we invite you to explore a world where
                     boundaries fade, and the extraordinary becomes the norm. Welcome to [Your Brand Name], where
                     innovation knows no limits.</p>
-                </div>
-                <div className="pt-10 max-sm:pt-0" >
-                    <h1 className="text-[40px] w-fit m-auto px-10 uppercase border-solid border-b-4 border-yellow max-sm:px-0 max-sm:text-[22px]" data-aos="flip-up" >seeds of a long journey</h1>
-                    <img src="./images/family.png" className="my-10 w-full max-sm:my-6" alt="men" data-aos="zoom-in" />
                     <p className="text-xl mb-6 max-sm:text-base" data-aos="flip-up">The story begins in pre-partition India, at Dera Ismail Khan, Khyber Pakhtunkhwa, a region in current day
                     Pakistan. Populated by both Pashtun and Hindokwan (Hindu) communities, the region had been a hub for
                     cultivating high quality Hing since centuries.</p>
                 </div>
+                
                 <div  className="flex  max-sm:flex-col  ">
                     <div className="w-1/2 max-sm:w-full" data-aos="flip-up" >
                         <p className="text-xl text-left max-sm:text-base max-sm:text-center"><b className="text-yellow max-sm:text-sm">Year 1903</b>: Lala Chetan Das Bhatia is born in the idyllic
@@ -140,6 +137,10 @@ const About = () => {
                     spice. The makings of the finest Hing, their varieties, trustworthy sources and buyers, the volatility
                     of the market, it was all education to a growing Sharad Bhatia. In no time, he realized that Hing
                     enjoyed a very special place in the Indian kitchen and cuisine.</p>
+                </div>
+                <div className="pt-10 pb-8 max-sm:pt-0" >
+                    <h1 className="text-[40px] w-fit m-auto px-10 uppercase border-solid border-b-4 border-yellow max-sm:px-0 max-sm:text-[22px]" data-aos="flip-up" >seeds of a long journey</h1>
+                    <img src="./images/family.png" className="my-10 w-full max-sm:my-6" alt="men" data-aos="zoom-in" />
                 </div>
             </div>
             <Section9/>

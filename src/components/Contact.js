@@ -21,10 +21,10 @@ const Contact = () => {
             <Header/>
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
-                <h1 className="text-white font-bold absolute bg-grey_over top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">contact us</h1>
+                <h1 className="text-red font-bold absolute bg-white_blur top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">contact us</h1>
             </div>
-            <div className="flex px-[6%] py-[3%] max-sm:flex-col max-sm:py-[6%]">
-                <div className="w-2/5 flex flex-col max-sm:w-full max-sm:pb-6" data-aos="fade-right">
+            <div className="flex px-[6%] py-[3%] max-sm:flex-col max-sm:py-[6%] ">
+                <div className="w-2/5 flex flex-col max-sm:w-full max-sm:pb-6 max-sm:pl-[20%]" data-aos="fade-right">
                     <div className="text-white flex mb-6 ">
                         <div className="pr-6 max-sm:pr-8">
                             <img src="./images/address.png"  alt="address" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2" />
@@ -47,7 +47,7 @@ const Contact = () => {
                             022 2784 2213</p>
                         </div>
                     </div>
-                    <div className="text-white flex ">
+                    <div className="text-white flex mb-6 ">
                         <div className="pr-6 max-sm:pr-8">
                             <img src="./images/mail.png"  alt="mail" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2" />
                         </div>
@@ -55,6 +55,20 @@ const Contact = () => {
                             <h3 className="capitalize max-sm:text-xl">email us</h3>
                             <p className="max-sm:text-sm">info@purehing.com<br/>
                             sriraghunathjioverseas@gmail.com</p>
+                        </div>
+                    </div>
+                    <div className="text-white flex ">
+                        <div className="pr-6 max-sm:pr-8">
+                            <img src="./images/follow-us.png"  alt="follow us" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2" />
+                        </div>
+                        <div className="flex items-center gap-3">
+                            {/* <h3 className="capitalize max-sm:text-xl">email us</h3>
+                            <p className="max-sm:text-sm">info@purehing.com<br/>
+                            sriraghunathjioverseas@gmail.com</p> */}
+                            <img src="./images/instagram.png" alt="insta"/>
+                            <img src="./images/facebook.png" alt="insta"/>
+                            <img src="./images/youtube.png" alt="insta"/>
+                            <img src="./images/twitter.png" alt="insta"/>
                         </div>
                     </div>
                 </div>

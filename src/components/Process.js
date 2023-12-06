@@ -20,7 +20,7 @@ const Process = () => {
             <Header />
             <div className="relative w-full">
                 <img src="./images/contact_back.jpg" alt="hing" className="w-full h-[400px]" />
-                <h1 className="text-white font-bold absolute bg-grey_over top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">process</h1>
+                <h1 className="text-red font-bold absolute bg-white_blur top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">process</h1>
             </div>
             <div className="bg-red text-white px-[6%]" >
                 <div className="flex flex-col py-[2%] max-sm:pt-[6%] max-sm:text-center"  >
