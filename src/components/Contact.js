@@ -69,10 +69,10 @@ const Contact = () => {
                             {/* <h3 className="capitalize max-sm:text-xl">email us</h3>
                             <p className="max-sm:text-sm">info@purehing.com<br/>
                             sriraghunathjioverseas@gmail.com</p> */}
-                            <img src="./images/instagram.png" alt="insta"/>
-                            <img src="./images/facebook.png" alt="insta"/>
-                            <img src="./images/youtube.png" alt="insta"/>
-                            <img src="./images/twitter.png" alt="insta"/>
+                            <img src="./images/instagram.png" alt="insta" className="hover:opacity-50"/>
+                            <img src="./images/facebook.png" alt="insta"className="hover:opacity-50" />
+                            <img src="./images/youtube.png" alt="insta" className="hover:opacity-50" />
+                            <img src="./images/twitter.png" alt="insta" className="hover:opacity-50" />
                         </div>
                     </div>
                 </div>

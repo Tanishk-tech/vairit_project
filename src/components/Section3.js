@@ -94,6 +94,7 @@ const Section3 = () => {
                 }
                 </Slider>
             </div>
+            <button className=" w-fit text-base text-white font-bold  border-2 border-solid border-yellow text-center capitalize px-8 py-4 mt-12 hover:bg-yellow hover:text-black rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm">discover more</button>
         </div>
     )
 }

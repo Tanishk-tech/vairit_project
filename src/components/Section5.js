@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useNavigate } from "react-router-dom";
 
 const Section5 = () => {
     useEffect(() => {
@@ -33,6 +34,12 @@ const Section5 = () => {
             text:'By the end of September, farmers bring their harvest down from the mountains. It undergoes quality checks and is repackaged for export to India.'
         },
     ]
+
+    const navigate=useNavigate();
+    const handleClick = () => {
+        navigate('/Process');
+    }
+
     return (
         <div className="flex pl-[12%] pr-[6%] pt-[6%] pb-[6%] bg-grey max-sm:px-4 max-sm:pt-[12%] max-sm:flex-col" id="s5">
             <div className="w-2/5 max-sm:w-[100%]" data-aos="fade-down">
@@ -53,7 +60,7 @@ const Section5 = () => {
                         </div>
                     ))
                 }
-                <button className="w-fit border-2 border-solid border-red text-base font-bold capitalize text-center  px-8  py-4 hover:bg-red hover:text-white rounded-xl cursor-pointer max-sm:px-4 max-sm:py-2 max-sm:text-sm max-sm:mt-6 ">read more</button>
+                <button className="w-fit border-2 border-solid border-red text-base font-bold capitalize text-center  px-8  py-4 hover:bg-red hover:text-white rounded-xl cursor-pointer max-sm:px-4 max-sm:py-2 max-sm:text-sm max-sm:mt-6 " onClick={handleClick} >read more</button>
             </div>
         </div>
     )

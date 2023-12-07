@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Section2= () => {
     useEffect(() => {
@@ -10,6 +11,11 @@ const Section2= () => {
         });
         AOS.refresh();
     }, []);
+
+    const navigate=useNavigate();
+    const handleClick = () => {
+        navigate('/About');
+    }
 
     return (
         <div className="flex w-[100%] h-[600px]  pl-[12%] mb-16  items-center relative max-sm:pl-0 max-sm:px-4 max-sm:flex-col max-sm:h-auto" id="s2" >
@@ -39,7 +45,7 @@ const Section2= () => {
                     <li className="tick-symbol pl-8 pb-3 text-base max-sm:text-xl " >Unrivaled Expertise in Asafoetida.</li>
                     <li className="tick-symbol pl-8 pb-3 text-base max-sm:text-xl ">Quality Beyond Compare, Prices Beyond and Belief.</li>
                 </ul>
-                <button className=" w-fit text-base border-2 border-solid border-red font-bold capitalize text-center px-8 py-4 hover:bg-red hover:text-white rounded-xl cursor-pointer max-sm:px-4 max-sm:py-2 max-sm:text-sm ">read more</button>
+                <button className=" w-fit text-base border-2 border-solid border-red font-bold capitalize text-center px-8 py-4 hover:bg-red hover:text-white rounded-xl cursor-pointer max-sm:px-4 max-sm:py-2 max-sm:text-sm " onClick={handleClick} >read more</button>
             </div>
         </div>
     )
