@@ -121,7 +121,7 @@ const Section1 = () => {
         // }
     }
 
-    const slider=useRef(null);
+    // const slider=useRef(null);
     
 
     const handlemodal2= (event) => {
@@ -147,16 +147,21 @@ const Section1 = () => {
 
         console.log(modal);
 
-        if(slider.current.lastChild != null || slider.current.firstChild !=null ){
-            // setCountry(event.current.lastChild.firstChild.textContent);
-        }
-        setLocation(slider.current.lastChild.children[1].textContent);
-        setImage(slider.current.firstChild.firstChild.src);
-        setDesc(slider.current.lastChild.lastChild.textContent);
+        // console.log(slider.current.lastChild.children[1].textContent);
+        // console.log(slider.current.firstChild.firstChild.src);
+        // console.log(slider.current.lastChild.lastChild.textContent);
 
-        console.log(slider.current.lastChild.children[1].textContent);
-        console.log(slider.current.firstChild.firstChild.src);
-        console.log(slider.current.lastChild.lastChild.textContent);
+        if(event.currentTarget.lastChild != null || event.currentTarget.firstChild !=null ){
+            setLocation(event.currentTarget.lastChild.children[1].textContent);
+            setImage(event.currentTarget.firstChild.firstChild.src);
+            setDesc(event.currentTarget.lastChild.lastChild.textContent);
+        }
+
+        console.log(event.currentTarget.lastChild.children[1].textContent,location);
+        console.log(event.currentTarget.firstChild.firstChild.src,image);
+        console.log(event.currentTarget.lastChild.lastChild.textContent,);
+
+        
         
         // console.log(slider.current.lastChild.firstChild.textContent);
 
@@ -175,7 +180,7 @@ const Section1 = () => {
                     <Slider {...settings} className="hidden max-sm:block" >
                     {
                         data.map((d) => (
-                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer" ref={slider} onClick={handlemodal2} >
+                            <div  className="flex   p-3 rounded-xl mb-3 cursor-pointer"  onClick={handlemodal2} >
                                 <div className="flex items-center  w-[35%] max-sm:w-[100%] max-sm:px-[25%] max-sm:justify-center">
                                     <img src={d.image} alt="map" className="w-24 h-20 " />
                                 </div>

@@ -46,9 +46,9 @@ const Section9 = () => {
                 <h3 className="text-red capitalize max-sm:text-2xl">Contact info</h3>
                 <ul className="max-sm:text-xl">
                     {/* <li>Phone</li> */}
-                    <p ><span>Phone : </span><a href="tel:+880123456789" className="curser-pointer hover:text-red hover:underline">+911234567890</a></p>
+                    <p ><span>Phone : </span><a href="tel:+911234567890" className="curser-pointer hover:text-red hover:underline">+911234567890</a></p>
                     {/* <li>Email</li> */}
-                    <p><span>Email  : </span><a href="mailto:needhelp@company.com" className="curser-pointer hover:text-red hover:underline"> info@thepurehing.com</a></p>
+                    <p><span>Email  : </span><a href="mailto:info@thepurehing.com" className="curser-pointer hover:text-red hover:underline"> info@thepurehing.com</a></p>
                     {/* <li>Address</li> */}
                     <p><span>Address : </span>4163, Kohlapur Road, Kamla Nagar, Delhi, 110007</p>
                 </ul>

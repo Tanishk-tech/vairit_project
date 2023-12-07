@@ -25,11 +25,11 @@ const Contact = () => {
             </div>
             <div className="flex px-[6%] py-[3%] max-sm:flex-col max-sm:py-[6%] ">
                 <div className="w-2/5 flex flex-col max-sm:w-full max-sm:pb-6 max-sm:pl-[20%]" data-aos="fade-right">
-                    <div className="text-white flex mb-6 ">
-                        <div className="pr-6 max-sm:pr-8">
-                            <img src="./images/address.png"  alt="address" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2" />
+                    <div className="text-white flex mb-6 items-center ">
+                        <div className="pr-6 max-sm:pr-2 max-sm:w-1/4">
+                            <img src="./images/address.png"  alt="address" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2 max-sm:w-3/4" />
                         </div>
-                        <div>
+                        <div className="max-sm:w-3/4">
                             <h3 className="max-sm:text-xl">Address</h3>
                             <p className="max-sm:text-sm">4163, Kohlapur Road<br/>
                                 Kamla Nagar, Delhi <br/>
@@ -37,31 +37,35 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="text-white flex mb-6 ">
-                        <div className="pr-6 max-sm:pr-8">
-                            <img src="./images/telephone.png"  alt="telephone" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2" />
+                    <div className="text-white flex mb-6 items-center">
+                        <div className="pr-6 max-sm:pr-2 max-sm:w-1/4">
+                            <img src="./images/telephone.png"  alt="telephone" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2 max-sm:w-3/4" />
                         </div>
-                        <div>
+                        <div className="max-sm:w-3/4">
                             <h3 className="capitalize max-sm:text-xl ">give us a call</h3>
-                            <p className="max-sm:text-sm ">022 2784 2212 <br/>
-                            022 2784 2213</p>
+                            <p className="max-sm:text-sm ">
+                                <a href="tel:022 2784 2212" className="curser-pointer hover:text-yellow hover:underline">022 2784 2212</a><br/>
+                                <a href="tel:022 2784 2213" className="curser-pointer hover:text-yellow hover:underline">022 2784 2213</a>
+                            </p>
                         </div>
                     </div>
-                    <div className="text-white flex mb-6 ">
-                        <div className="pr-6 max-sm:pr-8">
-                            <img src="./images/mail.png"  alt="mail" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2" />
+                    <div className="text-white flex mb-6 items-center ">
+                        <div className="pr-6 max-sm:pr-2 max-sm:w-1/4">
+                            <img src="./images/mail.png"  alt="mail" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2 max-sm:w-3/4" />
                         </div>
-                        <div>
+                        <div className="max-sm:w-3/4">
                             <h3 className="capitalize max-sm:text-xl">email us</h3>
-                            <p className="max-sm:text-sm">info@purehing.com<br/>
-                            sriraghunathjioverseas@gmail.com</p>
+                            <p className="max-sm:text-sm">
+                                <a href="mailto:info@purehing.com" className="curser-pointer hover:text-yellow hover:underline">info@purehing.com</a><br/>
+                                <a href="mailto:sriraghunathjioverseas@gmail.com" className="curser-pointer hover:text-yellow hover:underline">sriraghunathjioverseas@gmail.com</a>
+                            </p>
                         </div>
                     </div>
-                    <div className="text-white flex ">
-                        <div className="pr-6 max-sm:pr-8">
-                            <img src="./images/follow-us.png"  alt="follow us" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2" />
+                    <div className="text-white flex items-center ">
+                        <div className="pr-6 max-sm:pr-2 max-sm:w-1/4">
+                            <img src="./images/follow-us.png"  alt="follow us" className="border-2 border-solid border-grey_blur p-3 rounded-full max-sm:p-2 max-sm:w-3/4" />
                         </div>
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 max-sm:w-3/4">
                             {/* <h3 className="capitalize max-sm:text-xl">email us</h3>
                             <p className="max-sm:text-sm">info@purehing.com<br/>
                             sriraghunathjioverseas@gmail.com</p> */}
