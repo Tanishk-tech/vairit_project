@@ -19,16 +19,16 @@ const About = () => {
 
     const data=[
         {
-            image:'./images/spice1.webp',
+            image:'./images/spice1.png',
         },
         {
-            image:'./images/spice2.jpg',
+            image:'./images/spice2.png',
         },
         {
-            image:'./images/spice3.jpg',
+            image:'./images/spice3.png',
         },
         {
-            image:'./images/spice4.jpeg',
+            image:'./images/spice4.png',
         },
     ]
 
@@ -64,21 +64,21 @@ const About = () => {
                             ))
                         }
                     </div>
-                    <p className="text-xl py-4 max-sm:text-base" data-aos="flip-up" >At [Your Brand Name], we embark on a journey fueled by passion and innovation. With a relentless
+                    {/* <p className="text-xl py-4 max-sm:text-base" data-aos="flip-up" >At [Your Brand Name], we embark on a journey fueled by passion and innovation. With a relentless
                     commitment to excellence, we merge creativity and cutting-edge technology to redefine standards. Our
                     foundation is built on a belief in the power of possibilities. From inception, we set out to inspire and
                     transform—fusing imagination with expertise to craft unique experiences. We are more than a brand; we are
                     a testament to ingenuity. Rooted in a culture of integrity and forward-thinking, we embrace challenges as
                     opportunities for growth. With a dedicated team driving our vision, we invite you to explore a world where
                     boundaries fade, and the extraordinary becomes the norm. Welcome to [Your Brand Name], where
-                    innovation knows no limits.</p>
-                    <p className="text-xl mb-6 max-sm:text-base" data-aos="flip-up">The story begins in pre-partition India, at Dera Ismail Khan, Khyber Pakhtunkhwa, a region in current day
+                    innovation knows no limits.</p> */}
+                    <p className="text-xl mt-10 max-sm:text-base" data-aos="flip-up">The story begins in pre-partition India, at Dera Ismail Khan, Khyber Pakhtunkhwa, a region in current day
                     Pakistan. Populated by both Pashtun and Hindokwan (Hindu) communities, the region had been a hub for
                     cultivating high quality Hing since centuries.</p>
                 </div>
                 
-                <div  className="flex  max-sm:flex-col  ">
-                    <div className="w-1/2 max-sm:w-full" data-aos="flip-up" >
+                <div  className="flex  max-sm:flex-col py-[4%]  ">
+                    <div className="w-2/4 pr-[5%] max-sm:w-full" data-aos="flip-up" >
                         <p className="text-xl text-left max-sm:text-base max-sm:text-center"><b className="text-yellow max-sm:text-sm">Year 1903</b>: Lala Chetan Das Bhatia is born in the idyllic
                         settings of Dera Ismail Khan. His life soon becomes infused
                         with the sharp, piercing aroma of Hing.
@@ -90,7 +90,7 @@ const About = () => {
                         a legacy that runs to this day, into its fourth generation, in
                         the form of Sri Raghunath Ji Overseas.</p>
                     </div>
-                    <div className="w-1/2 flex flex-col bg-red items-center pt-[14%] pb-[4%] max-sm:w-full max-sm:pt-[6%] "   >
+                    <div className="w-1/2 flex flex-col bg-red items-center  max-sm:w-full max-sm:pt-[6%] "   >
                         <img src="./images/about1.png" className="w-[25%] max-sm:pb-4" alt="men"  data-aos="zoom-in"  />
                         <b className="text-base text-yellow  max-sm:text-sm"  data-aos="flip-up" >Late Lala Chetan Das Bhatia Circa1903 to 1972</b>
                         <p className="font-thin  text-base max-sm:text-sm"  data-aos="flip-up" >Lala Ji's endearing persona made him the first face of Sri
@@ -100,33 +100,38 @@ const About = () => {
                 </div>
 
                 <div className="flex justify-center mb-8 mx-[-9.5%] bg-white max-sm:mb-4 ">
-                    <img src="./images/legacy.png" alt="legacy" className="w-1/3 bg-white p-4 max-sm:w-4/5"  data-aos="zoom-in"  />
+                    <img src="./images/legacy.png" alt="legacy" className="w-1/2 bg-white p-4 max-sm:w-4/5"  data-aos="zoom-in"  />
                 </div>
 
-                <div className="" >
-                    <p className="text-xl mb-6 text-right max-sm:text-base max-sm:text-center" data-aos="flip-up">While Shri Ram Lal Bhatia consolidated Sri Raghunath Ji Overseas Hing business in India, his
-                    son Shri Ajay Bhatia played a vital role in expanding the company's presence. He travelled
-                    across India,  <b className="text-yellow">exploring new markets</b> for the company. All this while, the company had
-                    focused primarily on the Hindi heartland of India's north. Shri Ajay Bhatia was surprised to
-                    find that south India was, in fact, a bigger market. Hing is widely used in Sambar, a staple
-                    dish of the south and is thus consumed extensively. Seizing the opportunity, Shri Ajay
-                    Bhatia developed a strong customer base in the region. The 1990s saw the company
-                    supplying raw Hing to manufacturers across the southern cities from Hyderabad to Chennai
-                    and - Kumbakonam to Thrissur</p>
-                    <p className="text-xl text-right pl-[20%] max-sm:text-base max-sm:text-center max-sm:pl-0" data-aos="flip-up">This further raised the stature of <b className="text-yellow">Sri Raghunath Ji Overseas</b> as the preferred supplier for
-                    Hing manufacturers across the country.</p>
-                </div>
-                <div className="flex my-6 max-sm:flex-col" >
-                    <div className="w-1/2 flex flex-col items-center pb-[6%] max-sm:w-full">
+                <div className="flex  max-sm:flex-col py-[4%] " >
+                    <div className="w-2/4 pr-[5%] max-sm:w-full" data-aos="flip-up" >
+                        <p className="text-xl mb-6 text-left max-sm:text-base max-sm:text-center" data-aos="flip-up">While Shri Ram Lal Bhatia consolidated Sri Raghunath Ji Overseas Hing business in India, his
+                        son Shri Ajay Bhatia played a vital role in expanding the company's presence. He travelled
+                        across India,  <b className="text-yellow">exploring new markets</b> for the company. All this while, the company had
+                        focused primarily on the Hindi heartland of India's north. Shri Ajay Bhatia was surprised to
+                        find that south India was, in fact, a bigger market. Hing is widely used in Sambar, a staple
+                        dish of the south and is thus consumed extensively. Seizing the opportunity, Shri Ajay
+                        Bhatia developed a strong customer base in the region. The 1990s saw the company
+                        supplying raw Hing to manufacturers across the southern cities from Hyderabad to Chennai
+                        and - Kumbakonam to Thrissur</p>
+                    </div>
+                    <div className="w-1/2 flex flex-col items-center justify-center max-sm:w-full">
                         <img src="./images/about2.png" className="w-1/4" alt="men" data-aos="zoom-in" />
                         <b className="text-yellow text-base mt-2 max-sm:text-sm" data-aos="flip-up">Ajay Bhatia Born 1965</b>
                         <p className="text-base font-thin max-sm:text-sm" data-aos="flip-up">Shri Ajay Bhatia's initiatives saw the company expand its
                         customer base significantly, supplying raw material to Hing
                         manufacturers across India.</p>
                     </div>
-                    <div className="w-1/2 flex flex-col items-end pt-[12%] max-sm:w-full max-sm:items-center">
+                    
+                </div>
+                <div className="flex  max-sm:flex-col pb-[4%] " >
+                    <div className="w-1/2 flex flex-col items-center  max-sm:w-full max-sm:items-center">
                         <img src="./images/about3.png" className="w-1/4" alt="men" data-aos="flip-up" />
                         <b className="text-base text-yellow mt-2 max-sm:text-sm" data-aos="flip-up">Sharad Bhatia Born 1988</b>
+                    </div>
+                    <div className="w-2/4  flex items-center max-sm:w-full" data-aos="flip-up" >
+                        <p className="text-xl text-right  max-sm:text-base max-sm:text-center max-sm:pl-0" data-aos="flip-up">This further raised the stature of <b className="text-yellow">Sri Raghunath Ji Overseas</b> as the preferred supplier for
+                        Hing manufacturers across the country.</p>
                     </div>
                 </div>
                 <div className="pb-10">
