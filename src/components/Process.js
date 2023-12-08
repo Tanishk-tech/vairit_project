@@ -23,10 +23,10 @@ const Process = () => {
                 <h1 className="text-red font-bold absolute bg-white_blur top-[55%] w-full text-center uppercase max-sm:text-3xl max-sm:top-[57%]">process</h1>
             </div>
             <div className="bg-red text-white px-[6%]" >
-                <div className="flex  max-sm:flex-col py-[4%] " >
+                <div className="flex  max-sm:flex-col-reverse py-[4%] max-sm:py-[10%] " >
                     <div className="w-1/2  flex flex-col  max-sm:w-full" data-aos="flip-up" >
-                        <h1 className="uppercase text-[40px] text-yellow  text-left mb-3 leading-tight  max-sm:px-0 max-sm:text-2xl" data-aos="flip-up">IDENTIFYING THE PLANT</h1>
-                        <p className="text-xl  max-sm:text-base max-sm:pr-0" data-aos="flip-up" >During April and May, asafoetida plants emerge, their roots containing hing. Recognition is key; spotting its distinct appearance aids farmers in harvesting before May's stems fall. The plant's image displays recognizable leaves atop a mountain. <br></br><br></br>
+                        <h1 className="uppercase text-[40px] text-yellow  text-left mb-3 leading-tight  max-sm:px-0 max-sm:text-2xl max-sm:text-center" data-aos="flip-up">IDENTIFYING THE PLANT</h1>
+                        <p className="text-xl  max-sm:text-base max-sm:pr-0 max-sm:text-center" data-aos="flip-up" >During April and May, asafoetida plants emerge, their roots containing hing. Recognition is key; spotting its distinct appearance aids farmers in harvesting before May's stems fall. The plant's image displays recognizable leaves atop a mountain. <br></br><br></br>
                             A. Identifying Asafoetida
                             In spring, recognizing asafoetida amidst nature's backdrop initiates the harvesting. <br></br>
                             B. Delicate Root Digging
@@ -34,7 +34,7 @@ const Process = () => {
                         </p>
                     </div>
                     <div className="w-1/2 flex flex-col items-center justify-center  max-sm:w-full max-sm:items-center">
-                        <img src="./images/process1.jpg" alt="spices" className="w-2/5  rounded-full  max-sm:w-[40%] max-sm:m-auto" data-aos="zoom-in" />
+                        <img src="./images/process1.jpg" alt="spices" className="w-2/5  rounded-full  max-sm:w-[40%] max-sm:m-auto max-sm:mb-6" data-aos="zoom-in" />
                     </div>
                 </div>
                 {/* <div className="flex flex-col py-[2%] max-sm:pt-[6%] max-sm:text-center"  >
@@ -45,9 +45,9 @@ const Process = () => {
                         B. Delicate Root Digging
                         Preserving the hing-rich root demands careful excavation using traditional techniques.</p>
                 </div> */}
-                <div className="flex pb-[4%] w-[100%] max-sm:flex-col">
+                <div className="flex pb-[4%] w-[100%] max-sm:flex-col max-sm:pb-[10%]">
                     <div className="w-1/2 flex flex-col items-center justify-center  max-sm:w-full max-sm:items-center"  >
-                        <img src="./images/process2.jpg" alt="spices" className="w-[40%]  rounded-full max-sm:hidden" data-aos="zoom-in" />
+                        <img src="./images/process2.jpg" alt="spices" className="w-[40%]  rounded-full  max-sm:mb-6" data-aos="zoom-in" />
                     </div>
                     <div className="w-1/2  flex flex-col  max-sm:w-full" >
                         <h1 className="uppercase text-[40px] text-right text-yellow leading-tight mb-3  max-sm:px-0 max-sm:text-2xl max-sm:text-center" data-aos="flip-up">EXTRACTING THE ASAFOETIDA</h1>
@@ -57,10 +57,9 @@ const Process = () => {
                             The extraction begins as the farmer skillfully makes cuts on the plant's root, optimizing resin collection.
                             B. Gathering Resin
                             Post-incisions, the precious asafoetida resin emerges, meticulously gathered by farmers to minimize waste and maximize yield.</p>
-                        <img src="./images/process2.jpg" alt="spices" className="w-[40%] rounded-full  hidden max-sm:block max-sm:m-auto" data-aos="zoom-in" />
                     </div>
                 </div>
-                <div className="flex pb-[4%] max-sm:items-center max-sm:text-center max-sm:pt-6"  >
+                <div className="flex pb-[4%] max-sm:flex-col-reverse max-sm:items-center max-sm:text-center max-sm:pb-[10%]"  >
                     <div className="w-1/2  flex flex-col  max-sm:w-full" >
                         <h1 className="uppercase text-[40px] text-yellow mb-3  leading-tight  max-sm:px-0 max-sm:text-2xl max-sm:pr-0" data-aos="flip-up">EXPOSING THE ROOTS TO DIRECT SUN</h1>
                         <p className="text-xl  max-sm:text-base max-sm:pr-0" data-aos="flip-up">The asafoetida roots undergo 5–10 days of direct sun exposure before hing extraction, vital for resin preparation.
@@ -71,12 +70,12 @@ const Process = () => {
                         </p>
                     </div>
                     <div className="w-1/2 flex flex-col items-center justify-center  max-sm:w-full max-sm:items-center"  >
-                        <img src="./images/process3.png" alt="spices" className="w-[40%]   rounded-full max-sm:ml-0 max-sm:w-[40%]" data-aos="zoom-in" />
+                        <img src="./images/process3.png" alt="spices" className="w-[40%]   rounded-full max-sm:ml-0 max-sm:w-[40%] max-sm:mb-6" data-aos="zoom-in" />
                     </div>
                 </div>
-                <div className="flex pb-[4%] w-[100%] max-sm:flex-col">
+                <div className="flex pb-[4%] w-[100%] max-sm:flex-col max-sm:pb-[10%]">
                     <div className="w-1/2 flex flex-col items-center justify-center  max-sm:w-full max-sm:items-center"  >
-                        <img src="./images/seed2.png" alt="spices" className="w-[40%]  rounded-full max-sm:hidden" data-aos="zoom-in" />
+                        <img src="./images/seed2.png" alt="spices" className="w-[40%]  rounded-full max-sm:mb-6" data-aos="zoom-in" />
                     </div>
                     <div className="w-1/2  flex flex-col  max-sm:w-full" >
                         <h1 className="uppercase text-[40px] text-right text-yellow  leading-tight mb-3 max-sm:px-0 max-sm:text-2xl max-sm:text-center max-sm:pl-0" data-aos="flip-up">STORING AND PACKING FOR FURTHER EXPORT</h1>

@@ -100,7 +100,7 @@ const About = () => {
                 </div>
 
                 <div className="flex justify-center mb-8 mx-[-9.5%] bg-white max-sm:mb-4 ">
-                    <img src="./images/legacy.png" alt="legacy" className="w-1/2 bg-white p-4 max-sm:w-4/5"  data-aos="zoom-in"  />
+                    <img src="./images/legacy.png" alt="legacy" className="w-1/2 bg-white p-4 max-sm:w-full"  data-aos="zoom-in"  />
                 </div>
 
                 <div className="flex  max-sm:flex-col py-[4%] " >
