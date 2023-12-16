@@ -37,7 +37,7 @@ const Section9 = () => {
                     <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/'>Home</li>
                     <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/About'>About Us</li>
                     <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/Process'>Process</li>
-                    {/* <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/Gallery'>Gallery</li> */}
+                    <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/Gallery'>Gallery</li>
                     <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/Brand'>Our Brands</li>
                     <li className="curser-pointer hover:text-red hover:underline" onClick={handleChange} data-path='/Contact'>Contact Us</li>
                 </ul>

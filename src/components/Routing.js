@@ -5,6 +5,7 @@ import About from "./About";
 import Process from "./Process";
 import Contact from "./Contact";
 import Brand from "./Brand";
+import Gallery from "./Gallery";
 const Routing = () => {
     return(
         <div>
@@ -13,9 +14,10 @@ const Routing = () => {
                     <Route path="/" element={<App/>} />
                     <Route path="/book" element={<Book/>} />
                     <Route path="/about" element={<About/>} />
-                    <Route path="/Process" element={<Process/>} />
+                    <Route path="/Process" element={<Process/>}/>
                     <Route path="/Contact" element={<Contact />} />
                     <Route path="/Brand" element={<Brand/>} />
+                    <Route path="/Gallery" element={<Gallery/>} />
                 </Routes>
             </BrowserRouter>
         </div>
