@@ -2,45 +2,10 @@ import Header from "./Header";
 import Section9 from "./Section9";
 import Section10 from "./Section10";
 import ScrollToTop from "./ScrollToTop";
-import 'video-react/dist/video-react.css';
-import { Player } from "video-react";
+// import 'video-react/dist/video-react.css';
+// import { Player } from "video-react";
 
 const Gallery= () =>{
-
-    const data=[
-        {
-            image: './images/rock1.png'
-        },
-        
-        {
-            image: './images/rock1.png'
-        },
-        
-        {
-            image: './images/rock1.png'
-        },
-        
-        {
-            image: './images/rock1.png'
-        },
-        
-        {
-            image: './images/rock1.png'
-        },
-        
-        {
-            image: './images/rock1.png'
-        },
-        
-        {
-            image: './images/rock1.png'
-        },
-        
-        {
-            image: './images/rock1.png'
-        },
-        
-    ]
 
     return (
         <div className="bg-red">
