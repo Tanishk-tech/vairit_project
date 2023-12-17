@@ -91,13 +91,13 @@ const Header= () => {
 
     return (
         <div className="flex items-center z-20 w-[100%] h-[100px] pl-[12%] pr-[4%] bg-white fixed top-0 z-10  max-sm:px-5 max-sm:py-2 ">
-            <div className="w-2/5 max-sm:w-4/5">
+            <div className="w-1/3 max-sm:w-4/5">
                 <img src={logo.imageSrc} className={`${logo.w} ${logo.mw}`}  alt="logo"/>
             </div>
             <div className="hidden max-sm:flex max-sm:justify-end w-[20%]">
                 <img src="./images/Hamburger_icon.svg" alt="icon" className="max-sm:w-[33%]" onClick={handleChange} />
             </div>
-            <ul className={`flex items-center justify-end gap-10 text-lg list-none w-3/5 max-sm:${display} max-sm:text-xl max-sm:flex-col max-sm:absolute max-sm:top-[100%] max-sm:w-[100%] max-sm:-ml-5 max-sm:bg-white max-sm:gap-0`}>
+            <ul className={`flex items-center justify-end gap-10 text-lg list-none w-2/3 max-sm:${display} max-sm:text-xl max-sm:flex-col max-sm:absolute max-sm:top-[100%] max-sm:w-[100%] max-sm:-ml-5 max-sm:bg-white max-sm:gap-0`}>
                 <li className="hover:header-hover cursor-pointer max-sm:py-2 max-sm:border-b max-sm:border-t max-sm:border-yellow max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white " onClick={handleChange} data-path='/' >Home</li>
                 <li className="hover:header-hover cursor-pointer max-sm:py-2 max-sm:border-b max-sm:border-yellow max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white " onClick={handleChange} data-path='/About' >About Us</li>
                 <li className="hover:header-hover cursor-pointer max-sm:py-2 max-sm:border-b max-sm:border-yellow max-sm:w-[100%] max-sm:text-center max-sm:hover:border-white " onClick={handleChange} data-path='/Process' >Process</li>
