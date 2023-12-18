@@ -43,10 +43,12 @@ const Book= () => {
 
     const handlePrev=() => {
         bookRef.current.pageFlip().flipPrev();
+        console.log("button click");
     }
 
     const handleNext=() => {
         bookRef.current.pageFlip().flipNext() ;
+        console.log("button click");
     }
 
     // const onPage = (e) => {
@@ -81,7 +83,7 @@ const Book= () => {
                 
             </div>
             
-            <HTMLFlipBook {...settings} ref={bookRef}  className='mb-6 cursor-grab max-sm:pt-[30%]'>
+            <HTMLFlipBook {...settings} ref={bookRef}  className='mb-6 cursor-grab w-[600px] max-sm:pt-[30%]'>
                 <PageCover source={"URL('./images/first.png')"} className='max-sm:w-[200px]' ></PageCover>
                 <Page source={"URL('./images/second.png')"} className='' ></Page>
                 <Page source={"URL('./images/third.png')"}></Page>
@@ -106,10 +108,10 @@ const Book= () => {
             </HTMLFlipBook>
 
             <div className='pt-12'>
-                <button className='text-base capitalize mr-16' onClick={handlePrev}><img src='./images/prev.png' alt='icons' /></button>
+                <button className='text-base capitalize mr-16' onClick={handlePrev} ><img src='./images/prev.png' alt='icons' onClick={handlePrev} /></button>
                 {/* [<span>{page}</span> of 
                 <span>20</span>] */}
-                <button className='text-base capitalize    ' onClick={handleNext}><img src='./images/next.png' alt='icons' /></button>
+                <button className='text-base capitalize    ' onClick={handleNext}><img src='./images/next.png' alt='icons' onClick={handleNext}></img></button>
             </div>
         
         </div>

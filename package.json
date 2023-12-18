@@ -1,5 +1,6 @@
 {
   "name": "vairit_project",
+  "homepage" : "https://cheese.ca",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
