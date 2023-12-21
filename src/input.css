@@ -241,3 +241,11 @@
     }
 
 }
+
+.book_buttonP{
+    background-image: url("../public/images/prev.png");
+}
+
+.book_buttonN{
+    background-image: url("../public/images/next.png");
+}
