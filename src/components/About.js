@@ -115,8 +115,7 @@ const About = () => {
                         supplying raw Hing to manufacturers across the southern cities from Hyderabad to Chennai
                         and - Kumbakonam to Thrissur</p>
                     </div>
-                    <div className="w-1/2 flex flex-col items-center justify-center relative max-sm:w-full">
-                        <img src="./images/section6_icon.png" alt="icon" className="absolute w-1/4 top-[-14%] right-[-19%]  max-sm:w-[30%] " data-aos="fade-up-right" />
+                    <div className="w-1/2 flex flex-col items-center justify-center max-sm:w-full">
                         <img src="./images/about2.png" className="w-1/4" alt="men" data-aos="zoom-in" />
                         <b className="text-yellow text-base mt-2 max-sm:text-sm" data-aos="flip-up">Ajay Bhatia Born 1965</b>
                         <p className="text-base font-thin max-sm:text-sm" data-aos="flip-up">Shri Ajay Bhatia's initiatives saw the company expand its

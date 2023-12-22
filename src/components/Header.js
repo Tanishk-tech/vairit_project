@@ -20,7 +20,7 @@ const Header= () => {
     const logo={
         imageSrc: './images/raghu.png',
         imageAlt: 'logo',
-        w:"w-[33%]",
+        w:"w-[50%]",
         mw:"max-sm:w-[40%]",
         };
 
@@ -90,7 +90,7 @@ const Header= () => {
     // },[])
 
     return (
-        <div className="flex items-center z-20 w-[100%] h-[100px] pl-[12%] pr-[4%] bg-white fixed top-0 z-10  max-sm:px-5 max-sm:py-2 ">
+        <div className="flex items-center z-20 w-[100%] h-[120px] pl-[12%] pr-[4%] bg-white fixed top-0 z-10  max-sm:px-5 max-sm:py-2 ">
             <div className="w-1/3 max-sm:w-4/5">
                 <img src={logo.imageSrc} className={`${logo.w} ${logo.mw}`}  alt="logo"/>
             </div>

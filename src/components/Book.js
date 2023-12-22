@@ -9,10 +9,10 @@ const Book= () => {
     return (
         <div className="" ref={ref} data-density="hard">
             <div className="">
-                {/* <img src={props.source}  alt='cover' className=''></img> */}
-                <div style={{backgroundImage:props.source}} className='w-[100%] h-[100%] z-20 fixed bg-contain'>
+                <img src={props.source}  alt='cover' className='w-[100%] h-[100%]'></img>
+                {/* <div style={{backgroundImage:props.source}} className='w-[100%] h-[100%] z-20 fixed bg-contain'>
 
-                </div>
+                </div> */}
             </div>
         </div>
     );
@@ -22,10 +22,10 @@ const Book= () => {
         return (
             <div className="" ref={ref}>
                 <div className=" ">
-                    {/* <img src={props.source} alt='pages' className='' /> */}
-                    <div style={{backgroundImage:props.source}} className='w-[100%] h-[100%] z-20 fixed bg-contain '>
+                    <img src={props.source} alt='pages' className='w-[100%] h-[100%]' />
+                    {/* <div style={{backgroundImage:props.source}} className='w-[100%] h-[100%] z-20 fixed bg-contain '>
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );
@@ -113,7 +113,6 @@ const Book= () => {
                 <div className='w-1/2 flex justify-end'>
                     <button className="text-black border-2 border-solid border-red    w-fit text-base font-bold uppercase text-center px-6 py-2 ml-[45%] hover:bg-red hover:text-white rounded-xl cursor-pointer max-sm:mt-3 max-sm:px-4 max-sm:py-2 max-sm:text-sm " onClick={back}>back</button>
                 </div>
-                
             </div>
 
             <div className=''>
@@ -127,25 +126,25 @@ const Book= () => {
             </div> */}
             
                 <HTMLFlipBook {...settings} ref={bookRef} className=''>
-                    <PageCover source={"URL('./images/first.png')"} className='' ></PageCover>
-                    <Page source={"URL('./images/second.png')"} className='' ></Page>
-                    <Page source={"URL('./images/third.png')"}></Page>
-                    <Page source={"URL('./images/5.png')"}></Page>
-                    <Page source={"URL('./images/fourth.png')"}></Page>
-                    <Page source={"URL('./images/6.png')"}></Page>
-                    <Page source={"URL('./images/7.png')"}></Page>
-                    <Page source={"URL('./images/8.png')"}></Page>
-                    <Page source={"URL('./images/9.png')"}></Page>
-                    <Page source={"URL('./images/10.png')"}></Page>
-                    <Page source={"URL('./images/12.png')"}></Page>
-                    <Page source={"URL('./images/13.png')"}></Page>
-                    <Page source={"URL('./images/16.png')"}></Page>
-                    <Page source={"URL('./images/15.png')"}></Page>
-                    <Page source={"URL('./images/17.png')"}></Page>
-                    <Page source={"URL('./images/18.png')"}></Page>
-                    <Page source={"URL('./images/19.png')"}></Page>
-                    <Page source={"URL('./images/20.png')"}></Page>
-                    <PageCover source={"URL('./images/21.png')"}></PageCover>
+                    <PageCover source={"./images/first.png"} className='' ></PageCover>
+                    <Page source={"./images/second.png"} className='' ></Page>
+                    <Page source={"./images/third.png"}></Page>
+                    <Page source={"./images/5.png"}></Page>
+                    <Page source={"./images/fourth.png"}></Page>
+                    <Page source={"./images/6.png"}></Page>
+                    <Page source={"/images/7.png"}></Page>
+                    <Page source={"./images/8.png"}></Page>
+                    <Page source={"./images/9.png"}></Page>
+                    <Page source={"./images/10.png"}></Page>
+                    <Page source={"./images/12.png"}></Page>
+                    <Page source={"./images/13.png"}></Page>
+                    <Page source={"./images/16.png"}></Page>
+                    <Page source={"./images/15.png"}></Page>
+                    <Page source={"./images/17.png"}></Page>
+                    <Page source={"./images/18.png"}></Page>
+                    <Page source={"./images/19.png"}></Page>
+                    <Page source={"./images/20.png"}></Page>
+                    <PageCover source={"./images/21.png"}></PageCover>
                 </HTMLFlipBook>
 
             {/* <HTMLFlipBook {...settings2} ref={bookRef2} className='hidden max-sm:block'>

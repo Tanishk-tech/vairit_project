@@ -249,3 +249,7 @@
 .book_buttonN{
     background-image: url("../public/images/next.png");
 }
+
+.stf__item div{
+    height: 100%;
+}
